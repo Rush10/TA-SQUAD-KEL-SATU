@@ -29,6 +29,18 @@ public class Utils {
 		return destination;
 	}
 	
+	public static void delay(int detik, String delays) {
+		if(delays.equals("y"))
+		{
+			try {
+				Thread.sleep(1000*detik);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}		
+	}
+	
 	public void zoomOut(int n) throws AWTException{
 	  	this.robot = new Robot();
 	  	for (int i = 0; i < n; i++) {			
