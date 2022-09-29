@@ -6,13 +6,18 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
 	public static int testCount = 0;
@@ -41,6 +46,30 @@ public class Utils {
 		}		
 	}
 	
+	public static String driverWaitTxt(WebDriver driver, int delays, WebElement element) {
+		return new WebDriverWait(driver, Duration.ofSeconds(delays))
+				.until(ExpectedConditions.visibilityOf(element)).getText();
+	}
+	
+	
+	public static void scrollByVisibleElement(WebElement element, WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("arguments[0].scrollIntoView();",element );	
+	}
+	
+	public static void scrollDownByPixel(int vertical, WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("window.scrollBy(0,"+vertical+")");
+	}
+	
+	public static void scrollDownToButtom(WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
+	
 	public static void zoomOut(int n) throws AWTException{
 	  	Robot robot = new Robot();
 	  	for (int i = 0; i < n; i++) {			
@@ -61,19 +90,6 @@ public class Utils {
 		}
 	}
 	
-	public static int generateInteger(int intFirstIndex, int intLastIndex) {
-		Random rand = new Random();
-		int intTemp = 0;
-		
-		try {
-			intTemp = rand.nextInt(intFirstIndex, intLastIndex+1);			
-		} catch (IllegalArgumentException e) {
-			intTemp = 0;
-		}
-		
-		return intTemp;
-	}
-	
 	public static String generateString(int intStringLength) {
 		int randAlphabeth = 0;
 		final char charBatasBawahAlphabeth = 97;
@@ -87,6 +103,19 @@ public class Utils {
 		}
 		
 		return strRandomString.toString();
+	}
+	
+	public static int generateInteger(int intFirstIndex, int intLastIndex) {
+		Random rand = new Random();
+		int intTemp = 0;
+		
+		try {
+			intTemp = rand.nextInt(intFirstIndex, intLastIndex+1);			
+		} catch (IllegalArgumentException e) {
+			intTemp = 0;
+		}
+		
+		return intTemp;
 	}
 	
 	public static String generateWord(int intWord, int intWordLength) {
