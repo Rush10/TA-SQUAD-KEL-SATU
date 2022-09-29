@@ -1,9 +1,11 @@
 package cucumber.framework.page.siloam;
 
-//#created_by : Novri
-//#created_date : 29/09/2022
-//#updated_by : -
-//#updated_date : -
+/*
+created_by : Novri
+created_date : 29/09/2022
+updated_by : -
+updated_date : -
+*/
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,16 +37,16 @@ public class LoginPage {
 //	@FindBy(xpath = "//div[@id='page-container']/div/div[2]/div")
 	private WebElement msgError; //pesan error
 	
-	@FindBy(xpath = "//div[@id='sidebar']/div/div/ul/li/a/div[3]")
+	@FindBy(xpath = "//span[@class='d-none d-md-inline']")
 	private WebElement lblName; //label name setelah login
 	
 
 	public void login(String user, String pass) {
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		inputUsername(user);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		inputPassword(pass);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-		btnLogin();
 	}
 	
 	public void inputUsername(String user) {

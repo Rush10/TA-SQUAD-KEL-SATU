@@ -1,10 +1,17 @@
 package cucumber.framework.constant;
 
+/*
+created_by : Novri
+created_date : 21/09/2022
+updated_by : Novri
+updated_date : 29/09/2022
+*/
+
 public class Constants {
 
 	public static final int TIMEOUT = 10;
 	public static final int TIMEOUT_DELAY = 2;
-	public static final String GLOB_PARAM_DELAY = "n";
+	public static final String GLOB_PARAM_DELAY = "y";
 	public static final String CHROME = "Chrome";
 	public static final String FIREFOX = "Firefox";
 	public static final String EDGE = "Edge";

@@ -5,14 +5,15 @@
 
 Feature: Valid Admin Login
 
-	Given Siloam strip Satu strip Satu strip Admin Mengakses Halaman Website
-
-  Scenario: Siloam001001 Admin Valid Login Username Lower Case
-    When Siloam001001 Admin Input Username dan Password Valid
-    And Siloam001001 Admin Menekan Tombol Login
-    Then Siloam001001 Validasi Nama Admin di Halaman Home Page
-    
-  Scenario: Siloam001002 Admin Valid Login Username Lower Case Upper Case
-    When Siloam001002 Admin Input Username dan Password Valid
-    And Siloam001002 Admin Menekan Tombol Login
-    Then Siloam001002 Validasi Nama Admin di Halaman Home Page
+  Scenario: Siloam001 Admin Valid Login Username 
+		When Siloam001 Admin Mengakses Halaman Website
+    And Siloam001 Admin Input <username> dan <password> Valid
+    And Siloam001 Admin Menekan Tombol Login
+    Then Siloam001 Validasi Nama Admin di Halaman Home Page
+   
+#3 data
+  Examples: 
+    | username  | password      |
+    | admindika | d1k4@passw0rd |
+    | Admindika | d1k4@passw0rd |
+    | ADMINDIKA | d1k4@passw0rd |

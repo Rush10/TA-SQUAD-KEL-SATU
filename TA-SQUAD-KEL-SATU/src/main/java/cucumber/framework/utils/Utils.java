@@ -1,9 +1,11 @@
 package cucumber.framework.utils;
 
-//#created_by : Novri
-//#created_date : 21/09/2022
-//#updated_by : Novri
-//#updated_date : 29/09/2022
+/*
+created_by : Novri
+created_date : 21/09/2022
+updated_by : Novri
+updated_date : 29/09/2022
+*/
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -55,7 +57,6 @@ public class Utils {
 		return new WebDriverWait(driver, Duration.ofSeconds(delays))
 				.until(ExpectedConditions.visibilityOf(element)).getText();
 	}
-	
 	
 	public static void scrollByVisibleElement(WebElement element, WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
