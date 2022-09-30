@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.loginadmin;
+package cucumber.framework.runner.siloam.login;
 
 /*
 created_by : Novri
@@ -17,4 +17,4 @@ monochrome=true,
 plugin = {"pretty","html:target/siloam/htmlreport/LoginRunnerOutline.html",
 		"json:target/siloam/jsonreport/LoginRunnerOutline.json",
 		"junit:target/siloam/junitreport/LoginRunnerOutline.xml"})
-public class AdminLoginOutlineRunner extends AbstractTestNGCucumberTests{}
+public class LoginOutlineRunner extends AbstractTestNGCucumberTests{}

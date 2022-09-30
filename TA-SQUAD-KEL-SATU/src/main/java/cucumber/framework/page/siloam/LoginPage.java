@@ -1,5 +1,8 @@
 package cucumber.framework.page.siloam;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+
 /*
 created_by : Novri
 created_date : 29/09/2022
@@ -13,8 +16,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.framework.connection.DriverSingleton;
-import cucumber.framework.constant.Constants;
 import cucumber.framework.utils.Utils;
+import cucumber.framework.constant.Constants;
+
 
 public class LoginPage {
 	private WebDriver driver;
@@ -67,5 +71,14 @@ public class LoginPage {
 	
 	public String getTxtUserInfo() {
 		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblName);
+	}
+	
+	public Boolean msgErrorEmpty() {
+		WebElement username = driver.findElement(By.name("username"));    
+		String validationMessage = username.getAttribute("Please fill out this field.");
+		boolean required = Boolean.parseBoolean(username.getAttribute("required"));
+		boolean valid = (Boolean)((JavascriptExecutor)driver).executeScript("return arguments[0].validity.valid;", username);
+		return required;
+
 	}
 }
