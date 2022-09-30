@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Random;
 
@@ -135,6 +136,19 @@ public class Utils {
 		strTemp = strRandomString.toString().substring(0,strRandomString.length()-1);
 		
 		return strTemp;
+	}
+	
+	public static String getCurrentDate() {
+		String currentDate = "";
+		currentDate = java.time.LocalDate.now().toString();
+		return currentDate;
+	}
+	
+	public static String getCurrentDateWithoutStrip() {
+		String currentDate = "";
+		currentDate = java.time.LocalDate.now().toString();
+		currentDate = currentDate.replaceAll("-", "");
+		return currentDate;
 	}
 	
 	public static String generateDate() {
