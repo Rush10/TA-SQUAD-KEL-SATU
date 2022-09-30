@@ -56,8 +56,17 @@ public class LoginPage {
 		this.username.sendKeys(user);
 	}
 	
+	public WebElement getInputUsername() {
+		return this.username;
+	}
+	
 	public void inputPassword(String pass) {
 		this.password.sendKeys(pass);
+	}
+	
+	
+	public WebElement getInputPassword() {
+		return this.password;
 	}
 	
 	public void btnLogin() {
@@ -72,8 +81,8 @@ public class LoginPage {
 		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblName);
 	}
 	
-	public Boolean isHaveRequired() {
-		boolean isHaveRequired = Boolean.parseBoolean(username.getAttribute("required"));
+	public Boolean isHaveRequired(WebElement element) {
+		boolean isHaveRequired = Boolean.parseBoolean(element.getAttribute("required"));
 		return isHaveRequired;
 	}
 }

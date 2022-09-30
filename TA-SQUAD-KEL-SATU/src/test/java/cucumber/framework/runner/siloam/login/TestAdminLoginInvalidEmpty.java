@@ -17,6 +17,8 @@ public class TestAdminLoginInvalidEmpty {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private LoginPage loginPage = new LoginPage();
+	private String strUser;
+	private String strPass;
 	
 	public TestAdminLoginInvalidEmpty() {
 		driver = LoginOutlineHooks.driver;
@@ -32,7 +34,17 @@ public class TestAdminLoginInvalidEmpty {
 
 	@When("^Siloam015 Admin Memasukan (.*) dan (.*) Salah$")
 	public void siloam015_admin_memasukan_username_dan_password_salah(String username, String password) {
-		System.out.println("admin_memasukan_username_dan_password_salah : "+username+" pwd : "+password);
+//		System.out.println("admin_memasukan_username_dan_password_salah : "+username+" pwd : "+password);
+		
+		if(username == "") {
+			strUser = "";
+		} else if(password == "") {
+			strPass = "";
+		} else {
+			strUser = "";
+			strPass = "";
+		}
+		
 		loginPage.login(username, password);
 		extentTest.log(LogStatus.PASS, "Siloam015 Admin Memasukan username dan password Salah");
 	}
@@ -45,7 +57,15 @@ public class TestAdminLoginInvalidEmpty {
 
 	@Then("Siloam015 Validasi pesan pada halaman login")
 	public void siloam015_validasi_pesan_pada_halaman_login() {
-		assertTrue(loginPage.isHaveRequired());
+		if(strUser == "" && strPass == "") {
+			assertTrue(loginPage.isHaveRequired(loginPage.getInputUsername()));
+			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
+		} else if(strUser == "") {
+			assertTrue(loginPage.isHaveRequired(loginPage.getInputUsername()));
+		} else {
+			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
+		}
+		
 		extentTest.log(LogStatus.PASS, "Siloam015 Validasi pesan pada halaman login");
 	}
 

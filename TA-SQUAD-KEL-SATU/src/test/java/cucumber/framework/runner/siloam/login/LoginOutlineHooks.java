@@ -31,7 +31,7 @@ public class LoginOutlineHooks{
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-admin-login-outline.html");
 	private static SiloamLogin[] tests = SiloamLogin.values();
-	private static final int[] DATA_OUTLINE = {6,6,1,1};
+	private static final int[] DATA_OUTLINE = {3,3,3,5};
 	private String testReport = "";
 	
 	@Before
