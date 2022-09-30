@@ -13,8 +13,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.framework.connection.DriverSingleton;
-import cucumber.framework.utils.Utils;
 import cucumber.framework.constant.Constants;
+import cucumber.framework.utils.Utils;
 
 public class LoginPage {
 	private WebDriver driver;

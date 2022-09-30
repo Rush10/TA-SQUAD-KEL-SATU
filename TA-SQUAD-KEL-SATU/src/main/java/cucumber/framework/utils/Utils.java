@@ -14,12 +14,10 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -142,13 +140,23 @@ public class Utils {
 	public static String getFileNameWithExt(String path) {
 		String fileName = "";
 		File f = new File(path);
-//		String extFile = FilenameUtils.getExtension(path); // returns "txt"
         if(f.exists()){
             fileName = f.getName();
         }else{
             fileName = "The File does not exist";
         }
 		return fileName;
+	}
+	
+	public static long getFileSize(String path) {
+		long fileSize = 0l;
+		File f = new File(path);
+		if(f.exists()){
+			fileSize = f.length();
+		}else{
+			fileSize = 0l;
+		}
+		return fileSize;
 	}
 	
 	public static String getCurrentDate() {

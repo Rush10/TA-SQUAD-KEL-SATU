@@ -1,7 +1,8 @@
 package cucumber.framework.utils;
 
-import java.io.File ;  
-import net.sourceforge.tess4j.Tesseract ;  
+import java.io.File ;
+
+import net.sourceforge.tess4j.Tesseract ;
 import net.sourceforge.tess4j.TesseractException ;  
 /*
  * https://github.com/tesseract-ocr/tessdata.git // download dulu dari sini ,lalu extract file rar ke folder di laptop kailan
