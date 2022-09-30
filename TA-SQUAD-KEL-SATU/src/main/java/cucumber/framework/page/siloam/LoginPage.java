@@ -38,7 +38,6 @@ public class LoginPage {
 	private WebElement login;
 	
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']")
-//	@FindBy(xpath = "//div[@id='page-container']/div/div[2]/div")
 	private WebElement msgError; //pesan error
 	
 	@FindBy(xpath = "//span[@class='d-none d-md-inline']")
@@ -73,12 +72,8 @@ public class LoginPage {
 		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblName);
 	}
 	
-	public Boolean msgErrorEmpty() {
-		WebElement username = driver.findElement(By.name("username"));    
-		String validationMessage = username.getAttribute("Please fill out this field.");
-		boolean required = Boolean.parseBoolean(username.getAttribute("required"));
-		boolean valid = (Boolean)((JavascriptExecutor)driver).executeScript("return arguments[0].validity.valid;", username);
-		return required;
-
+	public Boolean isHaveRequired() {
+		boolean isHaveRequired = Boolean.parseBoolean(username.getAttribute("required"));
+		return isHaveRequired;
 	}
 }
