@@ -4,7 +4,7 @@ package cucumber.framework.utils;
 created_by : Novri
 created_date : 21/09/2022
 updated_by : Novri
-updated_date : 29/09/2022
+updated_date : 30/09/2022
 */
 
 import java.awt.AWTException;
@@ -19,6 +19,7 @@ import java.util.Date;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -136,6 +137,18 @@ public class Utils {
 		strTemp = strRandomString.toString().substring(0,strRandomString.length()-1);
 		
 		return strTemp;
+	}
+	
+	public static String getFileNameWithExt(String path) {
+		String fileName = "";
+		File f = new File(path);
+//		String extFile = FilenameUtils.getExtension(path); // returns "txt"
+        if(f.exists()){
+            fileName = f.getName();
+        }else{
+            fileName = "The File does not exist";
+        }
+		return fileName;
 	}
 	
 	public static String getCurrentDate() {
