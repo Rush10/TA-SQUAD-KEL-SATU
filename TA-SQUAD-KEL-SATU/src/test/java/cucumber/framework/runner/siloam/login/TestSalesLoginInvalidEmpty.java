@@ -3,8 +3,8 @@ package cucumber.framework.runner.siloam.login;
 /*
 created_by : Manda
 created_date : 30/09/2022
-updated_by : -
-updated_date : -
+updated_by : Novri
+updated_date : 01/10/2022
 */
 
 import static org.testng.Assert.assertTrue;
@@ -69,6 +69,7 @@ public class TestSalesLoginInvalidEmpty {
 		} else {
 			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
 		}
+		extentTest.log(LogStatus.PASS, "Siloam019 Validasi pesan pada halaman login");
 	}
 
 }

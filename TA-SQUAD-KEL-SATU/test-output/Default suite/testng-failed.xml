@@ -6,8 +6,8 @@
       <class name="cucumber.framework.runner.siloam.login.LoginOutlineRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="tearDownClass"/>
           <include name="runScenario" invocation-numbers="2 3 4"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- cucumber.framework.runner.siloam.login.LoginOutlineRunner -->
     </classes>
