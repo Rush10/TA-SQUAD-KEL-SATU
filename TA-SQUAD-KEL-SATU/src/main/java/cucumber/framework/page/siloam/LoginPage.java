@@ -1,14 +1,14 @@
 package cucumber.framework.page.siloam;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-
 /*
 created_by : Novri
 created_date : 29/09/2022
-updated_by : -
-updated_date : -
+updated_by : Novri
+updated_date : 30/09/2022
 */
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

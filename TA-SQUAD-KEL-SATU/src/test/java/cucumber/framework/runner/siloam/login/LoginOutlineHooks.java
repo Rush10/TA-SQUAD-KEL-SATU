@@ -3,7 +3,7 @@ package cucumber.framework.runner.siloam.login;
 /*
 created_by : Novri
 created_date : 29/09/2022
-updated_by : Novri
+updated_by : Manda
 updated_date : 30/09/2022
 */
 
@@ -29,9 +29,9 @@ public class LoginOutlineHooks{
 	
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-admin-login-outline.html");
+	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-login-outline.html");
 	private static SiloamLogin[] tests = SiloamLogin.values();
-	private static final int[] DATA_OUTLINE = {3,3,3,5};
+	private static final int[] DATA_OUTLINE = {3,3,3,5,3,5};
 	private String testReport = "";
 	
 	@Before
@@ -52,7 +52,7 @@ public class LoginOutlineHooks{
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
 		if(scenario.isFailed()) {
-			String screenshotPath = Utils.getScreenshot(driver, "Siloam_AdminLoginOutlineHooks"+scenario.getName().replace(" ", "_"));
+			String screenshotPath = Utils.getScreenshot(driver, "Siloam_LoginOutlineHooks"+scenario.getName().replace(" ", "_"));
 			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"
 					+extentTest.addScreenCapture(screenshotPath));;
 		}

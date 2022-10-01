@@ -3,7 +3,7 @@ package cucumber.framework.runner.siloam.login;
 /*
 created_by : Novri
 created_date : 29/09/2022
-updated_by : Novri
+updated_by : Manda
 updated_date : 30/09/2022
 */
 
@@ -16,6 +16,8 @@ features = {
 		"src/test/resources/features/siloam/005ValidSalesLogin.feature",
 		"src/test/resources/features/siloam/010InvalidAdminLogin.feature",
 		"src/test/resources/features/siloam/015InvalidAdminLoginEmpty.feature",
+		"src/test/resources/features/siloam/018InvalidSalesLogin.feature",
+		"src/test/resources/features/siloam/019InvalidSalesLoginEmpty.feature",
 		},
 glue = "cucumber.framework.runner.siloam.login",
 monochrome=true,
