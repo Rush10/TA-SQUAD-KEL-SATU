@@ -3,7 +3,7 @@ package cucumber.framework.utils;
 /*
 created_by : Novri
 created_date : 21/09/2022
-updated_by : Novri
+updated_by : Adit
 updated_date : 01/10/2022
 */
 
@@ -40,6 +40,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.framework.constant.Constants;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 
@@ -344,5 +345,23 @@ public class Utils {
 		}
 		
 		return strTemp;
+	}
+	
+	public static void tabEnter() throws AWTException
+	{
+		Robot robot = new Robot();
+		for(int i =0; i < 8; i++)
+		{
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
+		
+		for(int i =0; i < 2; i++)
+		{
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
 	}
 }

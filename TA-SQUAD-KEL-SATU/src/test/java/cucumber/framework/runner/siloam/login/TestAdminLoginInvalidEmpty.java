@@ -4,7 +4,7 @@ package cucumber.framework.runner.siloam.login;
 created_by : Manda
 created_date : 30/09/2022
 updated_by : Novri
-updated_date : 30/09/2022
+updated_date : 02/10/2022
 */
 
 import static org.testng.Assert.assertTrue;
@@ -45,10 +45,9 @@ public class TestAdminLoginInvalidEmpty {
 		
 		if(username == "") {
 			strUser = "";
-		} else if(password == "") {
-			strPass = "";
-		} else {
-			strUser = "";
+		}
+		
+		if(password == "") {
 			strPass = "";
 		}
 		
@@ -64,14 +63,13 @@ public class TestAdminLoginInvalidEmpty {
 
 	@Then("Siloam015 Validasi pesan pada halaman login")
 	public void siloam015_validasi_pesan_pada_halaman_login() {
-		if(strUser == "" && strPass == "") {
+		if(strUser == "") {
 			assertTrue(loginPage.isHaveRequired(loginPage.getInputUsername()));
-			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
-		} else if(strUser == "") {
-			assertTrue(loginPage.isHaveRequired(loginPage.getInputUsername()));
-		} else {
-			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
 		}
+		
+		if(strPass == "") {
+			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
+		} 
 		
 		extentTest.log(LogStatus.PASS, "Siloam015 Validasi pesan pada halaman login");
 	}
