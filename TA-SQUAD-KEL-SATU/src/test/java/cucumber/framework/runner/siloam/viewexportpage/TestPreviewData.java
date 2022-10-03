@@ -1,5 +1,7 @@
 package cucumber.framework.runner.siloam.viewexportpage;
 
+import static org.junit.Assert.assertFalse;
+
 /*
 created_by : Adit
 created_date : 30/09/2022
@@ -51,7 +53,7 @@ public class TestPreviewData {
 	public void siloam050_admin_tekan_tombol_preview_data() throws AWTException {
 		viewExportPage.btnPreviewData();
 		Utils.tabEnter();
-		driver.get(Constants.URL_SILOAM_VIEW_ADMIN);
+		driver.get(Constants.URL_SILOAM_VIEW_ADMIN_DUA);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		viewExportPage.btnPreviewData();
 		Utils.tabEnter();
@@ -60,9 +62,9 @@ public class TestPreviewData {
 
 	@Then("Siloam050 Validasi Data Pada Dokumen PDF")
 	public void siloam050_validasi_data_pada_dokumen_pdf() {
-		String pathSatu = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\20220930 (1).zip";
-		String pathDua = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\20220930 (1).zip";
-		assertTrue(Utils.getFileSize(pathSatu) == Utils.getFileSize(pathDua));
+		String pathSatu = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf.pdf";
+		String pathDua = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf (1).pdf";
+		assertFalse(Utils.getFileSize(pathSatu) == Utils.getFileSize(pathDua));
 		extentTest.log(LogStatus.PASS, "Siloam025 Siloam030 Validasi An uncaught Exception was encountered");
 	}
 }

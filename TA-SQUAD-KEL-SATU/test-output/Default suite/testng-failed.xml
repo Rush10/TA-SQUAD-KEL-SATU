@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cucumber.framework.runner.siloam.login.LoginOutlineRunner">
+      <class name="cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="2 3 4"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="6 7"/>
         </methods>
-      </class> <!-- cucumber.framework.runner.siloam.login.LoginOutlineRunner -->
+      </class> <!-- cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

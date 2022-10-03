@@ -30,7 +30,7 @@ public class ViewExportHooksOutline {
 
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/siloamoutline/extentreport/siloam-view-export.html");
+	public static ExtentReports reports = new ExtentReports("target/siloamoutline/extentreport/siloam-view-export-invalid-outline.html");
 	private static SiloamViewExportInvalid[] tests = SiloamViewExportInvalid.values();
 	private static final int[] DATA_OUTLINE = {3};
 	private String testReport = "";

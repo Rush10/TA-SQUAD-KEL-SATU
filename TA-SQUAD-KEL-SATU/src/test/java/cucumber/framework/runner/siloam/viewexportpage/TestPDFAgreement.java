@@ -1,10 +1,12 @@
 package cucumber.framework.runner.siloam.viewexportpage;
 
+import static org.junit.Assert.assertFalse;
+
 /*
 created_by : Adit
 created_date : 30/09/2022
 updated_by : Novri
-updated_date : 02/10/2022
+updated_date : 03/10/2022
 */
 
 
@@ -55,8 +57,8 @@ public class TestPDFAgreement {
 		viewExportPage.btnPDFAgreement();
 		Utils.tabEnter();
 		
-		String startDate = "2022-09-14";
-	    String endDate = "2022-09-18";
+		String startDate = "2022-09-8";
+	    String endDate = "2022-09-10";
 	    
 	    viewExportPage.filter(startDate,endDate);
 		viewExportPage.btnPDFAgreement();
@@ -67,8 +69,8 @@ public class TestPDFAgreement {
 	@Then("Siloam065 Validasi PDF Agreement")
 	public void siloam060_validasi_pdf_agreement() {
 		String pathSatu = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\350_agreement_1663523732.pdf";
-		String pathDua = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\350_agreement_1663523732 (1).pdf";
-		assertTrue(Utils.getFileSize(pathSatu) == Utils.getFileSize(pathDua));
+		String pathDua = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\344_agreement_1662635941.pdf";
+		assertFalse(Utils.getFileSize(pathSatu) == Utils.getFileSize(pathDua));
 		extentTest.log(LogStatus.PASS, "Siloam065 Validasi PDF Agreement");
 	}
 	

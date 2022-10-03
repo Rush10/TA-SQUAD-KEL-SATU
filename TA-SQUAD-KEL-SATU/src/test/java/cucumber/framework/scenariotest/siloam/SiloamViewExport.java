@@ -13,7 +13,7 @@ public enum SiloamViewExport {
 	T2("Siloam025 Admin Tekan Refresh"),
 	T3("Siloam030 Admin Tekan Download"),
 	T4("Siloam035 Admin Tekan Export"),
-//	T5("Siloam040 Admin Menekan View"),
+	T5("Siloam040 Admin Menekan View"),
 	T6("Siloam045 Admin Menekan Back"),
 	T7("Siloam050 Admin Menekan Preview Data"),
 //	T8("Siloam055 Admin Tekan Faskes Awal"),

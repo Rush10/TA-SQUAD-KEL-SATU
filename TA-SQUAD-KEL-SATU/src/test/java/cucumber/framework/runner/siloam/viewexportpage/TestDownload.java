@@ -41,7 +41,7 @@ public class TestDownload {
 	    viewExportPage.btnViewExport();
 	    
 	    String startDate = "2022-09-14";
-	    String endDate = "2022-09-14";
+	    String endDate = "2022-09-18";
 	    
 	    viewExportPage.filter(startDate,endDate);
 	    extentTest.log(LogStatus.PASS, "Siloam030 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter");

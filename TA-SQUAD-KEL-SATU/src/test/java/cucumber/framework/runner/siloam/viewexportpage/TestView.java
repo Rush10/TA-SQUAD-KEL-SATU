@@ -1,5 +1,7 @@
 package cucumber.framework.runner.siloam.viewexportpage;
 
+import static org.testng.Assert.assertTrue;
+
 /*
 created_by : Adit
 created_date : 30/09/2022
@@ -52,8 +54,8 @@ public class TestView {
 
 	@Then("Siloam040 Validasi kata View Data")
 	public void siloam040_validasi_kata_view_data() {
-//		String adminName = "C:\\Users\\NEXSOFT\\Downloads\\20220930.zip";
-//		assertEquals(Utils.getCurrentDateWithoutStrip() + ".zip",Utils.getFileNameWithExt(adminName));
-//		extentTest.log(LogStatus.PASS, "Siloam040 Validasi kata View Data");
+		String txtExpected = "View & Export";
+		assertTrue(viewExportPage.getTxtSuccessView().contains(txtExpected));
+		extentTest.log(LogStatus.PASS, "Siloam040 Validasi kata View Data");
 	}
 }

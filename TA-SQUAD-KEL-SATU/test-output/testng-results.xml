@@ -1,686 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="19" failed="3" skipped="0">
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-02T14:38:55 ICT" name="Default suite" finished-at="2022-10-02T14:42:38 ICT" duration-ms="223867">
+  <suite started-at="2022-10-03T09:00:31 ICT" name="Default suite" finished-at="2022-10-03T09:04:02 ICT" duration-ms="210536">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-02T14:38:55 ICT" name="Default test" finished-at="2022-10-02T14:42:38 ICT" duration-ms="223867">
-      <class name="cucumber.framework.runner.siloam.login.LoginOutlineRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:38:55 ICT" name="setUpClass" finished-at="2022-10-02T14:38:55 ICT" duration-ms="622" status="PASS">
+    <test started-at="2022-10-03T09:00:31 ICT" name="Default test" finished-at="2022-10-03T09:04:02 ICT" duration-ms="210536">
+      <class name="cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:00:31 ICT" name="setUpClass" finished-at="2022-10-03T09:00:32 ICT" duration-ms="670" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5402612e]]>
+                <![CDATA[org.testng.TestRunner@1f5d7fd5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:38:55 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:39:10 ICT" duration-ms="14225" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:00:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:00:47 ICT" duration-ms="15435" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam001 Admin Valid Login Username"]]>
+                <![CDATA["Siloam020 Admin Memasukkan Start Date End Date Tekan Filter"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Valid Admin Login"]]>
+                <![CDATA["Admin Melihat Data Karyawan"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:39:10 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:39:18 ICT" duration-ms="8040" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:00:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:01 ICT" duration-ms="13848" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam001 Admin Valid Login Username"]]>
+                <![CDATA["Siloam025 Admin Tekan Refresh"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Valid Admin Login"]]>
+                <![CDATA["Admin Melakukan Refresh"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:39:18 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:39:45 ICT" duration-ms="27801" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:23 ICT" duration-ms="22187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam001 Admin Valid Login Username"]]>
+                <![CDATA["Siloam030 Admin Tekan Download"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Valid Admin Login"]]>
+                <![CDATA["Admin Melakukan Download"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:23 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:45 ICT" duration-ms="21444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam035 Admin Tekan Export"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Melakukan Export"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:45 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:59 ICT" duration-ms="14323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam040 Admin Menekan View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Menekan View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:59 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:02:07 ICT" duration-ms="7539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam045 Admin Menekan Back"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Menekan Tombol Back"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:02:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:02:36 ICT" duration-ms="29068" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam050 Admin Menekan Preview Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Menekan Preview Data"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='d-none d-md-inline']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='d-none d-md-inline']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:75)
-at cucumber.framework.page.siloam.LoginPage.getTxtUserInfo(LoginPage.java:81)
-at cucumber.framework.runner.siloam.login.TestAdminLoginValid.siloam001_validasi_nama_admin_di_halaman_home_page(TestAdminLoginValid.java:55)
-at ✽.Siloam001 Validasi Nama Admin di Halaman Home Page(file:///C:/Users/ROG/git/Tugas%20Akhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/001ValidAdminLogin.feature:12)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='d-none d-md-inline']"}
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'RUSHTEN', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a32c3cedca09052c37a12b835602ed9, findElement {using=xpath, value=//span[@class='d-none d-md-inline']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ROG\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49232/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a32c3cedca09052c37a12b835602ed9
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:75)
-at cucumber.framework.page.siloam.LoginPage.getTxtUserInfo(LoginPage.java:81)
-at cucumber.framework.runner.siloam.login.TestAdminLoginValid.siloam001_validasi_nama_admin_di_halaman_home_page(TestAdminLoginValid.java:55)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at cucumber.framework.runner.siloam.viewexportpage.TestPreviewData.siloam050_validasi_data_pada_dokumen_pdf(TestPreviewData.java:65)
+at ✽.Siloam050 Validasi Data Pada Dokumen PDF(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam/050AdminMenekanPreviewData.feature:11)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:39:45 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:40:13 ICT" duration-ms="27964" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:02:36 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:19 ICT" duration-ms="43215" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam005 Sales Valid Login Username"]]>
+                <![CDATA["Siloam065 Admin Tekan PDF Agreement"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Valid Sales Login"]]>
+                <![CDATA["Admin Menekan Link PDF Agreement"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='d-none d-md-inline']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='d-none d-md-inline']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:75)
-at cucumber.framework.page.siloam.LoginPage.getTxtUserInfo(LoginPage.java:81)
-at cucumber.framework.runner.siloam.login.TestSalesLoginValid.siloam005_validasi_nama_sales_di_halaman_home_page(TestSalesLoginValid.java:58)
-at ✽.Siloam005 Validasi Nama Sales di Halaman Home Page(file:///C:/Users/ROG/git/Tugas%20Akhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/005ValidSalesLogin.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='d-none d-md-inline']"}
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'RUSHTEN', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a32c3cedca09052c37a12b835602ed9, findElement {using=xpath, value=//span[@class='d-none d-md-inline']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ROG\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49232/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a32c3cedca09052c37a12b835602ed9
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:75)
-at cucumber.framework.page.siloam.LoginPage.getTxtUserInfo(LoginPage.java:81)
-at cucumber.framework.runner.siloam.login.TestSalesLoginValid.siloam005_validasi_nama_sales_di_halaman_home_page(TestSalesLoginValid.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at cucumber.framework.runner.siloam.viewexportpage.TestPDFAgreement.siloam060_validasi_pdf_agreement(TestPDFAgreement.java:71)
+at ✽.Siloam065 Validasi PDF Agreement(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam/065AdminMenekanLinkPDFAgreement.feature:11)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:40:13 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:40:41 ICT" duration-ms="27710" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:19 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:26 ICT" duration-ms="7154" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam005 Sales Valid Login Username"]]>
+                <![CDATA["Siloam075 Admin Tekan Export Start End Date Empty"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Valid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='d-none d-md-inline']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='d-none d-md-inline']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:75)
-at cucumber.framework.page.siloam.LoginPage.getTxtUserInfo(LoginPage.java:81)
-at cucumber.framework.runner.siloam.login.TestSalesLoginValid.siloam005_validasi_nama_sales_di_halaman_home_page(TestSalesLoginValid.java:58)
-at ✽.Siloam005 Validasi Nama Sales di Halaman Home Page(file:///C:/Users/ROG/git/Tugas%20Akhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/005ValidSalesLogin.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='d-none d-md-inline']"}
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'RUSHTEN', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a32c3cedca09052c37a12b835602ed9, findElement {using=xpath, value=//span[@class='d-none d-md-inline']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ROG\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49232/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a32c3cedca09052c37a12b835602ed9
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:75)
-at cucumber.framework.page.siloam.LoginPage.getTxtUserInfo(LoginPage.java:81)
-at cucumber.framework.runner.siloam.login.TestSalesLoginValid.siloam005_validasi_nama_sales_di_halaman_home_page(TestSalesLoginValid.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:40:41 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:40:48 ICT" duration-ms="7265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam005 Sales Valid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Valid Sales Login"]]>
+                <![CDATA["Admin Menekan Export Invalid"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:40:48 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:40:55 ICT" duration-ms="6711" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:26 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:40 ICT" duration-ms="13616" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam010 Admin Invalid Login Username"]]>
+                <![CDATA["Siloam075 Admin Tekan Export Data Empty"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Invalid Sales Login"]]>
+                <![CDATA["Admin Menekan Export Invalid"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:40:55 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:02 ICT" duration-ms="7187" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:40 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:47 ICT" duration-ms="6740" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam010 Admin Invalid Login Username"]]>
+                <![CDATA["Siloam080 Admin Tekan Download Start End Date Empty"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Invalid Sales Login"]]>
+                <![CDATA["Admin Menekan Download Invalid"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:02 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:09 ICT" duration-ms="7191" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:04:00 ICT" duration-ms="13815" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam010 Admin Invalid Login Username"]]>
+                <![CDATA["Siloam080 Admin Tekan Download Data Empty"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Invalid Sales Login"]]>
+                <![CDATA["Admin Menekan Download Invalid"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:16 ICT" duration-ms="6335" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam015 Admin Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:16 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:22 ICT" duration-ms="6361" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam015 Admin Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:22 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:28 ICT" duration-ms="6373" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam015 Admin Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:28 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:35 ICT" duration-ms="6331" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam015 Admin Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:35 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:41 ICT" duration-ms="6432" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam015 Admin Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:41 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:49 ICT" duration-ms="7281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam018 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:49 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:41:56 ICT" duration-ms="7252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam018 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:41:56 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:42:03 ICT" duration-ms="7283" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam018 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:42:03 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:42:09 ICT" duration-ms="6308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam019 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:42:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:42:16 ICT" duration-ms="6391" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam019 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:42:16 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:42:23 ICT" duration-ms="7569" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam019 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:42:23 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:42:30 ICT" duration-ms="6354" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam019 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:42:30 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-02T14:42:36 ICT" duration-ms="6322" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam019 Sales Invalid Login Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Invalid Sales Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.login.LoginOutlineRunner@24269709]" started-at="2022-10-02T14:42:36 ICT" name="tearDownClass" finished-at="2022-10-02T14:42:38 ICT" duration-ms="2480" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:04:00 ICT" name="tearDownClass" finished-at="2022-10-03T09:04:02 ICT" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.framework.runner.siloam.login.LoginOutlineRunner -->
+      </class> <!-- cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
