@@ -36,15 +36,6 @@ public class TestInputDataSalahFormat {
 		driver = InputDataOutlineHooks.driver;
 		extentTest = InputDataOutlineHooks.extentTest;
 	}
-	
-	@When("Siloam310001 Sales Mengakses Halaman Website")
-	public void siloam310001_sales_mengakses_halaman_website() {
-		driver.get(Constants.URL_SILOAM);
-		inputDataPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
-		inputDataPage.btnLogin();
-		inputDataPage.clickInputDataMenu();
-		extentTest.log(LogStatus.PASS, "Siloam310-001 Sales Mengakses Halaman Website dan masuk ke halaman input");
-	}
 
 	@When("^Siloam310001 Sales input data (.*), (.*), (.*), (.*), (.*), (.*), (.*), dan (.*) nomor bpjs format invalid$")
 	public void siloam310001_sales_input_data_nama_nomor_bpjs_nomor_ktp_address_kota_ktp_faskes_awal_faskes_tujuan_dan_alasan_nomor_bpjs_format_invalid(String nama, String nomorBPJS, String nomorKTP, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {

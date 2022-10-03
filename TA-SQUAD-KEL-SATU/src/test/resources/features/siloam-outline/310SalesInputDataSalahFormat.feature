@@ -6,8 +6,7 @@
 Feature: Sales Input Data Salah Format
     
   Scenario: Siloam310 Sales input data karyawan nomor BPJS kurang dari tiga belas angka
-  	When Siloam310001 Sales Mengakses Halaman Website
-    And Siloam310001 Sales input data <nama>, <nomorBPJS>, <nomorKTP>, <address>, <kotaKTP>, <faskesAwal>, <faskesTujuan>, dan <alasan> nomor bpjs format invalid
+    When Siloam310001 Sales input data <nama>, <nomorBPJS>, <nomorKTP>, <address>, <kotaKTP>, <faskesAwal>, <faskesTujuan>, dan <alasan> nomor bpjs format invalid
     And Siloam310001 Sales tekan tombol simpan data invalid
     Then Siloam310001 Validasi pesan error nomor BPJS angka harus tiga belas
    

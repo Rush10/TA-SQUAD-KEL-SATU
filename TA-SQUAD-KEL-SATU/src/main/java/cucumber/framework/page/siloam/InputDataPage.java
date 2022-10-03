@@ -47,11 +47,17 @@ private WebDriver driver;
 	@FindBy(xpath = "//span[@id='select2-ktp_city-container']")
 	private WebElement kotaKTP;
 	
+	@FindBy(xpath = "//select[@id='ktp_city']")
+	private WebElement selectKotaKTP;
+	
 	@FindBy(xpath = "//input[@id='origin_faskes']")
 	private WebElement faskesAwal;
 	
 	@FindBy(xpath = "//span[@id='select2-destination_faskes-container']")
 	private WebElement faskesTujuan;
+	
+	@FindBy(xpath = "//select[@id='destination_faskes']")
+	private WebElement selectFaskesTujuan;
 	
 	@FindBy(xpath = "//input[@role='textbox']")
 	private WebElement txtBox;
@@ -77,47 +83,84 @@ private WebDriver driver;
 	@FindBy(xpath = "//div[@role='alert']")
 	private WebElement msgValidSave;
 	
+	@FindBy(xpath = "//a[@class='nav-link active']//span[@class='d-sm-block d-none']")
+	private WebElement inputDataTitle;
+	
 	//INPUT DATA
+//	public void inputData(String nama, String nomBpjs,String nomKtp, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
+//		Robot robot = new Robot();
+//		
+//		if(nama != "") {
+//			clearName();
+//			inputName(nama);
+//		}
+//		if(nomBpjs != "") {
+//			clearNomBpjs();
+//			inputNomBPJS(nomBpjs);
+//		} 
+//		if(nomKtp != "") {
+//			clearNomKtp();
+//			inputNomKtp(nomKtp);
+//		}
+//		if(address != "") {
+//			clearAddress();
+//			inputAddress(address);
+//		}
+//		if(kotaKTP != "") {
+//			clickKotaKtp();
+//			inputKotaKTP(kotaKTP);
+//			robot.keyPress(KeyEvent.VK_ENTER);
+//			robot.keyRelease(KeyEvent.VK_ENTER);
+//		}
+//		if(faskesAwal != "") {
+//			clearFaskesAwal();
+//			inputFaskesAwal(faskesAwal);
+//		}
+//		if(faskesTujuan != "") {
+//			clickFaskesTujuan();
+//			inputFaskesTujuan(faskesTujuan);
+//			robot.keyPress(KeyEvent.VK_ENTER);
+//			robot.keyRelease(KeyEvent.VK_ENTER);
+//		}
+//		if(alasan != "") {
+//			clearAlasan();
+//			inputAlasan(alasan);
+//		}
+//		
+//	}
+	
 	public void inputData(String nama, String nomBpjs,String nomKtp, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
 		Robot robot = new Robot();
 		
-		if(nama != "") {
-			clearName();
-			inputName(nama);
-		}
-		if(nomBpjs != "") {
-			clearNomBpjs();
-			inputNomBPJS(nomBpjs);
-		} 
-		if(nomKtp != "") {
-			clearNomKtp();
-			inputNomKtp(nomKtp);
-		}
-		if(address != "") {
-			clearAddress();
-			inputAddress(address);
-		}
-		if(kotaKTP != "") {
-			clickKotaKtp();
-			inputKotaKTP(kotaKTP);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-		}
-		if(faskesAwal != "") {
-			clearFaskesAwal();
-			inputFaskesAwal(faskesAwal);
-		}
-		if(faskesTujuan != "") {
-			clickFaskesTujuan();
-			inputFaskesTujuan(faskesTujuan);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-		}
-		if(alasan != "") {
+		clearName();
+		inputName(nama);
+		
+		clearNomBpjs();
+		inputNomBPJS(nomBpjs);
+		
+		clearNomKtp();
+		inputNomKtp(nomKtp);
+		
+		clearAddress();
+		inputAddress(address);
+		
+		clickKotaKtp();
+		inputKotaKTP(kotaKTP);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		
+		clearFaskesAwal();
+		inputFaskesAwal(faskesAwal);
+		
+		clickFaskesTujuan();
+		inputFaskesTujuan(faskesTujuan);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		
+		if(!faskesTujuan.equalsIgnoreCase("faskes")) {	
 			clearAlasan();
 			inputAlasan(alasan);
 		}
-		
 	}
 	
 	public void clearName() {
@@ -200,12 +243,20 @@ private WebDriver driver;
 		return this.kotaKTP;
 	}
 	
+	public WebElement getSelectKotaKTP() {
+		return this.selectKotaKTP;
+	}
+	
 	public WebElement getFaskesAwal() {
 		return this.faskesAwal;
 	}
 	
 	public WebElement getFaskesTujuan() {
 		return this.faskesTujuan;
+	}
+	
+	public WebElement getSelectFaskesTujuan() {
+		return this.selectFaskesTujuan;
 	}
 	
 	public void clickSubmit() {
@@ -248,6 +299,10 @@ private WebDriver driver;
 	
 	public String msgAddSuccess() {
 		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgValidSave);
+	}
+	
+	public String getInputDataTitle() {
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, inputDataTitle);
 	}
 
 }

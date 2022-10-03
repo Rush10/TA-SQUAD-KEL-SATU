@@ -6,8 +6,7 @@
 Feature: Valid Sales Input Data
 
   Scenario: Siloam300 Sales Input Data Valid 
-	When Siloam300 Sales Mengakses Halaman Website
-    And Siloam300 Sales input data <nama>, <nomorBPJS>, <nomorKTP>, <address>, <kotaKTP>, <faskesAwal>, <faskesTujuan>, dan <alasan> valid
+    When Siloam300 Sales input data <nama>, <nomorBPJS>, <nomorKTP>, <address>, <kotaKTP>, <faskesAwal>, <faskesTujuan>, dan <alasan> valid
     And Siloam300 Sales tekan tombol simpan data valid
     Then Siloam300 Validasi pesan input data berhasil
    

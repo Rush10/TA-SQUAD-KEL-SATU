@@ -34,15 +34,6 @@ public class TestInputDataValid {
 		driver = InputDataOutlineHooks.driver;
 		extentTest = InputDataOutlineHooks.extentTest;
 	}
-	
-	@When("Siloam300 Sales Mengakses Halaman Website")
-	public void siloam300_sales_mengakses_halaman_website() {
-		driver.get(Constants.URL_SILOAM);
-		inputDataPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
-		inputDataPage.btnLogin();
-		inputDataPage.clickInputDataMenu();
-		extentTest.log(LogStatus.PASS, "Siloam300 Sales Mengakses Halaman Website Siloam Dan Masuk Ke Page Input Data");
-	}
 
 	@When("^Siloam300 Sales input data (.*), (.*), (.*), (.*), (.*), (.*), (.*), dan (.*) valid$")
 	public void siloam300_sales_input_data_nama_nomor_bpjs_nomor_ktp_address_kota_ktp_faskes_awal_faskes_tujuan_dan_alasan_valid(String nama, String nomorBPJS, String nomorKTP, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {

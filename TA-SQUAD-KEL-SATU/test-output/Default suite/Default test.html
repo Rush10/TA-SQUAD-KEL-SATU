@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 03 15:03:34 ICT 2022</td>
+<td>Started on:</td><td>Mon Oct 03 23:11:07 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>243 seconds (243199 ms)</td>
+<tr><td>Total time:</td><td>162 seconds (162702 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,197 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam050 Admin Menekan Preview Data", "Admin Menekan Preview Data"</td>
-<td><div><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.assertTrue(Assert.java:43)
-	at org.junit.Assert.assertFalse(Assert.java:68)
-	at org.junit.Assert.assertFalse(Assert.java:79)
-	at cucumber.framework.runner.siloam.viewexportpageoutline.TestPreviewData.siloam050_validasi_data_pada_dokumen_pdf(TestPreviewData.java:67)
-	at ✽.Siloam050 Validasi Data Pada Dokumen PDF(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/050AdminMenekanPreviewData.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace340418158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace340418158'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.assertTrue(Assert.java:43)
-	at org.junit.Assert.assertFalse(Assert.java:68)
-	at org.junit.Assert.assertFalse(Assert.java:79)
-	at cucumber.framework.runner.siloam.viewexportpageoutline.TestPreviewData.siloam050_validasi_data_pada_dokumen_pdf(TestPreviewData.java:67)
-	at ✽.Siloam050 Validasi Data Pada Dokumen PDF(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/050AdminMenekanPreviewData.feature:11)
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam300 Sales Input Data Valid", "Valid Sales Input Data"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@role=&apos;alert&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:76)
+	at cucumber.framework.page.siloam.InputDataPage.msgAddSuccess(InputDataPage.java:301)
+	at cucumber.framework.runner.siloam.inputdatapage.TestInputDataValid.siloam300_validasi_pesan_input_data_berhasil(TestInputDataValid.java:53)
+	at ✽.Siloam300 Validasi pesan input data berhasil(file:///C:/Users/ROG/git/Tugas%20Akhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/300ValidSalesInputData.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@role=&apos;alert&apos;]&quot;}
+  (Session info: chrome=106.0.5249.91)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;RUSHTEN&apos;, ip: &apos;192.168.0.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8070d39e0d1f81dbda8a23f773ab0389, findElement {using=xpath, value=//div[@role=&apos;alert&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ROG\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49828/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8070d39e0d1f81dbda8a23f773ab0389
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:76)
+	at cucumber.framework.page.siloam.InputDataPage.msgAddSuccess(InputDataPage.java:301)
+	at cucumber.framework.runner.siloam.inputdatapage.TestInputDataValid.siloam300_validasi_pesan_input_data_berhasil(TestInputDataValid.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace107285100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace107285100'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@role=&apos;alert&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:76)
+	at cucumber.framework.page.siloam.InputDataPage.msgAddSuccess(InputDataPage.java:301)
+	at cucumber.framework.runner.siloam.inputdatapage.TestInputDataValid.siloam300_validasi_pesan_input_data_berhasil(TestInputDataValid.java:53)
+	at ✽.Siloam300 Validasi pesan input data berhasil(file:///C:/Users/ROG/git/Tugas%20Akhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/300ValidSalesInputData.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@role=&apos;alert&apos;]&quot;}
+  (Session info: chrome=106.0.5249.91)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;RUSHTEN&apos;, ip: &apos;192.168.0.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8070d39e0d1f81dbda8a23f773ab0389, findElement {using=xpath, value=//div[@role=&apos;alert&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ROG\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49828/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8070d39e0d1f81dbda8a23f773ab0389
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:76)
+	at cucumber.framework.page.siloam.InputDataPage.msgAddSuccess(InputDataPage.java:301)
+	at cucumber.framework.runner.siloam.inputdatapage.TestInputDataValid.siloam300_validasi_pesan_input_data_berhasil(TestInputDataValid.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>28</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>31</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -105,75 +277,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam075 Admin Tekan Export Data Empty", "Admin Menekan Export Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam305 Sales langsung menekan tombol simpan", "Sales Tidak Input Data"</td>
 <td></td>
-<td>14</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>1</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam070 Admin Melihat Data Karyawan Invalid Empty", "Admin Melihat Data Karyawan Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
 <td>11</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam045 Admin Menekan Back", "Admin Menekan Tombol Back"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam310 Sales input data karyawan nomor KTP angka kurang dari enam belas angka", "Sales Input Data Salah Format"</td>
 <td></td>
-<td>6</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>9</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam030 Admin Tekan Download", "Admin Melakukan Download"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam305 Sales input data karyawan kosong semua", "Sales Tidak Input Data"</td>
 <td></td>
-<td>21</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>8</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam080 Admin Tekan Download Start End Date Empty", "Admin Menekan Download Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam315 Sales input data karyawan nomor BPJS yang sudah ada", "Sales Input Data BPJS Yang Sudah Ada"</td>
 <td></td>
-<td>6</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>9</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam035 Admin Tekan Export", "Admin Melakukan Export"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>21</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>10</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam065 Admin Tekan PDF Agreement", "Admin Menekan Link PDF Agreement"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>42</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>8</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam070 Admin Melihat Data Karyawan Invalid Empty", "Admin Melihat Data Karyawan Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam310 Sales input data karyawan nomor BPJS kurang dari tiga belas angka", "Sales Input Data Salah Format"</td>
 <td></td>
-<td>11</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>9</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam040 Admin Menekan View", "Admin Menekan View"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam299 Sales menekan tombol menu input", "Sales Menekan Tombol Menu Input"</td>
 <td></td>
-<td>13</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>9</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam020 Admin Memasukkan Start Date End Date Tekan Filter", "Admin Melihat Data Karyawan"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>17</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>10</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam025 Admin Tekan Refresh", "Admin Melakukan Refresh"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>13</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>10</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam080 Admin Tekan Download Data Empty", "Admin Menekan Download Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>13</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>9</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam070 Admin Melihat Data Karyawan Invalid Empty", "Admin Melihat Data Karyawan Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>11</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>10</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 <tr>
-<td title='cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam075 Admin Tekan Export Start End Date Empty", "Admin Menekan Export Invalid"</td>
+<td title='cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Siloam320 Sales input data karyawan satu kombinasi kosong", "Sales Input Data Satu Kombinasi Kosong"</td>
 <td></td>
-<td>7</td>
-<td>cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed</td></tr>
+<td>10</td>
+<td>cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c</td></tr>
 </table><p>
 </body>
 </html>

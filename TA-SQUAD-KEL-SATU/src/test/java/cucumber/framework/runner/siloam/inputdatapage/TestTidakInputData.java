@@ -34,15 +34,6 @@ public class TestTidakInputData {
 		driver = InputDataOutlineHooks.driver;
 		extentTest = InputDataOutlineHooks.extentTest;
 	}
-	
-	@When("Siloam305001 Sales Mengakses Halaman Website")
-	public void siloam305001_sales_mengakses_halaman_website() {
-		driver.get(Constants.URL_SILOAM);
-		inputDataPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
-		inputDataPage.btnLogin();
-		inputDataPage.clickInputDataMenu();
-		extentTest.log(LogStatus.PASS, "Siloam305-001 Sales Mengakses Halaman Website");
-	}
 
 	@When("Siloam305001 Sales tekan tombol simpan data invalid")
 	public void siloam305001_sales_tekan_tombol_simpan_data_invalid() {

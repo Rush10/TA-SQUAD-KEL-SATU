@@ -6,8 +6,7 @@
 Feature: Sales Tidak Input Data
 
 	Scenario: Siloam305 Sales langsung menekan tombol simpan
-		When Siloam305001 Sales Mengakses Halaman Website
-    And Siloam305001 Sales tekan tombol simpan data invalid
+    When Siloam305001 Sales tekan tombol simpan data invalid
     Then Siloam305001 Validasi pesan error isi input nama
 
   Scenario: Siloam305 Sales input data karyawan kosong semua 
@@ -18,4 +17,4 @@ Feature: Sales Tidak Input Data
 #1 data
   Examples: 
     |nama|nomorBPJS|nomorKTP|address|kotaKTP|faskesAwal|faskesTujuan|alasan|
-		||||||||| 
+		|||||kota||faskes|| 
