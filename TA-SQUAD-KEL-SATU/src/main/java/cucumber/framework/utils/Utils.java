@@ -3,8 +3,8 @@ package cucumber.framework.utils;
 /*
 created_by : Novri
 created_date : 21/09/2022
-updated_by : Adit
-updated_date : 01/10/2022
+updated_by : Novri
+updated_date : 03/10/2022
 */
 
 import java.awt.AWTException;
@@ -27,8 +27,8 @@ import java.util.Random;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
+//import org.apache.pdfbox.pdmodel.PDDocument;
+//import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.hamcrest.core.IsEqual;
@@ -41,8 +41,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.framework.constant.Constants;
-import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.tess4j.TesseractException;
+//import net.sourceforge.tess4j.Tesseract;
+//import net.sourceforge.tess4j.TesseractException;
 
 public class Utils {
 	public static int testCount = 0;
@@ -155,92 +155,92 @@ public class Utils {
 		return strTemp;
 	}
 	
-	public static String OCR(String pathPdf) {
-		// creating an object of class Tesseract  
-		String text = "";
-        Tesseract tesseract = new Tesseract( ) ;  
-        try {
-        	String pathOcr ="D:\\tessa\\tessdata-3.04.00";
-            // this includes the path of tessdata inside the extracted folder  
-            tesseract.setDatapath(pathOcr) ;  
-            // specifying the image that has to be read  
-            text = tesseract.doOCR( new File(pathPdf) ) ;    
-            // printing the text corresponding to the image interpreted  
-//            System.out.print( text ) ;  
-        }  
-        catch ( TesseractException e ) {  
-            e.printStackTrace( ) ;
-        }  
-		
-		return text;
-	}
+//	public static String OCR(String pathPdf) {
+//		// creating an object of class Tesseract  
+//		String text = "";
+//        Tesseract tesseract = new Tesseract( ) ;  
+//        try {
+//        	String pathOcr ="D:\\tessa\\tessdata-3.04.00";
+//            // this includes the path of tessdata inside the extracted folder  
+//            tesseract.setDatapath(pathOcr) ;  
+//            // specifying the image that has to be read  
+//            text = tesseract.doOCR( new File(pathPdf) ) ;    
+//            // printing the text corresponding to the image interpreted  
+////            System.out.print( text ) ;  
+//        }  
+//        catch ( TesseractException e ) {  
+//            e.printStackTrace( ) ;
+//        }  
+//		
+//		return text;
+//	}
 	
-	public static boolean comparePDFAndDOCX(String pathPdf, String pathDocx) {
-		boolean isEquals = false;
-		StringBuilder sBuild = new StringBuilder();
-		String strPdf = readPDFFile(pathPdf);
-		try {
-			
-            File file = new File(pathDocx);
-            FileInputStream fis = new FileInputStream(file.getAbsolutePath());
-            XWPFDocument document = new XWPFDocument(fis);
-
-            List<XWPFParagraph> paragraphs = document.getParagraphs();
-
-        	String strA = "";
-        	sBuild.setLength(0);
-            for (XWPFParagraph para : paragraphs) {
-            	sBuild.setLength(0);
-            	strA = sBuild.append(strA).append(para.getText()).append("\n").toString();
-            }
-            fis.close();
-            isEquals = strA.equals(strPdf);
-            System.out.println("isEqual: " + isEquals);
-            System.out.println("Text DOCX: " + strA);
-            System.out.println("Text PDF: " + strPdf);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-		return isEquals;
-	}
+//	public static boolean comparePDFAndDOCX(String pathPdf, String pathDocx) {
+//		boolean isEquals = false;
+//		StringBuilder sBuild = new StringBuilder();
+//		String strPdf = readPDFFile(pathPdf);
+//		try {
+//			
+//            File file = new File(pathDocx);
+//            FileInputStream fis = new FileInputStream(file.getAbsolutePath());
+//            XWPFDocument document = new XWPFDocument(fis);
+//
+//            List<XWPFParagraph> paragraphs = document.getParagraphs();
+//
+//        	String strA = "";
+//        	sBuild.setLength(0);
+//            for (XWPFParagraph para : paragraphs) {
+//            	sBuild.setLength(0);
+//            	strA = sBuild.append(strA).append(para.getText()).append("\n").toString();
+//            }
+//            fis.close();
+//            isEquals = strA.equals(strPdf);
+//            System.out.println("isEqual: " + isEquals);
+//            System.out.println("Text DOCX: " + strA);
+//            System.out.println("Text PDF: " + strPdf);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//		return isEquals;
+//	}
 	
-	public static String readPDFFile(String pathPdf) {
-		PDDocument pd;
-		File input;
-		String pageText = "";
-		PDFTextStripper stripper;
-		
- 		try {
-			input = new File(pathPdf);
-		    pd = PDDocument.load(input);				     
-		    stripper = new PDFTextStripper();
-		    pageText = stripper.getText(pd);
-		} catch (Exception e){
-			System.out.println(e.getMessage());
-	    }
- 		
-	    return pageText;
-	}
+//	public static String readPDFFile(String pathPdf) {
+//		PDDocument pd;
+//		File input;
+//		String pageText = "";
+//		PDFTextStripper stripper;
+//		
+// 		try {
+//			input = new File(pathPdf);
+//		    pd = PDDocument.load(input);				     
+//		    stripper = new PDFTextStripper();
+//		    pageText = stripper.getText(pd);
+//		} catch (Exception e){
+//			System.out.println(e.getMessage());
+//	    }
+// 		
+//	    return pageText;
+//	}
 	
-	public static void writeTXTFileFromPDFFile(String pathPdf, String pathTxt) {
-		PDDocument pd;
-		BufferedWriter wr;
-		PDFTextStripper stripper;
-		try {
-	         File input = new File(pathPdf); // Membaca isi PDF
-	         File output = new File(pathTxt); //Path File untuk menulis isi PDF
-	         pd = PDDocument.load(input);
-	         stripper = new PDFTextStripper();
-	         wr = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(output)));
-	         stripper.writeText(pd, wr);
-	         if (pd != null) {
-	             pd.close();
-	         }
-	         wr.close();
-		} catch (Exception e){
-		     e.printStackTrace();
-		}
-	}
+//	public static void writeTXTFileFromPDFFile(String pathPdf, String pathTxt) {
+//		PDDocument pd;
+//		BufferedWriter wr;
+//		PDFTextStripper stripper;
+//		try {
+//	         File input = new File(pathPdf); // Membaca isi PDF
+//	         File output = new File(pathTxt); //Path File untuk menulis isi PDF
+//	         pd = PDDocument.load(input);
+//	         stripper = new PDFTextStripper();
+//	         wr = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(output)));
+//	         stripper.writeText(pd, wr);
+//	         if (pd != null) {
+//	             pd.close();
+//	         }
+//	         wr.close();
+//		} catch (Exception e){
+//		     e.printStackTrace();
+//		}
+//	}
 		
 	public static String compareImage(String pathImg1, String pathImg2) throws IOException{
 		BufferedImage img1 = ImageIO.read(new File(pathImg1));
