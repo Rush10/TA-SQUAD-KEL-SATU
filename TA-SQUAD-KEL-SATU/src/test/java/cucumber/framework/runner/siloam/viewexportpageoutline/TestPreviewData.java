@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.viewexportpage;
+package cucumber.framework.runner.siloam.viewexportpageoutline;
 
 import static org.junit.Assert.assertFalse;
 
@@ -36,8 +36,8 @@ public class TestPreviewData {
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
 	public TestPreviewData() {
-		driver = ViewExportHooks.driver;
-		extentTest = ViewExportHooks.extentTest;
+		driver = ViewExportHooksOutline.driver;
+		extentTest = ViewExportHooksOutline.extentTest;
 	}
 	
 	@Given("Siloam050 Admin Sudah Login Dan Berada Di Halaman View Data")

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-03T09:00:31 ICT" name="Default suite" finished-at="2022-10-03T09:04:02 ICT" duration-ms="210536">
+  <suite started-at="2022-10-03T15:03:34 ICT" name="Default suite" finished-at="2022-10-03T15:07:37 ICT" duration-ms="243199">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-03T09:00:31 ICT" name="Default test" finished-at="2022-10-03T09:04:02 ICT" duration-ms="210536">
-      <class name="cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:00:31 ICT" name="setUpClass" finished-at="2022-10-03T09:00:32 ICT" duration-ms="670" status="PASS">
+    <test started-at="2022-10-03T15:03:34 ICT" name="Default test" finished-at="2022-10-03T15:07:37 ICT" duration-ms="243199">
+      <class name="cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:03:34 ICT" name="setUpClass" finished-at="2022-10-03T15:03:35 ICT" duration-ms="756" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1f5d7fd5]]>
+                <![CDATA[org.testng.TestRunner@398694a6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:00:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:00:47 ICT" duration-ms="15435" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:03:35 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:03:52 ICT" duration-ms="17033" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:00:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:01 ICT" duration-ms="13848" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:03:52 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:04:06 ICT" duration-ms="13714" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:23 ICT" duration-ms="22187" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:04:06 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:04:27 ICT" duration-ms="21636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:23 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:45 ICT" duration-ms="21444" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:04:27 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:04:49 ICT" duration-ms="21456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:45 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:01:59 ICT" duration-ms="14323" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:04:49 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:05:03 ICT" duration-ms="13848" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:01:59 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:02:07 ICT" duration-ms="7539" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:05:03 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:05:09 ICT" duration-ms="6322" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:02:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:02:36 ICT" duration-ms="29068" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:05:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:05:38 ICT" duration-ms="28926" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -131,24 +131,21 @@
             </param>
           </params>
           <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at cucumber.framework.runner.siloam.viewexportpage.TestPreviewData.siloam050_validasi_data_pada_dokumen_pdf(TestPreviewData.java:65)
-at ✽.Siloam050 Validasi Data Pada Dokumen PDF(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam/050AdminMenekanPreviewData.feature:11)
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:92)
+at org.junit.Assert.assertTrue(Assert.java:43)
+at org.junit.Assert.assertFalse(Assert.java:68)
+at org.junit.Assert.assertFalse(Assert.java:79)
+at cucumber.framework.runner.siloam.viewexportpageoutline.TestPreviewData.siloam050_validasi_data_pada_dokumen_pdf(TestPreviewData.java:67)
+at ✽.Siloam050 Validasi Data Pada Dokumen PDF(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/050AdminMenekanPreviewData.feature:11)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:02:36 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:19 ICT" duration-ms="43215" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:05:38 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:06:20 ICT" duration-ms="42094" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,25 +158,58 @@ at ✽.Siloam050 Validasi Data Pada Dokumen PDF(file:///C:/Users/Nexsoft/git/Tug
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at cucumber.framework.runner.siloam.viewexportpage.TestPDFAgreement.siloam060_validasi_pdf_agreement(TestPDFAgreement.java:71)
-at ✽.Siloam065 Validasi PDF Agreement(file:///C:/Users/Nexsoft/git/TugasAkhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam/065AdminMenekanLinkPDFAgreement.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:19 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:26 ICT" duration-ms="7154" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:06:20 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:06:31 ICT" duration-ms="11504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam070 Admin Melihat Data Karyawan Invalid Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Melihat Data Karyawan Invalid"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:06:31 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:06:43 ICT" duration-ms="11462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam070 Admin Melihat Data Karyawan Invalid Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Melihat Data Karyawan Invalid"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:06:43 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:06:54 ICT" duration-ms="11099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam070 Admin Melihat Data Karyawan Invalid Empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin Melihat Data Karyawan Invalid"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:06:54 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:07:01 ICT" duration-ms="7243" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,7 +225,7 @@ at ✽.Siloam065 Validasi PDF Agreement(file:///C:/Users/Nexsoft/git/TugasAkhir/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:26 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:40 ICT" duration-ms="13616" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:07:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:07:15 ICT" duration-ms="14008" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,7 +241,7 @@ at ✽.Siloam065 Validasi PDF Agreement(file:///C:/Users/Nexsoft/git/TugasAkhir/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:40 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:03:47 ICT" duration-ms="6740" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:07:15 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:07:22 ICT" duration-ms="6885" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -227,7 +257,7 @@ at ✽.Siloam065 Validasi PDF Agreement(file:///C:/Users/Nexsoft/git/TugasAkhir/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:03:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T09:04:00 ICT" duration-ms="13815" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:07:22 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T15:07:36 ICT" duration-ms="13623" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -243,11 +273,11 @@ at ✽.Siloam065 Validasi PDF Agreement(file:///C:/Users/Nexsoft/git/TugasAkhir/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner@3e08ff24]" started-at="2022-10-03T09:04:00 ICT" name="tearDownClass" finished-at="2022-10-03T09:04:02 ICT" duration-ms="1413" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline@433defed]" started-at="2022-10-03T15:07:36 ICT" name="tearDownClass" finished-at="2022-10-03T15:07:37 ICT" duration-ms="1505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.framework.runner.siloam.viewexportpage.ViewExportRunner -->
+      </class> <!-- cucumber.framework.runner.siloam.viewexportpageoutline.ViewExportRunnerOutline -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

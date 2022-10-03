@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.viewexportpage;
+package cucumber.framework.runner.siloam.viewexportpageoutline;
 
 /*
 created_by : Adit
@@ -28,8 +28,8 @@ public class TestBack {
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
 	public TestBack() {
-		driver = ViewExportHooks.driver;
-		extentTest = ViewExportHooks.extentTest;
+		driver = ViewExportHooksOutline.driver;
+		extentTest = ViewExportHooksOutline.extentTest;
 	}
 	
 	@Given("Siloam045 Admin Sudah Login Dan Berada Di Halaman View Data")

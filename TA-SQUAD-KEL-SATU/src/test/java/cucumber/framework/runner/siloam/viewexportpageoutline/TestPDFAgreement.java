@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.viewexportpage;
+package cucumber.framework.runner.siloam.viewexportpageoutline;
 
 import static org.junit.Assert.assertFalse;
 
@@ -34,8 +34,8 @@ public class TestPDFAgreement {
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
 	public TestPDFAgreement() {
-		driver = ViewExportHooks.driver;
-		extentTest = ViewExportHooks.extentTest;
+		driver = ViewExportHooksOutline.driver;
+		extentTest = ViewExportHooksOutline.extentTest;
 	}
 	
 	@Given("Siloam065 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter")

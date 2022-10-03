@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.viewexportpage;
+package cucumber.framework.runner.siloam.viewexportpageoutline;
 
 import static org.testng.Assert.assertTrue;
 
@@ -28,8 +28,8 @@ public class TestView {
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
 	public TestView() {
-		driver = ViewExportHooks.driver;
-		extentTest = ViewExportHooks.extentTest;
+		driver = ViewExportHooksOutline.driver;
+		extentTest = ViewExportHooksOutline.extentTest;
 	}
 	
 	@Given("Siloam040 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter")

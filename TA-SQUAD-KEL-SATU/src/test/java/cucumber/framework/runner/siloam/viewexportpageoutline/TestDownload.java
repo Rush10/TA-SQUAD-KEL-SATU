@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.viewexportpage;
+package cucumber.framework.runner.siloam.viewexportpageoutline;
 
 /*
 created_by : Adit
@@ -29,8 +29,8 @@ public class TestDownload {
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
 	public TestDownload() {
-		driver = ViewExportHooks.driver;
-		extentTest = ViewExportHooks.extentTest;
+		driver = ViewExportHooksOutline.driver;
+		extentTest = ViewExportHooksOutline.extentTest;
 	}
 	
 	@Given("Siloam030 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter")
