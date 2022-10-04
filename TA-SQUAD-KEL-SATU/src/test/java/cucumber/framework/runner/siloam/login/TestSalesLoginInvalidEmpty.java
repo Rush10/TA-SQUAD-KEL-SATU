@@ -24,12 +24,15 @@ public class TestSalesLoginInvalidEmpty {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private LoginPage loginPage = new LoginPage();
-	private String strUser;
-	private String strPass;
+	private boolean isUserEmpty;
+	private boolean isPassEmpty;
 	
 	public TestSalesLoginInvalidEmpty() {
 		driver = LoginOutlineHooks.driver;
 		extentTest = LoginOutlineHooks.extentTest;
+		
+		this.isUserEmpty = true;
+		this.isPassEmpty = true;
 	}
 	
 	@When("Siloam019 Sales Mengakses Halaman Website")
@@ -40,12 +43,12 @@ public class TestSalesLoginInvalidEmpty {
 
 	@When("^Siloam019 Sales Memasukan (.*) dan (.*) Salah$")
 	public void siloam019_sales_memasukan_username_dan_password_salah(String username, String password) {
-		if(username == "") {
-			strUser = "";
-		}
+		if(!username.equals("")) {
+			this.isUserEmpty = false;
+		} 
 		
-		if(password == "") {
-			strPass = "";
+		if(!password.equals("")) {
+			this.isPassEmpty = false;
 		}
 		
 		loginPage.login(username, password);
@@ -60,11 +63,11 @@ public class TestSalesLoginInvalidEmpty {
 
 	@Then("Siloam019 Validasi pesan pada halaman login")
 	public void siloam019_validasi_pesan_pada_halaman_login() {
-		if(strUser == "") {
+		if(this.isUserEmpty) {
 			assertTrue(loginPage.isHaveRequired(loginPage.getInputUsername()));
 		}
 		
-		if(strPass == "") {
+		if(this.isPassEmpty) {
 			assertTrue(loginPage.isHaveRequired(loginPage.getInputPassword()));
 		} 
 		
