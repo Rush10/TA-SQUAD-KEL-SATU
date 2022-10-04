@@ -24,7 +24,8 @@ features = {
 		"src/test/resources/features/siloam-outline/065AdminMenekanLinkPDFAgreement.feature",
 		"src/test/resources/features/siloam-outline/075AdminMenekanTombolExportInvalid.feature",
 		"src/test/resources/features/siloam-outline/080AdminMenekanTombolDownload.feature",
-		"src/test/resources/features/siloam-outline/070AdminMelihatDataKaryawanInvalid.feature"
+		"src/test/resources/features/siloam-outline/070AdminMelihatDataKaryawanInvalid.feature",
+		"src/test/resources/features/siloam-outline/200AdminMenekanTombolLogout.feature",
 		},
 glue = "cucumber.framework.runner.siloam.viewexportpageoutline",
 monochrome=true,

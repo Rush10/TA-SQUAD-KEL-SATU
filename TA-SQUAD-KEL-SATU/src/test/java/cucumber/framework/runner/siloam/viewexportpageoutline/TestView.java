@@ -1,7 +1,5 @@
 package cucumber.framework.runner.siloam.viewexportpageoutline;
 
-import static org.testng.Assert.assertTrue;
-
 /*
 created_by : Adit
 created_date : 30/09/2022
@@ -9,7 +7,7 @@ updated_by : Novri
 updated_date : 02/10/2022
 */
 
-
+import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.WebDriver;
 
 import com.relevantcodes.extentreports.ExtentTest;

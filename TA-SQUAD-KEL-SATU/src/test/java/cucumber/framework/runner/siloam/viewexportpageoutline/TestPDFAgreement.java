@@ -1,7 +1,5 @@
 package cucumber.framework.runner.siloam.viewexportpageoutline;
 
-import static org.junit.Assert.assertFalse;
-
 /*
 created_by : Adit
 created_date : 30/09/2022
@@ -11,9 +9,11 @@ updated_date : 03/10/2022
 
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
@@ -33,9 +33,11 @@ public class TestPDFAgreement {
 	private static ExtentTest extentTest;
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
-	public TestPDFAgreement() {
+	public TestPDFAgreement() throws IOException {
 		driver = ViewExportHooksOutline.driver;
 		extentTest = ViewExportHooksOutline.extentTest;
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\350_agreement_1663523732.pdf");
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\344_agreement_1662635941.pdf");
 	}
 	
 	@Given("Siloam065 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter")
@@ -55,6 +57,8 @@ public class TestPDFAgreement {
 	@When("Siloam065 Admin Tekan Link PDF Agreement")
 	public void siloam060_admin_tekan_link_pdf_agreement() throws AWTException {
 		viewExportPage.btnPDFAgreement();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.tabEnter();
 		
 		String startDate = "2022-09-8";
@@ -62,6 +66,8 @@ public class TestPDFAgreement {
 	    
 	    viewExportPage.filter(startDate,endDate);
 		viewExportPage.btnPDFAgreement();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.tabEnter();
 		extentTest.log(LogStatus.PASS, "Siloam065 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter");
 	}

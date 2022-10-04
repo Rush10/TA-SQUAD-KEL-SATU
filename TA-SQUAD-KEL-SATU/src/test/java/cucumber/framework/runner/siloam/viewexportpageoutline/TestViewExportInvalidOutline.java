@@ -25,12 +25,14 @@ public class TestViewExportInvalidOutline {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private ViewExportPage viewExportPage = new ViewExportPage();
-	private String strStart;
-	private String strEnd;
+	private boolean isStartEmpty;
+	private boolean isEndEmpty;
 	
 	public TestViewExportInvalidOutline() {
 		driver = ViewExportHooksOutline.driver;
 		extentTest = ViewExportHooksOutline.extentTest;
+		this.isStartEmpty = true;
+		this.isEndEmpty = true;
 	}
 	
 	@When("Siloam070 Admin Sudah Login Dan Berada Di Dalam Halaman View Dan Export")
@@ -45,12 +47,12 @@ public class TestViewExportInvalidOutline {
 
 	@And("^Siloam070 Admin Memasukkan (.*) (.*)$")
 	public void siloam070_admin_memasukkan_start_date_end_date(String startdate, String enddate) {
-		if(startdate == "") {
-			strStart = "";
+		if(!startdate.equals("")) {
+			this.isStartEmpty = false;
 		} 
 		
-		if(enddate == "") {
-			strEnd = "";
+		if(!enddate.equals("")) {
+			this.isEndEmpty = false;
 		}
 		
 		viewExportPage.inputStartEndDate(startdate, enddate);
@@ -65,11 +67,11 @@ public class TestViewExportInvalidOutline {
 
 	@Then("Siloam070 Validasi Start Date End Date Kosong")
 	public void siloam070_validasi_start_date_end_date_kosong() {
-		if(strEnd == "") {
+		if(this.isEndEmpty) {
 			assertTrue(viewExportPage.isHaveRequired(viewExportPage.getInputEnddate()));
 		}
 		
-		if(strStart == "") {
+		if(this.isStartEmpty) {
 			assertTrue(viewExportPage.isHaveRequired(viewExportPage.getInputStartdate()));
 		}
 		

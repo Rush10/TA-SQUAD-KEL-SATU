@@ -80,6 +80,6 @@ public class TestExportInvalid {
 	public void siloam075_validasi_sukses_export_data_empty() {
 		String txtExpected = "Danger! Data Tidak Ada!!!";
 		assertTrue(viewExportPage.getTxtInvalidExportEmpty().contains(txtExpected));
-		extentTest.log(LogStatus.PASS, "Siloam075 Validasi Sukses Export Start End Date Empty");
+		extentTest.log(LogStatus.PASS, "Siloam075 Validasi Export Start End Date Empty");
 	}
 }

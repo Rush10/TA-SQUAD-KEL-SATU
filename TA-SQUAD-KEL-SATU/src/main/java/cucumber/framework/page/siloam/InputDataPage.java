@@ -259,6 +259,10 @@ private WebDriver driver;
 		return this.selectFaskesTujuan;
 	}
 	
+	public WebElement getAlasan() {
+		return this.alasan;
+	}
+	
 	public void clickSubmit() {
 		this.submit.click();
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);

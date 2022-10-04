@@ -10,6 +10,8 @@ updated_date : 02/10/2022
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -28,9 +30,11 @@ public class TestDownload {
 	private static ExtentTest extentTest;
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
-	public TestDownload() {
+	public TestDownload() throws IOException {
 		driver = ViewExportHooksOutline.driver;
 		extentTest = ViewExportHooksOutline.extentTest;
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + Utils.getCurrentDateWithoutStrip() + ".zip");
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + Utils.getCurrentDateWithoutStrip() + " (1).zip");
 	}
 	
 	@Given("Siloam030 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter")

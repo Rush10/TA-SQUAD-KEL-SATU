@@ -7,7 +7,7 @@ updated_by : Adit
 updated_date : 03/10/2022
 */
 
-public enum SiloamViewExportInvalid {
+public enum SiloamViewExport {
 
 	T1("Siloam020 Admin Memasukkan Start Date End Date Tekan Filter"),
 	T2("Siloam025 Admin Tekan Refresh"),
@@ -23,11 +23,13 @@ public enum SiloamViewExportInvalid {
 	T12("Siloam075 Admin Tekan Export Data Empty"),
 	T13("Siloam080 Admin Tekan Download Start End Date Empty"),
 	T14("Siloam080 Admin Tekan Download Data Empty"),
-	T15("Siloam070 Admin Melihat Data Karyawan Invalid Empty");
+	T15("Siloam070 Admin Melihat Data Karyawan Invalid Empty"),
+	T16("Siloam200 Admin Menekan Tombol LogOut"),
+	;
 	
 	private String testName;
 	
-	private SiloamViewExportInvalid(String value) {
+	private SiloamViewExport(String value) {
 		testName = value;
 	}
 	

@@ -78,6 +78,6 @@ public class TestDownloadInvalid {
 	public void siloam080_validasi_sukses_download_data_empty() {
 		String txtExpected = "Danger";
 		assertTrue(viewExportPage.getTxtInvalidDownloadEmpty().contains(txtExpected));
-		extentTest.log(LogStatus.PASS, "Siloam080 Validasi Sukses Download Data Empty");
+		extentTest.log(LogStatus.PASS, "Siloam080 Validasi Download Data Empty");
 	}
 }

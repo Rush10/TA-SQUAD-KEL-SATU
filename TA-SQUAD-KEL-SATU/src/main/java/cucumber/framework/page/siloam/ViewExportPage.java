@@ -3,8 +3,8 @@ package cucumber.framework.page.siloam;
 /*
 created_by : Adit
 created_date : 29/09/2022
-updated_by : -
-updated_date : -
+updated_by : Adit
+updated_date : 04/09/2022
 */
 
 
@@ -89,6 +89,13 @@ public class ViewExportPage extends LoginPage{
 //	//*[@id="content"]/h1/a
 	
 	
+	@FindBy(xpath = "//a[@class='dropdown-toggle']")
+	private WebElement btnAkun;
+	
+	@FindBy(xpath = "//a[@class='dropdown-item']")
+	private WebElement btnLogOut;
+	
+	
 	@FindBy(xpath = "//h1[@class='page-header']")
 	private WebElement txtValidasiBack;
 	
@@ -122,6 +129,10 @@ public class ViewExportPage extends LoginPage{
 	
 	@FindBy(xpath = "//div[@id='sidebar']/div/div/ul/li/a/div[3]")
 	private WebElement lblName; //label name setelah login
+	
+	
+	@FindBy(xpath = "//b[normalize-space()='DIKA | SILOAM']")
+	private WebElement txtPageLogin;
 	
 	
 	public void filter(String start, String end)
@@ -176,6 +187,19 @@ public class ViewExportPage extends LoginPage{
 		this.btnFilter.click();
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
+	
+	public void btnAkun()
+	{
+		this.btnAkun.click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void btnLogOut()
+	{
+		this.btnLogOut.click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
 	
 	public void btnRefresh()
 	{
@@ -291,6 +315,10 @@ public class ViewExportPage extends LoginPage{
 	
 	public String getTxtValidPDF() {
 		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtValidasiPDF);
+	}
+	
+	public String getTxtValidLogOut() {
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtPageLogin);
 	}
 	
 	public Boolean isHaveRequired(WebElement element) {

@@ -15,6 +15,7 @@ import static org.testng.Assert.assertTrue;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
@@ -35,9 +36,11 @@ public class TestPreviewData {
 	private static ExtentTest extentTest;
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
-	public TestPreviewData() {
+	public TestPreviewData() throws IOException {
 		driver = ViewExportHooksOutline.driver;
 		extentTest = ViewExportHooksOutline.extentTest;
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf.pdf");
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf (1).pdf");
 	}
 	
 	@Given("Siloam050 Admin Sudah Login Dan Berada Di Halaman View Data")
@@ -53,12 +56,21 @@ public class TestPreviewData {
 	public void siloam050_admin_tekan_tombol_preview_data() throws AWTException {
 		viewExportPage.btnPreviewData();
 		Utils.tabEnter();
+		
 		driver.get(Constants.URL_SILOAM_VIEW_ADMIN_DUA);
+		
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		viewExportPage.btnPreviewData();
+		
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.tabEnter();
-		extentTest.log(LogStatus.PASS, "Siloam050 Admin Sudah Login Dan Berada Di Halaman View Data");
-	}
+		
+		extentTest.log(LogStatus.PASS, "Siloam050 Admin Tekan Tombol Preview Data");
+	}	
+	
 
 	@Then("Siloam050 Validasi Data Pada Dokumen PDF")
 	public void siloam050_validasi_data_pada_dokumen_pdf() {
