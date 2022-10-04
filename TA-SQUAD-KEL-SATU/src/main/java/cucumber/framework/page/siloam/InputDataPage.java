@@ -270,14 +270,17 @@ private WebDriver driver;
 	
 	public void clickInputDataMenu() {
 		this.inputDataMenu.click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickKotaKtp() {
 		this.kotaKTP.click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickFaskesTujuan() {
 		this.faskesTujuan.click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public boolean msgErrorBPJSCharacter() {

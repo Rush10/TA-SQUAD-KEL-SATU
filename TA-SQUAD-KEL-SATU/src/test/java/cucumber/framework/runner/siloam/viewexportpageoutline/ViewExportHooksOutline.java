@@ -3,8 +3,8 @@ package cucumber.framework.runner.siloam.viewexportpageoutline;
 /*
 created_by : Adit
 created_date : 01/10/2022
-updated_by : Adit
-updated_date : 03/10/2022
+updated_by : Novri
+updated_date : 04/10/2022
 */
 
 import java.io.IOException;
@@ -52,7 +52,7 @@ public class ViewExportHooksOutline {
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
 		if(scenario.isFailed()) {
-			String screenshotPath = Utils.getScreenshot(driver, "Siloam_LoginOutlineHooks"+scenario.getName().replace(" ", "_"));
+			String screenshotPath = Utils.getScreenshot(driver, "Siloam_ViewExportHooks"+scenario.getName().replace(" ", "_"));
 			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"
 					+extentTest.addScreenCapture(screenshotPath));;
 		}

@@ -1,4 +1,4 @@
-package cucumber.framework.runner.siloam.inputdatapage;
+package cucumber.framework.runner.siloam.uploaddokumenpage;
 
 /*
 created_by : Novri
@@ -17,7 +17,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import cucumber.framework.connection.DriverSingleton;
 import cucumber.framework.constant.Constants;
-import cucumber.framework.scenariotest.siloam.SiloamInputData;
+import cucumber.framework.scenariotest.siloam.SiloamUploadDocument;
 import cucumber.framework.utils.Utils;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
@@ -25,14 +25,14 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class InputDataOutlineHooks{
+public class UploadDokumenOutlineHooks{
 	
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-input-data-outline.html");
-	private static SiloamInputData[] tests = SiloamInputData.values();
-//	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,8,28};
-	private static final int[] DATA_OUTLINE = {1,1,8,28};
+	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-upload-document-outline.html");
+	private static SiloamUploadDocument[] tests = SiloamUploadDocument.values();
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+//	private static final int[] DATA_OUTLINE = {1,1};
 	private String testReport = "";
 	
 	@Before
@@ -53,7 +53,7 @@ public class InputDataOutlineHooks{
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
 		if(scenario.isFailed()) {
-			String screenshotPath = Utils.getScreenshot(driver, "Siloam_InputDataOutlineHooks"+scenario.getName().replace(" ", "_"));
+			String screenshotPath = Utils.getScreenshot(driver, "Siloam_UploadDocumentOutlineHooks"+scenario.getName().replace(" ", "_"));
 			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"
 					+extentTest.addScreenCapture(screenshotPath));;
 		}

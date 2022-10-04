@@ -373,4 +373,22 @@ public class Utils {
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 	}
+	
+	public static void tabEnter(int tab, int enter) throws AWTException
+	{
+		Robot robot = new Robot();
+		for(int i =0; i < tab; i++)
+		{
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
+		
+		for(int i =0; i < enter; i++)
+		{
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
+	}
 }
