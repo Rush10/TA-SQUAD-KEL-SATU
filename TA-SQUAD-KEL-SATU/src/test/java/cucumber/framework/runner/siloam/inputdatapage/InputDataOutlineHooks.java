@@ -32,7 +32,7 @@ public class InputDataOutlineHooks{
 	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-input-data-outline.html");
 	private static SiloamInputData[] tests = SiloamInputData.values();
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,8,28};
-	private static final int[] DATA_OUTLINE = {1,8};
+	private static final int[] DATA_OUTLINE = {1,28};
 	private String testReport = "";
 	
 	@Before

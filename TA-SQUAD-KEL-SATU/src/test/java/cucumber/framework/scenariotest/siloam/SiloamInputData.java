@@ -16,8 +16,8 @@ public enum SiloamInputData {
 //	T5("Siloam310 Sales input data karyawan nomor BPJS kurang dari tiga belas angka"),
 //	T6("Siloam310 Sales input data karyawan nomor KTP angka kurang dari enam belas angka"),
 //	T7("Siloam315 Sales input data karyawan nomor BPJS yang sudah ada"),
-	T8("Siloam320 Sales input data karyawan satu kombinasi kosong"),
-//	T9("Siloam325 Sales input data karyawan dua kombinasi kosong"),
+//	T8("Siloam320 Sales input data karyawan satu kombinasi kosong"),
+	T9("Siloam325 Sales input data karyawan dua kombinasi kosong"),
 	;
 	
 	private String testName;

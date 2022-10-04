@@ -3,8 +3,8 @@ package cucumber.framework.runner.siloam.inputdatapage;
 /*
 created_by : Novri
 created_date : 03/10/2022
-updated_by : Novri
-updated_date : 04/10/2022
+updated_by : -
+updated_date : -
 */
 
 import static org.testng.Assert.assertEquals;
@@ -25,7 +25,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class TestSalesInputDataSatuKombinasiKosong {
+public class TestSalesInputDataDuaKombinasiKosong {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
@@ -39,7 +39,7 @@ public class TestSalesInputDataSatuKombinasiKosong {
 	private boolean isFaskesTujuanEmpty;
 	private boolean isAlasanEmpty;
 	
-	public TestSalesInputDataSatuKombinasiKosong() {
+	public TestSalesInputDataDuaKombinasiKosong() {
 		driver = InputDataOutlineHooks.driver;
 		extentTest = InputDataOutlineHooks.extentTest;
 		
@@ -53,8 +53,8 @@ public class TestSalesInputDataSatuKombinasiKosong {
 		this.isAlasanEmpty = true;
 	}
 	
-	@When("^Siloam320 Sales input data (.*), (.*), (.*), (.*), (.*), (.*), (.*), dan (.*) salah satu kosong$")
-	public void siloam320_sales_input_data_nama_nomor_bpjs_nomor_ktp_address_kota_ktp_faskes_awal_faskes_tujuan_dan_alasan_salah_satu_kosong(String nama, String nomorBPJS, String nomorKTP, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
+	@When("^Siloam325 Sales input data (.*), (.*), (.*), (.*), (.*), (.*), (.*), dan (.*) dua kosong$")
+	public void siloam325_sales_input_data_nama_nomor_bpjs_nomor_ktp_address_kota_ktp_faskes_awal_faskes_tujuan_dan_alasan_dua_kosong(String nama, String nomorBPJS, String nomorKTP, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
 		if(!nama.equals("")) {
 			this.isNamaEmpty = false;
 		}
@@ -81,17 +81,17 @@ public class TestSalesInputDataSatuKombinasiKosong {
 		}
 		
 		inputDataPage.inputData(nama,nomorBPJS,nomorKTP,address,kotaKTP,faskesAwal,faskesTujuan,alasan);
-		extentTest.log(LogStatus.PASS, "Siloam320 Sales input semua data valid kecuali salah satu kosong");
+		extentTest.log(LogStatus.PASS, "Siloam325 Sales input semua data valid kecuali dua kosong");
 	}
 
-	@When("Siloam320 Sales tekan tombol simpan data invalid")
-	public void siloam320_sales_tekan_tombol_simpan_data_invalid() {
+	@When("Siloam325 Sales tekan tombol simpan data invalid")
+	public void siloam325_sales_tekan_tombol_simpan_data_invalid() {
 		inputDataPage.clickSubmit();
-		extentTest.log(LogStatus.PASS, "Siloam320 Sales tekan tombol simpan data invalid");
+		extentTest.log(LogStatus.PASS, "Siloam325 Sales tekan tombol simpan data invalid");
 	}
 
-	@Then("Siloam320 Validasi pesan isi data")
-	public void siloam320_validasi_pesan_isi_data() {
+	@Then("Siloam325 Validasi pesan isi data")
+	public void siloam325_validasi_pesan_isi_data() {
 		if(this.isNamaEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getName()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
@@ -105,9 +105,11 @@ public class TestSalesInputDataSatuKombinasiKosong {
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 		if (this.isAlamatEmpty) {
-			String txtExpected = "Field Alamat Harus Diisi";
-			assertTrue(inputDataPage.msgErrorAlamat().contains(txtExpected));
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+			if(!this.isNamaEmpty && !this.isNoBpjsEmpty && !this.isNoKTPEmpty && !this.isKotaKTPEmpty && !this.isFaskesAwalEmpty && !this.isFaskesTujuanEmpty) {
+				String txtExpected = "Field Alamat Harus Diisi";
+				assertTrue(inputDataPage.msgErrorAlamat().contains(txtExpected));
+				Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+			}
 		}
 		if (this.isKotaKTPEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getSelectKotaKTP()));
@@ -122,12 +124,14 @@ public class TestSalesInputDataSatuKombinasiKosong {
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 		if (this.isAlasanEmpty) {
-			String txtExpected = "Field Alasan Harus Diisi";
-			assertTrue(inputDataPage.msgErrorAlasan().contains(txtExpected));
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+			if(!this.isNamaEmpty && !this.isNoBpjsEmpty && !this.isNoKTPEmpty && !this.isKotaKTPEmpty && !this.isFaskesAwalEmpty && !this.isFaskesTujuanEmpty) { //&& !this.isAlamatEmpty
+				String txtExpected = "Field Alasan Harus Diisi";
+				assertTrue(inputDataPage.msgErrorAlasan().contains(txtExpected));
+				Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);				
+			}
 		}
 		
-		extentTest.log(LogStatus.PASS, "Siloam320 Validasi pesan isi data");
+		extentTest.log(LogStatus.PASS, "Siloam325 Validasi pesan isi data");
 	}
 
 }

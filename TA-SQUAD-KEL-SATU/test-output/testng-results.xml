@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
+<testng-results ignored="0" total="29" passed="29" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-03T23:11:07 ICT" name="Default suite" finished-at="2022-10-03T23:13:50 ICT" duration-ms="162702">
+  <suite started-at="2022-10-04T11:44:19 ICT" name="Default suite" finished-at="2022-10-04T11:49:44 ICT" duration-ms="325447">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-03T23:11:07 ICT" name="Default test" finished-at="2022-10-03T23:13:50 ICT" duration-ms="162702">
+    <test started-at="2022-10-04T11:44:19 ICT" name="Default test" finished-at="2022-10-04T11:49:44 ICT" duration-ms="325447">
       <class name="cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:11:07 ICT" name="setUpClass" finished-at="2022-10-03T23:11:07 ICT" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:44:19 ICT" name="setUpClass" finished-at="2022-10-04T11:44:20 ICT" duration-ms="616" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@8ecc457]]>
+                <![CDATA[org.testng.TestRunner@3f213e97]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:11:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:11:16 ICT" duration-ms="9085" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:44:20 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:44:28 ICT" duration-ms="8369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,332 +37,455 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:11:16 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:11:48 ICT" duration-ms="31304" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:44:28 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:44:40 ICT" duration-ms="12466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam300 Sales Input Data Valid"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Valid Sales Input Data"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@role='alert']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@role='alert']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:76)
-at cucumber.framework.page.siloam.InputDataPage.msgAddSuccess(InputDataPage.java:301)
-at cucumber.framework.runner.siloam.inputdatapage.TestInputDataValid.siloam300_validasi_pesan_input_data_berhasil(TestInputDataValid.java:53)
-at ✽.Siloam300 Validasi pesan input data berhasil(file:///C:/Users/ROG/git/Tugas%20Akhir/Novri/TA-SQUAD-KEL-SATU/TA-SQUAD-KEL-SATU/src/test/resources/features/siloam-outline/300ValidSalesInputData.feature:11)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='alert']"}
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'RUSHTEN', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8070d39e0d1f81dbda8a23f773ab0389, findElement {using=xpath, value=//div[@role='alert']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ROG\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49828/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8070d39e0d1f81dbda8a23f773ab0389
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at cucumber.framework.utils.Utils.driverWaitTxt(Utils.java:76)
-at cucumber.framework.page.siloam.InputDataPage.msgAddSuccess(InputDataPage.java:301)
-at cucumber.framework.runner.siloam.inputdatapage.TestInputDataValid.siloam300_validasi_pesan_input_data_berhasil(TestInputDataValid.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:11:48 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:11:49 ICT" duration-ms="1414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam305 Sales langsung menekan tombol simpan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Tidak Input Data"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:11:49 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:11:58 ICT" duration-ms="8538" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:44:40 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:44:52 ICT" duration-ms="12037" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam305 Sales input data karyawan kosong semua"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Tidak Input Data"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:11:58 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:12:07 ICT" duration-ms="9504" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:44:53 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:45:03 ICT" duration-ms="10977" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam310 Sales input data karyawan nomor BPJS kurang dari tiga belas angka"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Salah Format"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:12:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:12:17 ICT" duration-ms="9501" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:45:03 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:45:15 ICT" duration-ms="11990" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam310 Sales input data karyawan nomor KTP angka kurang dari enam belas angka"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Salah Format"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:12:17 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:12:27 ICT" duration-ms="9902" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:45:15 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:45:27 ICT" duration-ms="11922" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam315 Sales input data karyawan nomor BPJS yang sudah ada"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data BPJS Yang Sudah Ada"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:12:27 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:12:37 ICT" duration-ms="10599" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:45:27 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:45:38 ICT" duration-ms="10888" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:12:37 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:12:48 ICT" duration-ms="10490" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:45:38 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:45:49 ICT" duration-ms="10885" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:12:48 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:12:58 ICT" duration-ms="10464" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:45:49 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:46:01 ICT" duration-ms="11908" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:12:58 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:13:09 ICT" duration-ms="10705" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:46:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:46:12 ICT" duration-ms="10950" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:13:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:13:18 ICT" duration-ms="9588" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:46:12 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:46:24 ICT" duration-ms="11975" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:13:18 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:13:29 ICT" duration-ms="10424" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:46:24 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:46:36 ICT" duration-ms="11883" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:13:29 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:13:37 ICT" duration-ms="8405" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:46:36 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:46:47 ICT" duration-ms="10851" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:13:37 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T23:13:48 ICT" duration-ms="11063" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:46:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:46:58 ICT" duration-ms="10904" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam320 Sales input data karyawan satu kombinasi kosong"]]>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Input Data Satu Kombinasi Kosong"]]>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@2df3b89c]" started-at="2022-10-03T23:13:48 ICT" name="tearDownClass" finished-at="2022-10-03T23:13:50 ICT" duration-ms="1272" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:46:58 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:47:09 ICT" duration-ms="10858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:47:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:47:20 ICT" duration-ms="11949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:47:20 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:47:32 ICT" duration-ms="11846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:47:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:47:43 ICT" duration-ms="10812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:47:43 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:47:54 ICT" duration-ms="10715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:47:54 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:48:05 ICT" duration-ms="10820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:48:05 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:48:15 ICT" duration-ms="10827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:48:15 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:48:25 ICT" duration-ms="9837" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:48:25 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:48:38 ICT" duration-ms="12309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:48:38 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:48:50 ICT" duration-ms="12094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:48:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:49:01 ICT" duration-ms="10850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:49:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:49:11 ICT" duration-ms="10875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:49:11 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:49:22 ICT" duration-ms="10843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:49:22 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:49:33 ICT" duration-ms="10898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:49:33 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-04T11:49:43 ICT" duration-ms="9824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Siloam325 Sales input data karyawan dua kombinasi kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Input Data Dua Kombinasi Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.inputdatapage.InputDataOutlineRunner@433defed]" started-at="2022-10-04T11:49:43 ICT" name="tearDownClass" finished-at="2022-10-04T11:49:44 ICT" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
