@@ -15,5 +15,3 @@ Feature: Valid Admin Login
   Examples: 
     | username  | password      |
     | admindika | d1k4@passw0rd |
-    | Admindika | d1k4@passw0rd |
-    | ADMINDIKA | d1k4@passw0rd |

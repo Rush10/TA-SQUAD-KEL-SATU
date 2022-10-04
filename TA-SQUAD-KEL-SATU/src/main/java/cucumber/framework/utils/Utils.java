@@ -4,7 +4,7 @@ package cucumber.framework.utils;
 created_by : Novri
 created_date : 21/09/2022
 updated_by : Novri
-updated_date : 03/10/2022
+updated_date : 04/10/2022
 */
 
 import java.awt.AWTException;
@@ -241,6 +241,15 @@ public class Utils {
 //		     e.printStackTrace();
 //		}
 //	}
+	
+	public static void deleteFile(String path) throws IOException{
+		File file = new File(path);
+	    if (file.delete()) { 
+	      System.out.println("Deleted the file: " + file.getName());
+	    } else {
+	      System.out.println("Failed To Delete The File !!");
+	    } 
+	}
 		
 	public static String compareImage(String pathImg1, String pathImg2) throws IOException{
 		BufferedImage img1 = ImageIO.read(new File(pathImg1));

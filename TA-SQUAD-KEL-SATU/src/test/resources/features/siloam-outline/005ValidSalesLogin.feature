@@ -15,6 +15,4 @@ Feature: Valid Sales Login
     #3 data
   Examples: 
     | username | password   |
-    | d6200927 | 1997-10-23 |
-    | d6200927 | 1997-10-23 |
     | D6200927 | 1997-10-23 |
