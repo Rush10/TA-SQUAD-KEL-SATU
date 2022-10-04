@@ -1,7 +1,7 @@
 #created_by : Alamanda
 #created_date : 29/09/2022
 #updated_by : Novri
-#updated_date : 1/10/2022
+#updated_date : 04/10/2022
 
 
 Feature: Invalid Sales Login

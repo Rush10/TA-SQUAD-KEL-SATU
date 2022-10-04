@@ -1,7 +1,7 @@
 #created_by : Novri
 #created_date : 29/09/2022
-#updated_by : -
-#updated_date : -
+#updated_by : Novri
+#updated_date : 04/10/2022
 
 Feature: Valid Admin Login
 

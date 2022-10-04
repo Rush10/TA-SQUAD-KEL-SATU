@@ -13,11 +13,12 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 features = {
 		"src/test/resources/features/siloam-outline/299SalesTekanMenuInput.feature",
-		"src/test/resources/features/siloam-outline/300ValidSalesInputData.feature",
-		"src/test/resources/features/siloam-outline/305SalesTidakInputData.feature",
-		"src/test/resources/features/siloam-outline/310SalesInputDataSalahFormat.feature",
-		"src/test/resources/features/siloam-outline/315SalesInputDataBPJSYangSudahAda.feature",
+//		"src/test/resources/features/siloam-outline/300ValidSalesInputData.feature",
+//		"src/test/resources/features/siloam-outline/305SalesTidakInputData.feature",
+//		"src/test/resources/features/siloam-outline/310SalesInputDataSalahFormat.feature",
+//		"src/test/resources/features/siloam-outline/315SalesInputDataBPJSYangSudahAda.feature",
 		"src/test/resources/features/siloam-outline/320SalesInputDataSatuKombinasiKosong.feature",
+//		"src/test/resources/features/siloam-outline/325SalesInputDataDuaKombinasiKosong.feature",
 		},
 glue = "cucumber.framework.runner.siloam.inputdatapage",
 monochrome=true,

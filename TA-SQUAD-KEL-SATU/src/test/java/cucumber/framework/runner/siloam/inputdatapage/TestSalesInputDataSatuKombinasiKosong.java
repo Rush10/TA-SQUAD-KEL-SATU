@@ -30,45 +30,54 @@ public class TestSalesInputDataSatuKombinasiKosong {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private InputDataPage inputDataPage = new InputDataPage();
-	private String strNama;
-	private String strNoBpjs;
-	private String strNoKTP;
-	private String strAlamat;
-	private String strKotaKTP;
-	private String strFaskesAwal;
-	private String strFaskesTujuan;
-	private String strAlasan;
+	private boolean isNamaEmpty;
+	private boolean isNoBpjsEmpty;
+	private boolean isNoKTPEmpty;
+	private boolean isAlamatEmpty;
+	private boolean isKotaKTPEmpty;
+	private boolean isFaskesAwalEmpty;
+	private boolean isFaskesTujuanEmpty;
+	private boolean isAlasanEmpty;
 	
 	public TestSalesInputDataSatuKombinasiKosong() {
 		driver = InputDataOutlineHooks.driver;
 		extentTest = InputDataOutlineHooks.extentTest;
+		
+		this.isNamaEmpty = true;
+		this.isNoBpjsEmpty = true;
+		this.isNoKTPEmpty = true;
+		this.isAlamatEmpty = true;
+		this.isKotaKTPEmpty = true;
+		this.isFaskesAwalEmpty = true;
+		this.isFaskesTujuanEmpty = true;
+		this.isAlasanEmpty = true;
 	}
 	
 	@When("^Siloam320 Sales input data (.*), (.*), (.*), (.*), (.*), (.*), (.*), dan (.*) salah satu kosong$")
 	public void siloam320_sales_input_data_nama_nomor_bpjs_nomor_ktp_address_kota_ktp_faskes_awal_faskes_tujuan_dan_alasan_salah_satu_kosong(String nama, String nomorBPJS, String nomorKTP, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
-		if(nama == "") {
-			strNama = "";
+		if(!nama.equals("")) {
+			this.isNamaEmpty = false;
 		}
-		if(nomorBPJS == "") {
-			strNoBpjs = "";
+		if(!nomorBPJS.equals("")) {
+			this.isNoBpjsEmpty = false;
 		} 
-		if(nomorKTP == "") {
-			strNoKTP = "";
+		if(!nomorKTP.equals("")) {
+			this.isNoKTPEmpty = false;
 		}
-		if(address == "") {
-			strAlamat = "";
+		if(!address.equals("")) {
+			this.isAlamatEmpty = false;
 		}
-		if(kotaKTP == "") {
-			strKotaKTP = "";	
+		if(!kotaKTP.equals("")) {
+			this.isKotaKTPEmpty = false;
 		}
-		if(faskesAwal == "") {
-			strFaskesAwal = "";
+		if(!faskesAwal.equals("")) {
+			this.isFaskesAwalEmpty = false;
 		}
-		if(faskesTujuan == "") {
-			strFaskesTujuan = "";
+		if(!faskesTujuan.equals("")) {
+			this.isFaskesTujuanEmpty = false;
 		}
-		if(alasan == "") {
-			strAlasan = "";
+		if(!alasan.equals("")) {
+			this.isAlasanEmpty = false;
 		}
 		
 		inputDataPage.inputData(nama,nomorBPJS,nomorKTP,address,kotaKTP,faskesAwal,faskesTujuan,alasan);
@@ -83,43 +92,43 @@ public class TestSalesInputDataSatuKombinasiKosong {
 
 	@Then("Siloam320 Validasi pesan isi data")
 	public void siloam320_validasi_pesan_isi_data() {
-		if(strNama == "") {
+		if(this.isNamaEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getName()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK NAMA");
 		} 
-		if (strNoBpjs == "") {
+		if (this.isNoBpjsEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getNomBPJS()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK BPJS");
 		}
-		if (strNoKTP == "") {
+		if (this.isNoKTPEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getNomKTP()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK KTP");
 		}
-		if (strAlamat == "") {
+		if (this.isAlamatEmpty) {
 			String txtExpected = "Field Alamat Harus Diisi";
 			assertTrue(inputDataPage.msgErrorAlamat().contains(txtExpected));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK ALAMAT");
 		}
-		if (strKotaKTP == "") {
+		if (this.isKotaKTPEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getSelectKotaKTP()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK KOTA KTP");
 		}
-		if (strFaskesAwal == "") {
+		if (this.isFaskesAwalEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getFaskesAwal()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK FASKES AWAL");
 		}
-		if (strFaskesTujuan == "") {
+		if (this.isFaskesTujuanEmpty) {
 			assertTrue(inputDataPage.isHaveRequired(inputDataPage.getSelectFaskesTujuan()));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			System.out.println("MASUK FASKES TUJUAN");
 		}
-		if (strAlasan == "") {
+		if (this.isAlasanEmpty) {
 			String txtExpected = "Field Alasan Harus Diisi";
 			assertTrue(inputDataPage.msgErrorAlasan().contains(txtExpected));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
