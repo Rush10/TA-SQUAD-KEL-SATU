@@ -88,10 +88,17 @@ public class Utils {
 		js.executeScript("window.scrollBy(0,"+vertical+")");
 	}
 	
+	
 	public static void scrollDownToButtom(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
+	
+	public static void elementClick(WebElement element, WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("arguments[0].click();", element);
 	}
 	
 	public static void zoomOut(int n) throws AWTException{

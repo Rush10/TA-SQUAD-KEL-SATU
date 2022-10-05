@@ -25,6 +25,7 @@ public class Constants {
 	public static final String URL_SILOAM_VIEW_ADMIN_DUA = "https://dev.ptdika.com/siloam/bd/export_data/do_view/344";
 	public static final String URL_SILOAM_DATA_UPLOAD_DOC_VALID = "https://dev.ptdika.com/siloam/sales/input/upload/570";
 	public static final String URL_SILOAM_DATA_UPLOAD_DOC_INVALID = "https://dev.ptdika.com/siloam/sales/input/upload/545";
+	public static final String URL_SILOAM_TTD_DIGITAL_DELETE_UPLOAD = "https://dev.ptdika.com/siloam/sales/input/ttd_digital2/569";
 	
 	public static final String USERNAME_ADMIN_SILOAM = "admindika";
 	public static final String PASSWORD_ADMIN_SILOAM = "d1k4@passw0rd";

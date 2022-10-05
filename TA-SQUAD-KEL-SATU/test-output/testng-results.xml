@@ -1,591 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="35" passed="35" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-05T14:50:44 ICT" name="Default suite" finished-at="2022-10-05T14:53:48 ICT" duration-ms="184332">
+  <suite started-at="2022-10-05T23:10:22 ICT" name="Default suite" finished-at="2022-10-05T23:11:15 ICT" duration-ms="52177">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-05T14:50:44 ICT" name="Default test" finished-at="2022-10-05T14:53:48 ICT" duration-ms="184332">
-      <class name="cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:50:44 ICT" name="setUpClass" finished-at="2022-10-05T14:50:45 ICT" duration-ms="729" status="PASS">
+    <test started-at="2022-10-05T23:10:22 ICT" name="Default test" finished-at="2022-10-05T23:11:15 ICT" duration-ms="52177">
+      <class name="cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:10:23 ICT" name="setUpClass" finished-at="2022-10-05T23:10:23 ICT" duration-ms="381" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@24258b54]]>
+                <![CDATA[org.testng.TestRunner@3b170235]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:50:45 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:01 ICT" duration-ms="16517" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:10:23 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T23:10:40 ICT" duration-ms="16627" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam335001 Sales klik tombol modal upload foto faskes awal"]]>
+                <![CDATA["Siloam370001 Sales tekan tombol hapus file upload before dan klik cancel"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
+                <![CDATA["Sales Hapus File Upload Before"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:03 ICT" duration-ms="1272" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:10:40 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T23:10:46 ICT" duration-ms="6607" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam335002 Sales klik tombol cancel di modal upload foto faskes awal"]]>
+                <![CDATA["Siloam370002 Sales tekan tombol hapus file upload before dan klik ok"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
+                <![CDATA["Sales Hapus File Upload Before"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:03 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:05 ICT" duration-ms="2348" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:10:46 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T23:10:56 ICT" duration-ms="9534" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam335003 Sales klik tombol keluar di modal upload foto faskes awal"]]>
+                <![CDATA["Siloam375001 Sales tekan tombol hapus file upload after dan klik cancel"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
+                <![CDATA["Sales Hapus File Upload After"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:05 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:07 ICT" duration-ms="2302" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:10:56 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T23:10:59 ICT" duration-ms="3667" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam335004 Sales memilih foto faskes awal dari lokal"]]>
+                <![CDATA["Siloam375002 Sales tekan tombol hapus file upload after dan klik ok"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
+                <![CDATA["Sales Hapus File Upload After"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:08 ICT" duration-ms="1220" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:10:59 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T23:11:10 ICT" duration-ms="10958" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam335005 Sales klik tombol cancel di modal upload foto faskes awal"]]>
+                <![CDATA["Siloam380001 Sales tekan tombol hapus file upload ttd dan klik cancel"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
+                <![CDATA["Sales Hapus File Upload TTD"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:08 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:12 ICT" duration-ms="3345" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:11:10 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T23:11:13 ICT" duration-ms="3113" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Siloam335006 Sales klik tombol keluar di modal upload foto faskes awal"]]>
+                <![CDATA["Siloam380002 Sales tekan tombol hapus file upload ttd dan klik ok"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
+                <![CDATA["Sales Hapus File Upload TTD"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:12 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:20 ICT" duration-ms="7853" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam335007 Sales tekan tombol simpan foto faskes awal"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:20 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:27 ICT" duration-ms="7461" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340001 Sales klik tombol modal upload foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:27 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:28 ICT" duration-ms="1203" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340002 Sales klik tombol cancel di modal upload foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:28 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:31 ICT" duration-ms="2290" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340003 Sales klik tombol keluar di modal upload foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:31 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:33 ICT" duration-ms="2255" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340004 Sales memilih foto faskes tujuan dari lokal"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:33 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:34 ICT" duration-ms="1182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340005 Sales klik tombol cancel di modal upload foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:34 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:37 ICT" duration-ms="3301" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340006 Sales klik tombol keluar di modal upload foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:37 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:44 ICT" duration-ms="6953" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam340007 Sales tekan tombol simpan foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:44 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:50 ICT" duration-ms="5854" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345001 Sales klik tombol modal upload foto ttd"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:51 ICT" duration-ms="1211" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345002 Sales klik tombol cancel di modal upload foto ttd"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:51 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:54 ICT" duration-ms="2256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345003 Sales klik tombol keluar di modal upload foto ttd"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:54 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:56 ICT" duration-ms="2236" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345004 Sales memilih foto ttd dari lokal"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:56 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:51:57 ICT" duration-ms="1183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345005 Sales klik tombol cancel di modal upload foto ttd"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:51:57 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:00 ICT" duration-ms="3303" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345006 Sales klik tombol keluar di modal upload foto ttd"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:00 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:07 ICT" duration-ms="7028" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam345007 Sales tekan tombol simpan foto ttd"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:16 ICT" duration-ms="8315" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam350001 Sales tekan tombol selanjutnya dan klik cancel"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:16 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:21 ICT" duration-ms="4970" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam350002 Sales tekan tombol selanjutnya dan klik ok"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Valid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:21 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:29 ICT" duration-ms="7954" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam355001 Sales langsung menekan tombol simpan foto faskes awal"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:29 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:32 ICT" duration-ms="3239" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam355002 Sales pilih file faskes awal tidak sesuai format"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:34 ICT" duration-ms="2178" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam355003 Sales upload file faskes awal tidak sesuai format"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:34 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:52:52 ICT" duration-ms="17645" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam355004 Sales upload foto faskes awal dengan size lebih dari lima mb"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Awal Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:52:52 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:00 ICT" duration-ms="8231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam360001 Sales langsung menekan tombol simpan foto faskes tujuan"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:00 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:03 ICT" duration-ms="3254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam360002 Sales pilih file faskes tujuan tidak sesuai format"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:03 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:05 ICT" duration-ms="2173" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam360003 Sales upload file faskes tujuan tidak sesuai format"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:05 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:19 ICT" duration-ms="13854" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam360004 Sales upload foto faskes tujuan dengan size lebih dari lima mb"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen Faskes Tujuan Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:19 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:27 ICT" duration-ms="7834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam365001 Sales langsung menekan tombol simpan foto TTD"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:27 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:30 ICT" duration-ms="3254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam365002 Sales pilih file TTD tidak sesuai format"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:30 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:32 ICT" duration-ms="2190" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam365003 Sales upload file TTD tidak sesuai format"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T14:53:47 ICT" duration-ms="14426" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Siloam365004 Sales upload foto TTD dengan size lebih dari lima mb"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Sales Upload Dokumen TTD Invalid"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner@433defed]" started-at="2022-10-05T14:53:47 ICT" name="tearDownClass" finished-at="2022-10-05T14:53:48 ICT" duration-ms="1395" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-05T23:11:13 ICT" name="tearDownClass" finished-at="2022-10-05T23:11:15 ICT" duration-ms="1258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner -->
+      </class> <!-- cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
