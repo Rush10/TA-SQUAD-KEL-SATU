@@ -12,13 +12,13 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 features = {
-//		"src/test/resources/features/siloam-outline/335SalesUploadDokumenFaskesAwalValid.feature",
-//		"src/test/resources/features/siloam-outline/340SalesUploadDokumenFaskesTujuanValid.feature",
-//		"src/test/resources/features/siloam-outline/345SalesUploadDokumenTTDValid.feature",
-//		"src/test/resources/features/siloam-outline/350SalesUploadSemuaDokumenValid.feature",
+		"src/test/resources/features/siloam-outline/335SalesUploadDokumenFaskesAwalValid.feature",
+		"src/test/resources/features/siloam-outline/340SalesUploadDokumenFaskesTujuanValid.feature",
+		"src/test/resources/features/siloam-outline/345SalesUploadDokumenTTDValid.feature",
+		"src/test/resources/features/siloam-outline/350SalesUploadSemuaDokumenValid.feature",
 		"src/test/resources/features/siloam-outline/355SalesUploadDokumenFaskesAwalInvalid.feature",
-//		"src/test/resources/features/siloam-outline/360SalesUploadDokumenFaskesTujuanInvalid.feature",
-//		"src/test/resources/features/siloam-outline/365SalesUploadDokumenTTDInvalid.feature",
+		"src/test/resources/features/siloam-outline/360SalesUploadDokumenFaskesTujuanInvalid.feature",
+		"src/test/resources/features/siloam-outline/365SalesUploadDokumenTTDInvalid.feature",
 		},
 glue = "cucumber.framework.runner.siloam.uploaddokumenpage",
 monochrome=true,
