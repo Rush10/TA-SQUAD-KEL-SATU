@@ -41,7 +41,7 @@ public class TestUploadSemuaDokumenValid {
 		driver.get(Constants.URL_SILOAM);
 		uploadDokumenPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
 		uploadDokumenPage.btnLogin();
-		driver.get(Constants.URL_SILOAM_DATA_UPLOAD_DOC);
+		driver.get(Constants.URL_SILOAM_DATA_UPLOAD_DOC_VALID);
 	    extentTest.log(LogStatus.PASS, "Siloam350001 Sales login dan masuk ke halaman upload dokumen");
 	}
 

@@ -6,8 +6,8 @@
       <class name="cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="21 22"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1 2 3"/>
         </methods>
       </class> <!-- cucumber.framework.runner.siloam.uploaddokumenpage.UploadDokumenOutlineRunner -->
     </classes>

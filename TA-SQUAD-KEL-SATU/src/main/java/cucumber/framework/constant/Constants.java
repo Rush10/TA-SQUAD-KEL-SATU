@@ -4,7 +4,7 @@ package cucumber.framework.constant;
 created_by : Novri
 created_date : 21/09/2022
 updated_by : Novri
-updated_date : 04/10/2022
+updated_date : 05/10/2022
 */
 
 public class Constants {
@@ -23,14 +23,13 @@ public class Constants {
 	public static final String URL_SILOAM = "https://dev.ptdika.com/siloam/panel/login/";
 	public static final String URL_SILOAM_VIEW_ADMIN = "https://dev.ptdika.com/siloam/bd/export_data/do_view/350";
 	public static final String URL_SILOAM_VIEW_ADMIN_DUA = "https://dev.ptdika.com/siloam/bd/export_data/do_view/344";
-	public static final String URL_SILOAM_DATA_UPLOAD_DOC = "https://dev.ptdika.com/siloam/sales/input/upload/569";
+	public static final String URL_SILOAM_DATA_UPLOAD_DOC_VALID = "https://dev.ptdika.com/siloam/sales/input/upload/570";
+	public static final String URL_SILOAM_DATA_UPLOAD_DOC_INVALID = "https://dev.ptdika.com/siloam/sales/input/upload/545";
 	
 	public static final String USERNAME_ADMIN_SILOAM = "admindika";
 	public static final String PASSWORD_ADMIN_SILOAM = "d1k4@passw0rd";
 	public static final String USERNAME_SALES_SILOAM = "D6200927";
 	public static final String PASSWORD_SALES_SILOAM = "1997-10-23";
 	
-//	public static final String USER_COMPUTER_NAME = "ROG";
-//	public static final String USER_COMPUTER_NAME = "NEXSOFT";
-	public static final String USER_COMPUTER_NAME = "Nexsoft";
+	public static final String USER_COMPUTER_NAME = System.getProperty("user.name").toString();
 }

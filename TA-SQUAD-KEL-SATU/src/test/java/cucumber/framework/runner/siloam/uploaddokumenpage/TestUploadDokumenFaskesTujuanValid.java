@@ -38,7 +38,7 @@ public class TestUploadDokumenFaskesTujuanValid {
 		driver.get(Constants.URL_SILOAM);
 		uploadDokumenPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
 		uploadDokumenPage.btnLogin();
-		driver.get(Constants.URL_SILOAM_DATA_UPLOAD_DOC);
+		driver.get(Constants.URL_SILOAM_DATA_UPLOAD_DOC_VALID);
 	    extentTest.log(LogStatus.PASS, "Siloam340001 Sales login dan masuk ke halaman upload dokumen");
 	}
 	
@@ -95,7 +95,7 @@ public class TestUploadDokumenFaskesTujuanValid {
 
 	@When("Siloam340004 Sales memilih foto faskes tujuan")
 	public void siloam340004_sales_memilih_foto_faskes_tujuan() {
-		String path = "C:\\Users\\ROG\\Pictures\\Testing\\klinik tujuan.jpg";
+		String path = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		uploadDokumenPage.fileUpload(path);
 		extentTest.log(LogStatus.PASS, "Siloam340004 Sales memilih foto faskes tujuan");
 	}
@@ -130,7 +130,7 @@ public class TestUploadDokumenFaskesTujuanValid {
 
 	@When("Siloam340006 Sales memilih foto faskes tujuan")
 	public void siloam340006_sales_memilih_foto_faskes_tujuan() {
-		String path = "C:\\Users\\ROG\\Pictures\\Testing\\klinik tujuan.jpg";
+		String path = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		uploadDokumenPage.fileUpload(path);
 		extentTest.log(LogStatus.PASS, "Siloam340006 Sales memilih foto faskes tujuan");
 	}
@@ -158,7 +158,7 @@ public class TestUploadDokumenFaskesTujuanValid {
 
 	@When("Siloam340007 Sales memilih foto faskes tujuan")
 	public void siloam340007_sales_memilih_foto_faskes_tujuan() {
-		String path = "C:\\Users\\ROG\\Pictures\\Testing\\klinik tujuan.jpg";
+		String path = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		uploadDokumenPage.fileUpload(path);
 		extentTest.log(LogStatus.PASS, "Siloam340007 Sales memilih foto faskes tujuan");
 	}

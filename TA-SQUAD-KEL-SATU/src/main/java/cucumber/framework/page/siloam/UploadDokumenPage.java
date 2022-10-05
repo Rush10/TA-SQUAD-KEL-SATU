@@ -57,6 +57,15 @@ private WebDriver driver;
 	@FindBy(xpath = "//img[@id='previewing']")
 	private WebElement previewImgModal;
 	
+	@FindBy(xpath = "//div[@id='message']")
+	private WebElement msgErrorSave; 
+	
+	@FindBy(xpath = "//p[@id='error']")
+	private WebElement msgErrorChooseFile; 
+	
+	@FindBy(xpath = "//span[@id='error_message']")
+	private WebElement noteErrorChooseFile; 
+	
 	@FindBy(xpath = "//input[@id='file']")
 	private WebElement file;
 	
@@ -171,6 +180,23 @@ private WebDriver driver;
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		btnOK().click();
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public String txtErrorSave() {
+		//Upload error: You did not select a file to upload.
+		//Upload error: The filetype you are attempting to upload is not allowed.
+		//Upload error: The file you are attempting to upload is larger than the permitted size.
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgErrorSave);
+	}
+	
+	public String txtErrorChooseFileMsg() {
+		//Please Select A valid Image File
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgErrorChooseFile);
+	}
+	
+	public String txtErrorChooseFileNote() {
+		//Only jpeg, jpg and png Images type allowed
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, noteErrorChooseFile);
 	}
 	
 	public String txtTitleUploadDocument() {
