@@ -38,14 +38,23 @@ private WebDriver driver;
 	@FindBy(xpath = "//h4[@class='panel-title'][normalize-space()='Upload Dokumen']")
 	private WebElement lblUploadDokumenTitle;
 	
-	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[1]/img[1]")
 	private WebElement previewUploadDokumenBefore;
 	
-	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/a[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[1]")
+	private WebElement linkPreviewUploadDokumenBefore;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/a[1]/img[1]")
 	private WebElement previewUploadDokumenAfter;
 	
-	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[3]/td[3]/div[1]/a[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/a[1]")
+	private WebElement linkPreviewUploadDokumenAfter;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[3]/td[3]/div[1]/a[1]/img[1]")
 	private WebElement previewUploadDokumenTTD;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[3]/td[3]/div[1]/a[1]")
+	private WebElement linkPreviewUploadDokumenTTD;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[2]")
 	private WebElement btnDeleteBefore;
@@ -117,12 +126,24 @@ private WebDriver driver;
 		return this.previewUploadDokumenBefore;
 	}
 	
+	public WebElement getLinkUploadDokumenBefore() {		
+		return this.linkPreviewUploadDokumenBefore;
+	}
+	
 	public WebElement getPreviewUploadDokumenAfter() {		
 		return this.previewUploadDokumenAfter;
 	}
 	
+	public WebElement getLinkUploadDokumenAfter() {		
+		return this.linkPreviewUploadDokumenAfter;
+	}
+	
 	public WebElement getPreviewUploadDokumenTTD() {		
 		return this.previewUploadDokumenTTD;
+	}
+	
+	public WebElement getLinkUploadDokumenTTD() {		
+		return this.linkPreviewUploadDokumenTTD;
 	}
 	
 	public WebElement getBtnDeleteBefore() {		
