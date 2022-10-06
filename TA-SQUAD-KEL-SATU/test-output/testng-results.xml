@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-06T21:04:57 ICT" name="Default suite" finished-at="2022-10-06T21:06:28 ICT" duration-ms="91044">
+  <suite started-at="2022-10-06T22:02:13 ICT" name="Default suite" finished-at="2022-10-06T22:04:07 ICT" duration-ms="114281">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-06T21:04:57 ICT" name="Default test" finished-at="2022-10-06T21:06:28 ICT" duration-ms="91044">
+    <test started-at="2022-10-06T22:02:13 ICT" name="Default test" finished-at="2022-10-06T22:04:07 ICT" duration-ms="114281">
       <class name="cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T21:04:57 ICT" name="setUpClass" finished-at="2022-10-06T21:04:58 ICT" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T22:02:13 ICT" name="setUpClass" finished-at="2022-10-06T22:02:13 ICT" duration-ms="373" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c9fdb64]]>
+                <![CDATA[org.testng.TestRunner@7103745]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T21:04:58 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T21:05:33 ICT" duration-ms="34888" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T22:02:13 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T22:02:59 ICT" duration-ms="46399" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T21:05:33 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T21:06:00 ICT" duration-ms="27059" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T22:02:59 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T22:03:33 ICT" duration-ms="33747" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T21:06:00 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T21:06:27 ICT" duration-ms="27131" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T22:03:33 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-06T22:04:06 ICT" duration-ms="32477" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T21:06:27 ICT" name="tearDownClass" finished-at="2022-10-06T21:06:28 ICT" duration-ms="1438" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.siloam.ttddigitalpage.TandaTanganDigitalOutlineRunner@2df3b89c]" started-at="2022-10-06T22:04:06 ICT" name="tearDownClass" finished-at="2022-10-06T22:04:07 ICT" duration-ms="1256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
