@@ -20,6 +20,8 @@ public class Constants {
 	public static final String IE = "Internet Explorer";
 	public static final String SAFARI = "Safari";
 	
+	public static final String URL_IMG_ONLINE = "https://www.imgonline.com.ua/eng/similarity-percent.php"; //web for compare image
+	
 	public static final String URL_SILOAM = "https://dev.ptdika.com/siloam/panel/login/";
 	public static final String URL_SILOAM_VIEW_ADMIN = "https://dev.ptdika.com/siloam/bd/export_data/do_view/350";
 	public static final String URL_SILOAM_VIEW_ADMIN_DUA = "https://dev.ptdika.com/siloam/bd/export_data/do_view/344";

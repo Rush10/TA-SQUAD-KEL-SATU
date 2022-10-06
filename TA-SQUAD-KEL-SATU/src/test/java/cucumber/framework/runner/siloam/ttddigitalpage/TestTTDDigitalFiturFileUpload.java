@@ -1,6 +1,7 @@
 package cucumber.framework.runner.siloam.ttddigitalpage;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
@@ -23,6 +24,10 @@ public class TestTTDDigitalFiturFileUpload {
 	public TestTTDDigitalFiturFileUpload() {
 		driver = TandaTanganDigitalOutlineHooks.driver;
 		extentTest = TandaTanganDigitalOutlineHooks.extentTest;
+		
+		
+		
+		
 	}
 	
 //BEFORE
@@ -37,21 +42,29 @@ public class TestTTDDigitalFiturFileUpload {
 	}
 
 	@And("Siloam215 Sales Menekan Gambar Before Fitur File Upload")
-	public void siloam215_sales_menekan_gambar_before_fitur_file_upload() throws AWTException {
+	public void siloam215_sales_menekan_gambar_before_fitur_file_upload() throws AWTException, IOException {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
-		
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_Before_d6afc10be16d20986b0306d476a4b70c.jpg");
 		ttdPage.rightClickPreviewUploadDokumenBefore();
-		
 		Utils.tabEnterDown(0, 8, 2);
 		
-//	    ttdDigital.btnBeforeFileUpload();
 	    extentTest.log(LogStatus.PASS, "Siloam215 Sales Menekan Gambar Before Fitur File Upload");
 	}
 
 	@Then("Siloam215 Validasi Gambar Before Fitur File Upload")
 	public void siloam215_validasi_gambar_before_fitur_file_upload() {
-		////
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_Before_d6afc10be16d20986b0306d476a4b70c.jpg";
+		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Awal.jpg";
+		
+		driver.get(Constants.URL_IMG_ONLINE);
+		
+		ttdPage.fileUploadImg1(pathWebPicBefore);
+		ttdPage.fileUploadImg2(pathRealPicBefore);
+		ttdPage.clickBtnOKImgOnline();
+		
+		System.out.println(ttdPage.txtResult());
+		
 		extentTest.log(LogStatus.PASS, "Siloam215 Validasi Gambar Before Fitur File Upload");
 	}
 	
@@ -67,21 +80,29 @@ public class TestTTDDigitalFiturFileUpload {
 	}
 
 	@And("Siloam215 Sales Menekan Gambar After Fitur File Upload")
-	public void siloam215_sales_menekan_gambar_after_fitur_file_upload() throws AWTException {
+	public void siloam215_sales_menekan_gambar_after_fitur_file_upload() throws AWTException, IOException {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
-		
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_After_ab7af79d2bc370e61ac7ba8fe750dd16.jpg");
 		ttdPage.rightClickPreviewUploadDokumenAfter();
-		
 		Utils.tabEnterDown(0, 8, 2);
 		
-//	    ttdDigital.btnAfterFileUpload();
 	    extentTest.log(LogStatus.PASS, "Siloam215 Sales Menekan Gambar After Fitur File Upload");
 	}
 
 	@Then("Siloam215 Validasi Gambar After Fitur File Upload")
 	public void siloam215_validasi_gambar_after_fitur_file_upload() {
-		////
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_After_ab7af79d2bc370e61ac7ba8fe750dd16.jpg";
+		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
+		
+		driver.get(Constants.URL_IMG_ONLINE);
+		
+		ttdPage.fileUploadImg1(pathWebPicBefore);
+		ttdPage.fileUploadImg2(pathRealPicBefore);
+		ttdPage.clickBtnOKImgOnline();
+		
+		System.out.println(ttdPage.txtResult());
+		
 		extentTest.log(LogStatus.PASS, "Siloam215 Validasi Gambar After Fitur File Upload");
 	}
 	
@@ -98,21 +119,29 @@ public class TestTTDDigitalFiturFileUpload {
 	}
 
 	@And("Siloam215 Sales Menekan Gambar TTD Digital Fitur File Upload")
-	public void siloam215_sales_menekan_gambar_ttd_digital_fitur_file_upload() throws AWTException {
+	public void siloam215_sales_menekan_gambar_ttd_digital_fitur_file_upload() throws AWTException, IOException {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
-		
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_TTD_3c7c831a6ad69474014d79b3b64acb03.jpg");
 		ttdPage.rightClickPreviewUploadDokumenTTD();
-		
 		Utils.tabEnterDown(0, 8, 2);
 		
-//	    ttdDigital.btnTTDDigitalFileUpload();
 	    extentTest.log(LogStatus.PASS, "Siloam215 Sales Menekan Gambar TTD Digital Fitur File Upload");
 	}
 
 	@Then("Siloam215 Validasi Gambar TTD Digital Fitur File Upload")
 	public void siloam215_validasi_gambar_ttd_digital_fitur_file_upload() {
-		////
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_TTD_3c7c831a6ad69474014d79b3b64acb03.jpg";
+		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto TTD.jpg";
+		
+		driver.get(Constants.URL_IMG_ONLINE);
+		
+		ttdPage.fileUploadImg1(pathWebPicBefore);
+		ttdPage.fileUploadImg2(pathRealPicBefore);
+		ttdPage.clickBtnOKImgOnline();
+		
+		System.out.println(ttdPage.txtResult());
+		
 		extentTest.log(LogStatus.PASS, "Siloam215 Validasi Gambar TTD Digital Fitur File Upload");
 	}
 }

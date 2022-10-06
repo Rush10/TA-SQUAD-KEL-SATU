@@ -98,6 +98,19 @@ private WebDriver driver;
 	@FindBy(xpath = "//span[@id='error_message']")
 	private WebElement noteErrorChooseFile; 
 	
+	//IMGOnline
+	@FindBy(xpath = "//input[@name='uploadfile']")
+	private WebElement fileImg1;
+	
+	@FindBy(xpath = "//input[@name='uploadfile2']")
+	private WebElement fileImg2;
+	
+	@FindBy(xpath = "//input[@value='OK']")
+	private WebElement btnOKImgonline;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[4]/span[1]")
+	private WebElement lblResult;
+	
 	// NOVRI//////////////////////////////
 	
 	public WebElement getPreviewUploadDokumenBefore() {		
@@ -137,31 +150,31 @@ private WebDriver driver;
 	}
 	
 	public WebElement getBtnSaveTTDDigital() {
-		return btnSaveTTDDigital;
+		return this.btnSaveTTDDigital;
 	}
 	
 	public WebElement getBtnCancelTTDDigital() {
-		return btnCancelTTDDigital;
+		return this.btnCancelTTDDigital;
 	}
 	
 	public WebElement getBtnKeluarTTDDigital() {
-		return btnKeluarTTDDigital;
+		return this.btnKeluarTTDDigital;
 	}
 	
 	public WebElement getBtnOK() {
-		return btnOK;
+		return this.btnOK;
 	}
 	
 	public WebElement getPreviewImgModal() {
-		return previewImgModal;
+		return this.previewImgModal;
 	}
 	
 	public WebElement getlblTTDDigitalTitle() {
-		return lblTTDDigitalTitle;
+		return this.lblTTDDigitalTitle;
 	}
 	
 	public WebElement getlblUploadDokumenTitle() {
-		return lblUploadDokumenTitle;
+		return this.lblUploadDokumenTitle;
 	}
 	
 	public String txtSrcPreview(WebElement element) {
@@ -247,33 +260,54 @@ private WebDriver driver;
 	
 	public String getMsgAlert() {
 		//berhasil didelete
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblAlert);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.lblAlert);
 	}
 	
 	public String getModalTitle() {
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblModalTitle);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.lblModalTitle);
 	}
 	
 	public String txtErrorSave() {
 		//Upload error: You did not select a file to upload.
 		//Upload error: The filetype you are attempting to upload is not allowed.
 		//Upload error: The file you are attempting to upload is larger than the permitted size.
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgErrorSave);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.msgErrorSave);
 	}
 	
 	public String txtErrorChooseFileMsg() {
 		//Please Select A valid Image File
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgErrorChooseFile);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.msgErrorChooseFile);
 	}
 	
 	public String txtErrorChooseFileNote() {
 		//Only jpeg, jpg and png Images type allowed
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, noteErrorChooseFile);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.noteErrorChooseFile);
 	}
 	
 	public void fileUpload(String path) {
 		file.sendKeys(path);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	//IMGOnline
+	public void fileUploadImg1(String path) {
+		fileImg1.sendKeys(path);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void fileUploadImg2(String path) {
+		fileImg2.sendKeys(path);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnOKImgOnline() {
+		Utils.elementClick(this.btnOKImgonline, driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public String txtResult() {
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblResult);
 	}
 
 }
