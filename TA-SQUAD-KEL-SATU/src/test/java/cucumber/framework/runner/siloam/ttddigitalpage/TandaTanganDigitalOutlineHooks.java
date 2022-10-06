@@ -29,9 +29,12 @@ public class TandaTanganDigitalOutlineHooks {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-sales-Update TTD Digital-outline.html");
-	private static SiloamTTDDigital[] tests = SiloamTTDDigital.values();
-//	private static final int[] DATA_OUTLINE = {9,29,59,71};
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1};
+	private static SiloamTTDDigital[] tests = SiloamTTDDigital.values();	
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};//semua
+	
+//	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1};//hapus
+//	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1}; //upload valid
+//	private static final int[] DATA_OUTLINE = {1,1,1,1}; ////upload invalid
 	private String testReport = "";
 //	9,29,59,
 	

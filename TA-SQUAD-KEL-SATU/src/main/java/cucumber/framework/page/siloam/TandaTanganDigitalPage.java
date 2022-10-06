@@ -33,326 +33,214 @@ private WebDriver driver;
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-
-//PAGE NEW
-	@FindBy(xpath = "//a[@href='https://dev.ptdika.com/siloam/sales/new_data']")
-	private WebElement pageNew;
-	
-//DATA
-	@FindBy(xpath = "//input[@id='name']")
-	private WebElement nama;
-	
-	@FindBy(xpath = "//input[@id='no_bpjs']")
-	private WebElement nomBpjs;
-	
-	@FindBy(xpath = "//input[@id='no_ktp']")
-	private WebElement nomKtp;
-	
-	@FindBy(xpath = "//textarea[@id='address']")
-	private WebElement address;
-	
-	@FindBy(xpath = "//span[@id='select2-ktp_city-container']")
-	private WebElement kotaKTP;
-	
-	@FindBy(xpath = "//input[@role='textbox']")
-	private WebElement txtBox;
-	
-	
-	@FindBy(xpath = "//input[@id='origin_faskes']")
-	private WebElement faskesAwal;
-	
-	@FindBy(xpath = "//span[@id='select2-destination_faskes-container']")
-	private WebElement faskesTujuan;
-	
-	@FindBy(xpath = "//textarea[@id='reason']")
-	private WebElement alasan;
-	
-	@FindBy(xpath = "//button[@id='btnEdit']")
-	private WebElement edit;
-	
-	@FindBy(xpath = "//button[@id='btnUpdate']")
-	private WebElement update;
-	
-	
-	@FindBy(xpath = "//button[@id='btnCancelUpdate']")
-	private WebElement cancelUpdate;
-	
-	@FindBy(xpath = "//div[@role='alert']")
-	private WebElement msgSuccess;
 	
 	// NOVRI//////////////////////////////
 	@FindBy(xpath = "//a[@class='nav-link active']//span[@class='d-sm-block d-none']")
-	private WebElement ttdDigitalTitle;
+	private WebElement lblTTDDigitalTitle;
 	
 	@FindBy(xpath = "//h4[@class='panel-title'][normalize-space()='Upload Dokumen']")
-	private WebElement uploadDokumenTitle;
+	private WebElement lblUploadDokumenTitle;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[2]")
-	private WebElement deleteBefore;
+	private WebElement btnDeleteBefore;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/a[2]")
-	private WebElement deleteAfter;
+	private WebElement btnDeleteAfter;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[3]/td[3]/div[1]/a[2]")
-	private WebElement deleteTTD;
+	private WebElement btnDeleteTTD;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]")
+	private WebElement btnUpdateBefore;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[4]/a[1]")
+	private WebElement btnUpdateAfter;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[3]/td[4]/a[1]")
+	private WebElement btnUpdateTTDDigital;
 	
 	@FindBy(xpath = "//div[@role='alert']")
-	private WebElement alert;
+	private WebElement lblAlert;
 	
-	/////////////////////////////////////
+	@FindBy(xpath = "//button[@id='btnSaveFoto']")
+	private WebElement btnSaveTTDDigital;
 	
-//DOKUMEN
-	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/a[1]/img[1]")
-	private WebElement bfImage;
-
+	@FindBy(xpath = "//button[@class='btn btn-danger pull-left']")
+	private WebElement btnCancelTTDDigital;
+	  
+	@FindBy(xpath = "//span[normalize-space()='×']")
+	private WebElement btnKeluarTTDDigital;
 	
-
-//UPLOAD DOKUMEN
-
-	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]/span[1]")
-	private WebElement imgBefore;
-
-	@FindBy(xpath = "//form[@id='fileupload']/div/table/tbody/tr[3]/td[4]/a/i")
-	private WebElement uploadFile;
+	@FindBy(xpath = "//h4[@class='modal-title']")
+	private WebElement lblModalTitle;
+	
+	@FindBy(xpath = "//img[@id='previewing_pelamar']")
+	private WebElement previewImgModal;
+	
+	@FindBy(xpath = "//button[@class='swal-button swal-button--confirm']")
+	private WebElement btnOK;
 	
 	@FindBy(xpath = "//input[@id='file']")
 	private WebElement file;
 	
-	@FindBy(xpath = "//button[@id='btnSaveFoto']")
-	private WebElement saveFoto;
+	@FindBy(xpath = "//div[@id='message']")
+	private WebElement msgErrorSave; 
 	
-	@FindBy(xpath = "//button[@class='btn btn-danger pull-left']")
-	private WebElement cancelUpload;
+	@FindBy(xpath = "//p[@id='error']")
+	private WebElement msgErrorChooseFile; 
+	
+	@FindBy(xpath = "//span[@id='error_message']")
+	private WebElement noteErrorChooseFile; 
 	
 	// NOVRI//////////////////////////////
 	
-	public WebElement getDeleteBefore() {		
-		return this.deleteBefore;
+	public WebElement getBtnDeleteBefore() {		
+		return this.btnDeleteBefore;
 	}
 	
-	public WebElement getDeleteAfter() {		
-		return this.deleteAfter;
+	public WebElement getBtnDeleteAfter() {		
+		return this.btnDeleteAfter;
 	}
 	
-	public WebElement getDeleteTTD() {		
-		return this.deleteTTD;
+	public WebElement getBtnDeleteTTD() {		
+		return this.btnDeleteTTD;
 	}
 	
-	public void clickDeleteBefore() {
-		getDeleteBefore().click();
+	public WebElement getBtnUpdateBefore() {		
+		return this.btnUpdateBefore;
+	}
+	
+	public WebElement getBtnUpdateAfter() {		
+		return this.btnUpdateAfter;
+	}
+	
+	public WebElement getBtnUpdateTTDDigital() {		
+		return this.btnUpdateTTDDigital;
+	}
+	
+	public WebElement getBtnSaveTTDDigital() {
+		return btnSaveTTDDigital;
+	}
+	
+	public WebElement getBtnCancelTTDDigital() {
+		return btnCancelTTDDigital;
+	}
+	
+	public WebElement getBtnKeluarTTDDigital() {
+		return btnKeluarTTDDigital;
+	}
+	
+	public WebElement getBtnOK() {
+		return btnOK;
+	}
+	
+	public WebElement getPreviewImgModal() {
+		return previewImgModal;
+	}
+	
+	public WebElement getlblTTDDigitalTitle() {
+		return lblTTDDigitalTitle;
+	}
+	
+	public WebElement getlblUploadDokumenTitle() {
+		return lblUploadDokumenTitle;
+	}
+	
+	public String txtSrcPreview(WebElement element) {
+		//	src="https://dev.ptdika.com/siloam/new_assets/noimage.png"
+		return element.getAttribute("src");
+	}
+	
+	public void clickOK() {
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		getBtnOK().click();
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	
-	public void clickDeleteAfter() {
-		getDeleteAfter().click();
+	public void clickBtnDeleteBefore() {
+		getBtnDeleteBefore().click();
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	
-	public void clickDeleteTTD() {
-		getDeleteTTD().click();
+	public void clickBtnDeleteAfter() {
+		getBtnDeleteAfter().click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnDeleteTTD() {
+		getBtnDeleteTTD().click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnSaveTTDDigital() {
+		getBtnSaveTTDDigital().click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnCancelTTDDigital() {
+		getBtnCancelTTDDigital().click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnKeluarTTDDigital() {
+		getBtnKeluarTTDDigital().click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnUpdateBefore() {
+		Utils.elementClick(getBtnUpdateBefore(), driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnUpdateAfter() {
+		Utils.elementClick(getBtnUpdateAfter(), driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnUpdateTTDDigital() {
+		Utils.elementClick(getBtnUpdateTTDDigital(), driver);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public String getTTDDigitalTitle() {
 		//TTD Digital
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, ttdDigitalTitle);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, getlblTTDDigitalTitle());
 	}
 	
 	public String getUploadDokumenTitle() {
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, uploadDokumenTitle);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, getlblUploadDokumenTitle());
 	}
 	
 	public String getMsgAlert() {
 		//berhasil didelete
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, alert);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblAlert);
 	}
 	
-	/////////////////////////////////////
-	
-	public void update(String nama, String nomBpjs,String nomKtp, String address, String srkotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
-		Robot robot = new Robot();
-		
-		if(!nama.equals("")) {
-			clearName();
-			updateName(nama);
-		}
-		if(!nomBpjs.equals("")) {
-			clearNomBpjs();
-			updateNoBPJS(nomBpjs);
-		} 
-		if(!nomKtp.equals("")) {
-			clearNomKtp();
-			updateNomKtp(nomKtp);
-		}
-		if(!address.equals("")) {
-			clearAddress();
-			updateAddress(address);
-		}
-		if(!srkotaKTP.equals("")) {
-			clickKotaKTP();
-			updateKotaKTP(srkotaKTP);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-//			Select skotaKtp = new Select(kotaKTP);
-//			skotaKtp.selectByValue(srkotaKTP);
-		}
-		if(!faskesAwal.equals("")) {
-			clearfaskesAwal();
-			updateFaskesAwal(faskesAwal);
-		}
-		if(!faskesTujuan.equals("")) {
-			clickFaskesTujuan();
-			updateFaskesTujuan(faskesTujuan);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-		}
-		if(!alasan.equals("")) {
-			clearAlasan();
-			updateAlasan(alasan);
-		}
-		
-	}
-
-	
-//PAGE NEW
-	public void menuNew() {
-		this.pageNew.click();
+	public String getModalTitle() {
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblModalTitle);
 	}
 	
-//DATA	
-	
-	//Nama
-	public String getTxtName() {		
-		return nama.getAttribute("value");
+	public String txtErrorSave() {
+		//Upload error: You did not select a file to upload.
+		//Upload error: The filetype you are attempting to upload is not allowed.
+		//Upload error: The file you are attempting to upload is larger than the permitted size.
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgErrorSave);
 	}
 	
-	public void clearName() {
-		this.nama.clear();
+	public String txtErrorChooseFileMsg() {
+		//Please Select A valid Image File
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgErrorChooseFile);
 	}
 	
-	public void updateName(String nama) {
-		this.nama.sendKeys(nama);
+	public String txtErrorChooseFileNote() {
+		//Only jpeg, jpg and png Images type allowed
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, noteErrorChooseFile);
+	}
+	
+	public void fileUpload(String path) {
+		file.sendKeys(path);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	//No BPJS
-	public void clearNomBpjs() {
-		this.nomBpjs.clear();
-	} 
-	
-	public void updateNoBPJS(String nomBpjs) {
-		this.nomBpjs.sendKeys(nomBpjs);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String getTxtNoBPJS() {		
-		return nomBpjs.getAttribute("value");
-	}
-	
-	//No KTP
-	public void clearNomKtp() {
-		this.nomKtp.clear();
-	} 
-	
-	public void updateNomKtp(String nomKtp) {
-		this.nomKtp.sendKeys(nomKtp);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String getTxtNomKtp() {		
-		return nomKtp.getAttribute("value");
-	}
-	
-	//Address
-	public void clearAddress() {
-		this.address.clear();
-	} 
-	
-	public void updateAddress(String address) {
-		this.address.sendKeys(address);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String getTxtAddress() {		
-		return address.getAttribute("value");
-	}
-	
-	//Kota KTP
-	public String getTxtKotaKTP() {		
-		return kotaKTP.getAttribute("title");
-	}
-	
-	public void clickKotaKTP() {
-		this.kotaKTP.click();
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	} 
-	
-	public void updateKotaKTP(String kotaKTP) {
-		this.txtBox.sendKeys(kotaKTP);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	//Faskes Awal
-	public void clearfaskesAwal() {
-		this.faskesAwal.clear();
-	} 
-	
-	public void updateFaskesAwal(String faskesAwal) {
-		this.faskesAwal.sendKeys(faskesAwal);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String getTxtFaskesAwal() {		
-		return faskesAwal.getAttribute("value");
-	}
-	
-	//Faskes Tujuan
-	public void clickFaskesTujuan() {
-		this.faskesTujuan.click();
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public void updateFaskesTujuan(String faskesTujuan) {
-		this.txtBox.sendKeys(faskesTujuan);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String getTxtFaskesTujuan() {		
-		return faskesTujuan.getAttribute("title");
-	}
-	
-	//Alasan
-	public void clearAlasan() {
-		this.alasan.clear();
-	} 
-	
-	public void updateAlasan(String alasan) {
-		this.alasan.sendKeys(alasan);
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String getTxtAlasan() {		
-		return alasan.getAttribute("value");
-	}
-	
-	
-	public void btnEdit() {
-		this.edit.click();
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public void btnUpdate() {
-		this.update.click();
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public void btncancelUpdate() {
-		this.cancelUpdate.click();
-		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-	}
-	
-	public String msgSuccessUpdate() {
-		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgSuccess);
 	}
 
 }

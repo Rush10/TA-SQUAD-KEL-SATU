@@ -39,14 +39,14 @@ public class TestHapusFileUploadBefore {
 		ttdDigitalPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
 		ttdDigitalPage.btnLogin();
 		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_DELETE_UPLOAD);
-		Utils.scrollByVisibleElement(ttdDigitalPage.getDeleteBefore(), driver);
+		Utils.scrollByVisibleElement(ttdDigitalPage.getlblUploadDokumenTitle(), driver);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	    extentTest.log(LogStatus.PASS, "Siloam370001 Sales login dan masuk ke halaman ttd digital");
 	}
 
 	@When("Siloam370001 Sales tekan tombol hapus file upload before")
 	public void siloam370001_sales_tekan_tombol_hapus_file_upload_before() {
-		Utils.elementClick(ttdDigitalPage.getDeleteBefore(), driver);
+		Utils.elementClick(ttdDigitalPage.getBtnDeleteBefore(), driver);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		extentTest.log(LogStatus.PASS, "Siloam370001 Sales tekan tombol hapus file upload before");
 	}
@@ -67,7 +67,7 @@ public class TestHapusFileUploadBefore {
 
 	@When("Siloam370002 Sales tekan tombol hapus file upload before")
 	public void siloam370002_sales_tekan_tombol_hapus_file_upload_before() {
-		Utils.elementClick(ttdDigitalPage.getDeleteBefore(), driver);
+		Utils.elementClick(ttdDigitalPage.getBtnDeleteBefore(), driver);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		extentTest.log(LogStatus.PASS, "Siloam370002 Sales tekan tombol hapus file upload before");
 	}
