@@ -30,11 +30,12 @@ public class TandaTanganDigitalOutlineHooks {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-sales-Update TTD Digital-outline.html");
 	private static SiloamTTDDigital[] tests = SiloamTTDDigital.values();	
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};//semua
+//	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};//semua delete & upload valid invalid
 	
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1};//hapus
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1}; //upload valid
 //	private static final int[] DATA_OUTLINE = {1,1,1,1}; ////upload invalid
+	private static final int[] DATA_OUTLINE = {1,1,1}; ////preview
 	private String testReport = "";
 //	9,29,59,
 	

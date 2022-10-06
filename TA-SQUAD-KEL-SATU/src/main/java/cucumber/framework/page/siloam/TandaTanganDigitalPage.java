@@ -1,8 +1,6 @@
 package cucumber.framework.page.siloam;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 
 /*
 created_by : Manda
@@ -14,7 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import cucumber.framework.connection.DriverSingleton;
 import cucumber.framework.constant.Constants;
@@ -40,6 +37,15 @@ private WebDriver driver;
 	
 	@FindBy(xpath = "//h4[@class='panel-title'][normalize-space()='Upload Dokumen']")
 	private WebElement lblUploadDokumenTitle;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[1]")
+	private WebElement previewUploadDokumenBefore;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[3]/div[1]/a[1]")
+	private WebElement previewUploadDokumenAfter;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[3]/td[3]/div[1]/a[1]")
+	private WebElement previewUploadDokumenTTD;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/a[2]")
 	private WebElement btnDeleteBefore;
@@ -93,6 +99,18 @@ private WebDriver driver;
 	private WebElement noteErrorChooseFile; 
 	
 	// NOVRI//////////////////////////////
+	
+	public WebElement getPreviewUploadDokumenBefore() {		
+		return this.previewUploadDokumenBefore;
+	}
+	
+	public WebElement getPreviewUploadDokumenAfter() {		
+		return this.previewUploadDokumenAfter;
+	}
+	
+	public WebElement getPreviewUploadDokumenTTD() {		
+		return this.previewUploadDokumenTTD;
+	}
 	
 	public WebElement getBtnDeleteBefore() {		
 		return this.btnDeleteBefore;
@@ -155,6 +173,21 @@ private WebDriver driver;
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		getBtnOK().click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void rightClickPreviewUploadDokumenBefore() {
+		Utils.rightClick(getPreviewUploadDokumenBefore(), driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void rightClickPreviewUploadDokumenAfter() {
+		Utils.rightClick(getPreviewUploadDokumenAfter(), driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void rightClickPreviewUploadDokumenTTD() {
+		Utils.rightClick(getPreviewUploadDokumenTTD(), driver);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	}
 	

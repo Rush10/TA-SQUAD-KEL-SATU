@@ -39,7 +39,7 @@ public class TestUploadDokumenTTDDigitalValid {
 		driver.get(Constants.URL_SILOAM);
 		ttdPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
 		ttdPage.btnLogin();
-		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_DELETE_UPLOAD);
+		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_DELETE_AND_UPLOAD);
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
 	    extentTest.log(LogStatus.PASS, "Siloam395001 Sales login dan masuk ke halaman upload dokumen");
 	}

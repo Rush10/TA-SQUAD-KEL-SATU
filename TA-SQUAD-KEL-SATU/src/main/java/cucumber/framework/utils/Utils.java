@@ -37,6 +37,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -363,6 +364,12 @@ public class Utils {
 		return strTemp;
 	}
 	
+	public static void rightClick(WebElement element, WebDriver driver)
+	{
+		Actions actions = new Actions(driver);
+		actions.contextClick(element).perform();
+	}
+	
 	public static void tabEnter() throws AWTException
 	{
 		Robot robot = new Robot();
@@ -393,6 +400,32 @@ public class Utils {
 		
 		for(int i =0; i < enter; i++)
 		{
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
+	}
+	
+	public static void tabEnterDown(int tab, int down, int enter) throws AWTException
+	{
+		Robot robot = new Robot();
+		for(int i =0; i < tab; i++)
+		{
+			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_TAB);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
+		
+		for(int i = 0; i < down; i++) {
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+			robot.keyPress(KeyEvent.VK_DOWN);
+			robot.keyRelease(KeyEvent.VK_DOWN);
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		}
+		
+		for(int i =0; i < enter; i++)
+		{
+			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);

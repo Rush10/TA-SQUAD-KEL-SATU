@@ -37,7 +37,7 @@ public class TestHapusFileUploadTTD {
 		driver.get(Constants.URL_SILOAM);
 		ttdDigitalPage.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
 		ttdDigitalPage.btnLogin();
-		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_DELETE_UPLOAD);
+		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_DELETE_AND_UPLOAD);
 		Utils.scrollByVisibleElement(ttdDigitalPage.getlblUploadDokumenTitle(), driver);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 	    extentTest.log(LogStatus.PASS, "Siloam380001 Sales login dan masuk ke halaman ttd digital");
