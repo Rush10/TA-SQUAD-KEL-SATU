@@ -44,11 +44,14 @@ public class TestTTDDigitalFiturFileUpload {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
 		
+		//pake split slash
+		//https://dev.ptdika.com/siloam/upload/dokumen/570/570_Before_d6afc10be16d20986b0306d476a4b70c.jpg
 		String txtSrc = ttdPage.txtSrcPreview(ttdPage.getPreviewUploadDokumenBefore());
 		String getNamePic = txtSrc.substring(txtSrc.length()-47,txtSrc.length());
 		System.out.println(getNamePic);
 		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
 		
+		//pake wget
 		ttdPage.rightClickPreviewUploadDokumenBefore();
 		Utils.tabEnterDown(0, 8, 2);
 		
@@ -66,6 +69,7 @@ public class TestTTDDigitalFiturFileUpload {
 		ttdPage.fileUploadImg2(pathRealPicBefore);
 		ttdPage.clickBtnOKImgOnline();
 		
+		//pake trims
 		String sub = ttdPage.txtResult().toString().substring(0,4);
 		double dNum = Double.parseDouble(sub);
 		

@@ -13,4 +13,4 @@ Feature: Valid Sales Input Data
 #1 data
   Examples: 
     |nama|nomorBPJS|nomorKTP|address|kotaKTP|faskesAwal|faskesTujuan|alasan|
-	|NB Test 3|6767676767677|6767676767676767|Jl.Test|Luwu Timur|Faskes Test|Meikarta|Test Alasan| #change to the new one
+	|NB Test 5|1324354657685|6767676767676767|Jl.Test|Luwu Timur|Faskes Test|Meikarta|Test Alasan| #change to the new one

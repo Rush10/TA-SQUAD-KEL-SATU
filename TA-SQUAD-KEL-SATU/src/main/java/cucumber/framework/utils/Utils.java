@@ -29,9 +29,9 @@ import javax.imageio.ImageIO;
 import org.apache.commons.io.FileUtils;
 //import org.apache.pdfbox.pdmodel.PDDocument;
 //import org.apache.pdfbox.text.PDFTextStripper;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFParagraph;
-import org.hamcrest.core.IsEqual;
+//import org.apache.poi.xwpf.usermodel.XWPFDocument;
+//import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+//import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -375,16 +375,16 @@ public class Utils {
 		Robot robot = new Robot();
 		for(int i =0; i < 8; i++)
 		{
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_TAB);
 			robot.keyRelease(KeyEvent.VK_TAB);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 		
 		for(int i =0; i < 2; i++)
 		{
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 	}
 	
@@ -393,16 +393,16 @@ public class Utils {
 		Robot robot = new Robot();
 		for(int i =0; i < tab; i++)
 		{
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_TAB);
 			robot.keyRelease(KeyEvent.VK_TAB);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 		
 		for(int i =0; i < enter; i++)
 		{
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 	}
 	
@@ -411,24 +411,22 @@ public class Utils {
 		Robot robot = new Robot();
 		for(int i =0; i < tab; i++)
 		{
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_TAB);
 			robot.keyRelease(KeyEvent.VK_TAB);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 		
 		for(int i = 0; i < down; i++) {
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_DOWN);
 			robot.keyRelease(KeyEvent.VK_DOWN);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 		
 		for(int i =0; i < enter; i++)
 		{
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+			Utils.delay(1, "y");
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
-			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
 	}
 }

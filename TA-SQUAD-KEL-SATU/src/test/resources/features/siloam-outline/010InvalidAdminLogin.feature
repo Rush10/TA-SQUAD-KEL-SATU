@@ -16,6 +16,6 @@ Feature: Invalid Sales Login
   Examples: 
   |username|password|
 	|manda|manda@passw0rd|
-	|Admindika|d1k4@passw0rd|
+	|AdminDika|d1k4@passw0rd|
 	|admindika|d1k4@|
 	

@@ -37,6 +37,7 @@ public class TestTidakInputData {
 
 	@When("Siloam305001 Sales tekan tombol simpan data invalid")
 	public void siloam305001_sales_tekan_tombol_simpan_data_invalid() {
+		inputDataPage.clickInputDataMenu();
 		inputDataPage.clickSubmit();
 		extentTest.log(LogStatus.PASS, "Siloam305-001 Sales tekan tombol simpan data invalid");
 	}
