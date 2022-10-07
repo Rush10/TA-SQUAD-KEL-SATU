@@ -30,11 +30,12 @@ public class TandaTanganDigitalOutlineHooks {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-ttd-digital-outline-outline.html");
 	private static SiloamTTDDigital[] tests = SiloamTTDDigital.values();	
+	private static final int[] DATA_OUTLINE = {9,28,56,70,56,5,10,10,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};//semua
+
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};//semua delete & upload valid invalid
 //	private static final int[] DATA_OUTLINE = {9,5,10,10,5,1,1,1,1,1,1,1,1,1,1};//semua adit
-	private static final int[] DATA_OUTLINE = {9,28,56,70,56,5,10,10,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};//semua
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1};//semua adit
-	
+//	private static final int[] DATA_OUTLINE = {1};//submit
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1};//hapus
 //	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1}; //upload valid
 //	private static final int[] DATA_OUTLINE = {1,1,1,1}; ////upload invalid

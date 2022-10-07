@@ -112,6 +112,9 @@ private WebDriver driver;
 	@FindBy(xpath = "//a[@class='nav-link active']//span[@class='d-sm-block d-none']")
 	private WebElement lblTTDDigitalTitle;
 	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/h1[1]")
+	private WebElement lblPageHeader;
+	
 	@FindBy(xpath = "//h4[@class='panel-title'][normalize-space()='Upload Dokumen']")
 	private WebElement lblUploadDokumenTitle;
 	
@@ -144,6 +147,9 @@ private WebDriver driver;
 	
 	@FindBy(xpath = "//div[@role='alert']")
 	private WebElement lblAlert;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]")
+	private WebElement lblAlertSimpanData;
 	
 	@FindBy(xpath = "//button[@id='btnSaveFoto']")
 	private WebElement btnSaveTTDDigital;
@@ -259,6 +265,10 @@ private WebDriver driver;
 		return element.getAttribute("src");
 	}
 	
+	public String getFormInputTitle() {
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblPageHeader);
+	}
+	
 	public void clickOK() {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
@@ -336,8 +346,11 @@ private WebDriver driver;
 	}
 	
 	public String getMsgAlert() {
-		//berhasil didelete
 		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.lblAlert);
+	}
+	
+	public String getAlertSimpanData() {
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, this.lblAlertSimpanData);
 	}
 	
 	public String getModalTitle() {

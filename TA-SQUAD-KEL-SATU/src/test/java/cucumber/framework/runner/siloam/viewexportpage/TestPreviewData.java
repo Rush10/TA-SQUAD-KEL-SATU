@@ -36,15 +36,15 @@ public class TestPreviewData {
 	private static ExtentTest extentTest;
 	private ViewExportPage viewExportPage = new ViewExportPage();
 	
-	public TestPreviewData() throws IOException {
+	public TestPreviewData(){
 		driver = ViewExportHooksOutline.driver;
 		extentTest = ViewExportHooksOutline.extentTest;
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf.pdf");
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf (1).pdf");
 	}
 	
 	@Given("Siloam050 Admin Sudah Login Dan Berada Di Halaman View Data")
-	public void siloam050_admin_sudah_login_dan_berada_di_halaman_view_data() {
+	public void siloam050_admin_sudah_login_dan_berada_di_halaman_view_data() throws IOException {
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf.pdf");
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf (1).pdf");
 		driver.get(Constants.URL_SILOAM);
 		viewExportPage.login(Constants.USERNAME_ADMIN_SILOAM,Constants.PASSWORD_ADMIN_SILOAM);
 	    viewExportPage.btnLogin();
@@ -76,6 +76,9 @@ public class TestPreviewData {
 	public void siloam050_validasi_data_pada_dokumen_pdf() {
 		String pathSatu = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf.pdf";
 		String pathDua = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\mpdf (1).pdf";
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		assertFalse(Utils.getFileSize(pathSatu) == Utils.getFileSize(pathDua));
 		extentTest.log(LogStatus.PASS, "Siloam025 Siloam030 Validasi An uncaught Exception was encountered");
 	}

@@ -75,7 +75,7 @@ public class TestInvalidEditSatuKombinasiKosong {
 
 	@When("Siloam125 Sales Tekan Tombol Edit")
 	public void siloam125_sales_tekan_tombol_edit() {
-		driver.get("https://dev.ptdika.com/siloam/sales/input/update/318");
+		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_EDIT_INVALID);
 		ttdDigital.btnEdit();
 		extentTest.log(LogStatus.PASS, "Siloam125 Sales Tekan Tombol Edit");
 	}

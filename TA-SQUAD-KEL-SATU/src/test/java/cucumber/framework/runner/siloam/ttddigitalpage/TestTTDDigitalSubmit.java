@@ -32,8 +32,7 @@ public class TestTTDDigitalSubmit {
 		driver.get(Constants.URL_SILOAM);
 		ttdDigital.login(Constants.USERNAME_SALES_SILOAM, Constants.PASSWORD_SALES_SILOAM);
 		ttdDigital.btnLogin();
-//		driver.get("https://dev.ptdika.com/siloam/sales/input/ttd_digital2/315");
-		driver.get("https://dev.ptdika.com/siloam/sales/input/ttd_digital2/575");
+		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_SUBMIT);
 		extentTest.log(LogStatus.PASS, "Siloam220 Sales Sudah Login");
 	    // https://dev.ptdika.com/siloam/sales/input/ttd_digital2/315
 	}
@@ -54,8 +53,11 @@ public class TestTTDDigitalSubmit {
 
 	@Then("Siloam220 Validasi Sales Submit Berhasil")
 	public void siloam220_validasi_sales_submit_berhasil() {
-	    String txtExpected = "TTD Digital Berhasil"; 
-	    assertTrue(ttdDigital.getMsgAlert().contains(txtExpected));
+		String txtExpectedTitle = "Form Input";
+//		assertTrue(ttdDigital.getFormInputTitle().contains(txtExpectedTitle));
+	    String txtExpectedMsg = "TTD Digital Berhasil"; 
+//	    assertTrue(ttdDigital.getAlertSimpanData().contains(txtExpectedMsg));
+//	    assertTrue(ttdDigital.getMsgAlert().contains(txtExpectedMsg));
 	    extentTest.log(LogStatus.PASS, "Siloam220 Validasi Sales Submit Berhasil");
 	}
 		

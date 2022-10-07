@@ -31,7 +31,8 @@ public class ViewExportHooksOutline {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/siloam/extentreport/siloam-view-export-outline.html");
 	private static SiloamViewExport[] tests = SiloamViewExport.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,3,1};
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1};
+//	private static final int[] DATA_OUTLINE = {1,1,1};
 	private String testReport = "";
 	
 	@Before

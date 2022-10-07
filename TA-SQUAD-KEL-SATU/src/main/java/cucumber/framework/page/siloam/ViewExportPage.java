@@ -134,6 +134,70 @@ public class ViewExportPage extends LoginPage{
 	@FindBy(xpath = "//b[normalize-space()='DIKA | SILOAM']")
 	private WebElement txtPageLogin;
 	
+	@FindBy(xpath = "//input[@name='uploadfile']")
+	private WebElement chooseFileSatu;
+	
+	@FindBy(xpath = "//input[@name='uploadfile2']")
+	private WebElement chooseFileDua;
+	
+	@FindBy(xpath = "//input[@value='OK']")
+	private WebElement okCompress;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[4]/span[1]")
+	private WebElement lblResult;
+	
+	public String txtSrcPreview(WebElement element) {
+		//	src="https://dev.ptdika.com/siloam/new_assets/noimage.png"
+		return element.getAttribute("src");
+	}
+	
+	public String txtHrefPreview(WebElement element) {
+		//	src="https://dev.ptdika.com/siloam/new_assets/noimage.png"
+		return element.getAttribute("href");
+	}
+	
+	
+	public WebElement getFaskesAwal() {		
+		return this.btnFaskesAwal;
+	}
+	
+	public WebElement getFaskesTujuan() {		
+		return this.btnFaskesTujuan;
+	}
+	
+	public void rightClickFaskesAwal() {
+		Utils.rightClick(getFaskesAwal(), driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void rightClickFaskesTujuan() {
+		Utils.rightClick(getFaskesTujuan(), driver);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}	
+	
+	public String txtResult() {
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+		return Utils.driverWaitTxt(driver, Constants.TIMEOUT, lblResult);
+	}
+	
+	
+	public void btnOK()
+	{
+		this.okCompress.click();
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void inputChooseFileSatu(String pathSatu)
+	{
+		this.chooseFileSatu.sendKeys(pathSatu);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void inputChooseFileDua(String pathDua)
+	{
+		this.chooseFileDua.sendKeys(pathDua);
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
+	}
 	
 	public void filter(String start, String end)
 	{

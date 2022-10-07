@@ -1,6 +1,11 @@
 package cucumber.framework.runner.siloam.viewexportpage;
 
 
+import static org.testng.Assert.assertTrue;
+
+import java.awt.AWTException;
+import java.io.IOException;
+
 /*
 created_by : Adit
 created_date : 30/09/2022
@@ -18,6 +23,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import cucumber.framework.constant.Constants;
 import cucumber.framework.page.siloam.ViewExportPage;
+import cucumber.framework.utils.Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,6 +33,7 @@ public class TestFaskesAwal {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private ViewExportPage viewExportPage = new ViewExportPage();
+	private String getNamePic;
 	
 	public TestFaskesAwal() {
 		driver = ViewExportHooksOutline.driver;
@@ -40,27 +47,46 @@ public class TestFaskesAwal {
 	    viewExportPage.btnLogin();
 	    viewExportPage.btnViewExport();
 	    
-	    String startDate = "2022-09-14";
-	    String endDate = "2022-09-18";
+	    String startDate = "2022-10-07";
+	    String endDate = "2022-10-07";
 	    
 	    viewExportPage.filter(startDate,endDate);
 	    extentTest.log(LogStatus.PASS, "Siloam055 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter");
 	}
 
 	@When("Siloam055 Admin Tekan Link Faskes Awal")
-	public void siloam055_admin_tekan_link_faskes_awal() {
-		viewExportPage.btnFaskesAwal();
+	public void siloam055_admin_tekan_link_faskes_awal() throws IOException, AWTException {
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		
-//		Actions actions = new Actions(driver);
-//		WebElement elementLocator = driver.findElement(By.cssSelector("img[src='https://dev.ptdika.com/siloam/upload/dokumen/350/350_Before_c89e27a00e06626438c07e03607a94ed.png']"));
-//		actions.contextClick(elementLocator).perform();
+		String txtSrc = viewExportPage.txtHrefPreview(viewExportPage.getFaskesAwal());
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePic = arrOfStr[arrOfStr.length-1];
+//		this.getNamePic = txtSrc.substring(txtSrc.length()-46,txtSrc.length());
+		System.out.println(this.getNamePic);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePic);
+		viewExportPage.rightClickFaskesAwal();
+		
+		Utils.tabEnterDown(0, 4, 2);
 		
 		extentTest.log(LogStatus.PASS, "Siloam055 Admin Tekan Link Faskes Awal");
 	}
 
 	@Then("Siloam055 Validasi Gambar Faskes Awal")
 	public void siloam055_validasi_gambar_faskes_awal() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePic;
+		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Awal.jpg";
+		
+		driver.get(Constants.URL_IMG_ONLINE);
+		
+		viewExportPage.inputChooseFileSatu(pathWebPicBefore);
+		viewExportPage.inputChooseFileDua(pathRealPicBefore);
+		viewExportPage.btnOK();
+		
+		int charSpace = viewExportPage.txtResult().indexOf(" "); 
+		String sub = viewExportPage.txtResult().substring(0,charSpace+1);
+		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
+		
+		assertTrue(dNum > 90);
 	}
 }

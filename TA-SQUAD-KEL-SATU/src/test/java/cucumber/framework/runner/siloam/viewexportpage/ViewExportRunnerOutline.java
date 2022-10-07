@@ -19,8 +19,8 @@ features = {
 		"src/test/resources/features/siloam-outline/040AdminMenekanView.feature",
 		"src/test/resources/features/siloam-outline/045AdminMenekanTombolBack.feature",
 		"src/test/resources/features/siloam-outline/050AdminMenekanPreviewData.feature",			
-//		"src/test/resources/features/siloam-outline/055AdminMenekanLinkFotoFaskesAwal.feature",
-//		"src/test/resources/features/siloam-outline/060AdminMenekanLinkFotoFaskesTujuan.feature",
+		"src/test/resources/features/siloam-outline/055AdminMenekanLinkFotoFaskesAwal.feature",
+		"src/test/resources/features/siloam-outline/060AdminMenekanLinkFotoFaskesTujuan.feature",
 		"src/test/resources/features/siloam-outline/065AdminMenekanLinkPDFAgreement.feature",
 		"src/test/resources/features/siloam-outline/075AdminMenekanTombolExportInvalid.feature",
 		"src/test/resources/features/siloam-outline/080AdminMenekanTombolDownload.feature",
@@ -29,8 +29,8 @@ features = {
 		},
 glue = "cucumber.framework.runner.siloam.viewexportpage",
 monochrome=true,
-plugin = {"pretty","html:target/siloamoutline/htmlreport/ViewExportPageInvalid.html",
-		"json:target/siloamoutline/jsonreport/ViewExportPageInvalid.json",
-		"junit:target/siloamoutline/junitreport/ViewExportPageInvalid.xml"})
+plugin = {"pretty","html:target/siloam/htmlreport/ViewExportPageInvalid.html",
+		"json:target/siloam/jsonreport/ViewExportPageInvalid.json",
+		"junit:target/siloam/junitreport/ViewExportPageInvalid.xml"})
 
 public class ViewExportRunnerOutline extends AbstractTestNGCucumberTests {}

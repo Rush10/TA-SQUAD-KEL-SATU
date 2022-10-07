@@ -22,6 +22,9 @@ public class TestTTDDigitalFiturFileUpload {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private static TandaTanganDigitalPage ttdPage = new TandaTanganDigitalPage();
+	private String getNamePicBefore;
+	private String getNamePicAfter;
+	private String getNamePicTTD;
 	
 	public TestTTDDigitalFiturFileUpload() {
 		driver = TandaTanganDigitalOutlineHooks.driver;
@@ -47,9 +50,11 @@ public class TestTTDDigitalFiturFileUpload {
 		//pake split slash
 		//https://dev.ptdika.com/siloam/upload/dokumen/570/570_Before_d6afc10be16d20986b0306d476a4b70c.jpg
 		String txtSrc = ttdPage.txtSrcPreview(ttdPage.getPreviewUploadDokumenBefore());
-		String getNamePic = txtSrc.substring(txtSrc.length()-47,txtSrc.length());
-		System.out.println(getNamePic);
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePicBefore = arrOfStr[arrOfStr.length-1];
+//		String getNamePic = txtSrc.substring(txtSrc.length()-47,txtSrc.length());
+		System.out.println(this.getNamePicBefore);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicBefore);
 		
 		//pake wget
 		ttdPage.rightClickPreviewUploadDokumenBefore();
@@ -60,7 +65,7 @@ public class TestTTDDigitalFiturFileUpload {
 
 	@Then("Siloam215 Validasi Gambar Before Fitur File Upload")
 	public void siloam215_validasi_gambar_before_fitur_file_upload() {
-		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_Before_d6afc10be16d20986b0306d476a4b70c.jpg";
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicBefore;
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Awal.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
@@ -69,9 +74,10 @@ public class TestTTDDigitalFiturFileUpload {
 		ttdPage.fileUploadImg2(pathRealPicBefore);
 		ttdPage.clickBtnOKImgOnline();
 		
-		//pake trims
-		String sub = ttdPage.txtResult().toString().substring(0,4);
+		int charSpace = ttdPage.txtResult().indexOf(" "); 
+		String sub = ttdPage.txtResult().substring(0,charSpace+1);
 		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
 		
 		assertTrue(dNum > 90);
 		
@@ -95,9 +101,11 @@ public class TestTTDDigitalFiturFileUpload {
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
 		
 		String txtSrc = ttdPage.txtSrcPreview(ttdPage.getPreviewUploadDokumenAfter());
-		String getNamePic = txtSrc.substring(txtSrc.length()-46,txtSrc.length());
-		System.out.println(getNamePic);
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePicAfter = arrOfStr[arrOfStr.length-1];
+//		String getNamePic = txtSrc.substring(txtSrc.length()-46,txtSrc.length());
+		System.out.println(this.getNamePicAfter);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicAfter);
 		
 		ttdPage.rightClickPreviewUploadDokumenAfter();
 		Utils.tabEnterDown(0, 8, 2);
@@ -107,7 +115,7 @@ public class TestTTDDigitalFiturFileUpload {
 
 	@Then("Siloam215 Validasi Gambar After Fitur File Upload")
 	public void siloam215_validasi_gambar_after_fitur_file_upload() {
-		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_After_ab7af79d2bc370e61ac7ba8fe750dd16.jpg";
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicAfter;
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
@@ -116,8 +124,10 @@ public class TestTTDDigitalFiturFileUpload {
 		ttdPage.fileUploadImg2(pathRealPicBefore);
 		ttdPage.clickBtnOKImgOnline();
 		
-		String sub = ttdPage.txtResult().toString().substring(0,4);
+		int charSpace = ttdPage.txtResult().indexOf(" "); 
+		String sub = ttdPage.txtResult().substring(0,charSpace+1);
 		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
 		
 		assertTrue(dNum > 90);
 		
@@ -142,9 +152,11 @@ public class TestTTDDigitalFiturFileUpload {
 		Utils.scrollByVisibleElement(ttdPage.getlblUploadDokumenTitle(), driver);
 		
 		String txtSrc = ttdPage.txtSrcPreview(ttdPage.getPreviewUploadDokumenTTD());
-		String getNamePic = txtSrc.substring(txtSrc.length()-44,txtSrc.length());
-		System.out.println(getNamePic);
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePicTTD = arrOfStr[arrOfStr.length-1];
+//		String getNamePic = txtSrc.substring(txtSrc.length()-44,txtSrc.length());
+		System.out.println(this.getNamePicTTD);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicTTD);
 		
 		ttdPage.rightClickPreviewUploadDokumenTTD();
 		Utils.tabEnterDown(0, 8, 2);
@@ -154,7 +166,7 @@ public class TestTTDDigitalFiturFileUpload {
 
 	@Then("Siloam215 Validasi Gambar TTD Digital Fitur File Upload")
 	public void siloam215_validasi_gambar_ttd_digital_fitur_file_upload() {
-		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_TTD_3c7c831a6ad69474014d79b3b64acb03.jpg";
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicTTD;
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto TTD.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
@@ -163,8 +175,10 @@ public class TestTTDDigitalFiturFileUpload {
 		ttdPage.fileUploadImg2(pathRealPicBefore);
 		ttdPage.clickBtnOKImgOnline();
 		
-		String sub = ttdPage.txtResult().toString().substring(0,4);
+		int charSpace = ttdPage.txtResult().indexOf(" "); 
+		String sub = ttdPage.txtResult().substring(0,charSpace+1);
 		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
 		
 		assertTrue(dNum > 90);
 		

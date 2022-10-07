@@ -87,47 +87,6 @@ private WebDriver driver;
 	private WebElement inputDataTitle;
 	
 	//INPUT DATA
-//	public void inputData(String nama, String nomBpjs,String nomKtp, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
-//		Robot robot = new Robot();
-//		
-//		if(nama != "") {
-//			clearName();
-//			inputName(nama);
-//		}
-//		if(nomBpjs != "") {
-//			clearNomBpjs();
-//			inputNomBPJS(nomBpjs);
-//		} 
-//		if(nomKtp != "") {
-//			clearNomKtp();
-//			inputNomKtp(nomKtp);
-//		}
-//		if(address != "") {
-//			clearAddress();
-//			inputAddress(address);
-//		}
-//		if(kotaKTP != "") {
-//			clickKotaKtp();
-//			inputKotaKTP(kotaKTP);
-//			robot.keyPress(KeyEvent.VK_ENTER);
-//			robot.keyRelease(KeyEvent.VK_ENTER);
-//		}
-//		if(faskesAwal != "") {
-//			clearFaskesAwal();
-//			inputFaskesAwal(faskesAwal);
-//		}
-//		if(faskesTujuan != "") {
-//			clickFaskesTujuan();
-//			inputFaskesTujuan(faskesTujuan);
-//			robot.keyPress(KeyEvent.VK_ENTER);
-//			robot.keyRelease(KeyEvent.VK_ENTER);
-//		}
-//		if(alasan != "") {
-//			clearAlasan();
-//			inputAlasan(alasan);
-//		}
-//		
-//	}
 	
 	public void inputData(String nama, String nomBpjs,String nomKtp, String address, String kotaKTP, String faskesAwal, String faskesTujuan, String alasan) throws AWTException {
 		Robot robot = new Robot();

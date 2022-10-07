@@ -74,7 +74,7 @@ public class TestInvalidEditLimaKombinasiKosong {
 
 	@When("Siloam145 Sales Tekan Tombol Edit")
 	public void siloam145_sales_tekan_tombol_edit() {
-		driver.get("https://dev.ptdika.com/siloam/sales/input/update/318");
+		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_EDIT_INVALID);
 		ttdDigital.btnEdit();
 		extentTest.log(LogStatus.PASS, "Siloam145 Sales Tekan Tombol Edit");
 	}
@@ -134,10 +134,6 @@ public class TestInvalidEditLimaKombinasiKosong {
 		String txtExpectedFaskesAwal = "Field Faskes Asal Harus Diisi!";
 		String txtExpectedAlasan = "Field Alasan Harus Diisi!";
 		
-//		if(this.isNamaEmpty) {
-//			assertTrue(ttdDigital.msgSuccessUpdate().contains(txtExpectedNama));
-//			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-//		} 
 		if (this.isBpjsEmpty) {
 			assertTrue(ttdDigital.msgInvalidNoBPJS().contains(txtExpectedNoBPJS));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
@@ -151,18 +147,10 @@ public class TestInvalidEditLimaKombinasiKosong {
 			assertTrue(ttdDigital.msgInvalidAlamat().contains(txtExpectedAlamat));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
-//		if (this.isKotaKTPEmpty) {
-//			assertTrue(ttdDigital.msgSuccessUpdate().contains(txtExpectedKotaKTP));
-//			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-//		}
 		if (this.isFaskesAwalEmpty) {
 			assertTrue(ttdDigital.msgInvalidFaskesAwal().contains(txtExpectedFaskesAwal));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		}
-//		if (this.isFaskesTujuanEmpty) {
-//			assertTrue(ttdDigital.msgSuccessUpdate().contains(txtExpectedFaskesTujuan));
-//			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
-//		}
 		if (this.isAlasanEmpty) {
 			assertTrue(ttdDigital.msgInvalidAlasan().contains(txtExpectedAlasan));
 			Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);

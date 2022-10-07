@@ -26,6 +26,9 @@ public class TestTTDDigitalFiturDocument {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private static TandaTanganDigitalPage ttdDigital = new TandaTanganDigitalPage();
+	private String getNamePicBefore;
+	private String getNamePicAfter;
+	private String getNamePicTTD;
 	
 	public TestTTDDigitalFiturDocument() {
 		driver = TandaTanganDigitalOutlineHooks.driver;
@@ -48,9 +51,11 @@ public class TestTTDDigitalFiturDocument {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		
 		String txtSrc = ttdDigital.txtSrcPreview(ttdDigital.getPreviewDokumenBefore());
-		String getNamePic = txtSrc.substring(txtSrc.length()-47,txtSrc.length());
-		System.out.println(getNamePic);
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePicBefore = arrOfStr[arrOfStr.length-1];
+//		String getNamePic = txtSrc.substring(txtSrc.length()-47,txtSrc.length());
+		System.out.println(this.getNamePicBefore);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicBefore);
 		
 		ttdDigital.rightClickPreviewDokumenBefore();
 		Utils.tabEnterDown(0, 8, 2);
@@ -59,7 +64,7 @@ public class TestTTDDigitalFiturDocument {
 
 	@Then("Siloam210 Validasi Gambar Before Fitur Document")
 	public void siloam210_validasi_gambar_before_fitur_document() throws IOException {
-		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_Before_d6afc10be16d20986b0306d476a4b70c.jpg";
+		String pathWebPicBefore = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicBefore;
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Awal.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
@@ -68,8 +73,10 @@ public class TestTTDDigitalFiturDocument {
 		ttdDigital.fileUploadImg2(pathRealPicBefore);
 		ttdDigital.clickBtnOKImgOnline();
 		
-		String sub = ttdDigital.txtResult().toString().substring(0,4);
+		int charSpace = ttdDigital.txtResult().indexOf(" "); 
+		String sub = ttdDigital.txtResult().substring(0,charSpace+1);
 		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
 		
 		assertTrue(dNum > 90);
 		extentTest.log(LogStatus.PASS, "Siloam210 Validasi Gambar Before Fitur Document");
@@ -92,9 +99,11 @@ public class TestTTDDigitalFiturDocument {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		
 		String txtSrc = ttdDigital.txtSrcPreview(ttdDigital.getPreviewDokumenAfter());
-		String getNamePic = txtSrc.substring(txtSrc.length()-46,txtSrc.length());
-		System.out.println(getNamePic);
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePicAfter = arrOfStr[arrOfStr.length-1];
+//		String getNamePic = txtSrc.substring(txtSrc.length()-46,txtSrc.length());
+		System.out.println(this.getNamePicAfter);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicAfter);
 		
 		ttdDigital.rightClickPreviewDokumenAfter();
 		Utils.tabEnterDown(0, 8, 2);
@@ -103,7 +112,7 @@ public class TestTTDDigitalFiturDocument {
 
 	@Then("Siloam210 Validasi Gambar After Fitur Document")
 	public void siloam210_validasi_gambar_after_fitur_document() throws IOException {
-		String pathWebPicAfter = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_After_ab7af79d2bc370e61ac7ba8fe750dd16.jpg";
+		String pathWebPicAfter = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicAfter;
 		String pathRealPicAfter = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
@@ -112,8 +121,10 @@ public class TestTTDDigitalFiturDocument {
 		ttdDigital.fileUploadImg2(pathRealPicAfter);
 		ttdDigital.clickBtnOKImgOnline();
 		
-		String sub = ttdDigital.txtResult().toString().substring(0,4);
+		int charSpace = ttdDigital.txtResult().indexOf(" "); 
+		String sub = ttdDigital.txtResult().substring(0,charSpace+1);
 		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
 		
 		assertTrue(dNum > 90);
 		extentTest.log(LogStatus.PASS, "Siloam210 Validasi Gambar After Fitur Document");
@@ -136,9 +147,11 @@ public class TestTTDDigitalFiturDocument {
 		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		
 		String txtSrc = ttdDigital.txtSrcPreview(ttdDigital.getPreviewDokumenTTD());
-		String getNamePic = txtSrc.substring(txtSrc.length()-44,txtSrc.length());
-		System.out.println(getNamePic);
-		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + getNamePic);
+		String[] arrOfStr = txtSrc.split("/");
+		this.getNamePicTTD = arrOfStr[arrOfStr.length-1];
+//		String getNamePic = txtSrc.substring(txtSrc.length()-44,txtSrc.length());
+		System.out.println(this.getNamePicTTD);
+		Utils.deleteFile("C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicTTD);
 		
 		ttdDigital.rightClickPreviewDokumenTTD();
 		Utils.tabEnterDown(0, 8, 2);
@@ -147,7 +160,7 @@ public class TestTTDDigitalFiturDocument {
 
 	@Then("Siloam210 Validasi Gambar TTD Digital Fitur Document")
 	public void siloam210_validasi_gambar_ttd_digital_fitur_document() throws IOException {
-		String pathWebPicTTD = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\570_TTD_3c7c831a6ad69474014d79b3b64acb03.jpg";
+		String pathWebPicTTD = "C:\\Users\\" + Constants.USER_COMPUTER_NAME + "\\Downloads\\" + this.getNamePicTTD;
 		String pathRealPicTTD = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto TTD.jpg";;
 		
 		driver.get(Constants.URL_IMG_ONLINE);
@@ -156,8 +169,10 @@ public class TestTTDDigitalFiturDocument {
 		ttdDigital.fileUploadImg2(pathRealPicTTD);
 		ttdDigital.clickBtnOKImgOnline();
 		
-		String sub = ttdDigital.txtResult().toString().substring(0,4);
+		int charSpace = ttdDigital.txtResult().indexOf(" "); 
+		String sub = ttdDigital.txtResult().substring(0,charSpace+1);
 		double dNum = Double.parseDouble(sub);
+		System.out.println(dNum);
 		
 		assertTrue(dNum > 90);
 		extentTest.log(LogStatus.PASS, "Siloam210 Validasi Gambar After Fitur Document");
