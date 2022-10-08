@@ -10,7 +10,11 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 features = {
-		"src/test/resources/features/siloam-outline/100UpdateDataSalesSatuKombinasi.feature",
+		"src/test/resources/features/siloam-outline/101SalesHapusFileUploadBefore.feature",
+		"src/test/resources/features/siloam-outline/102SalesHapusFileUploadAfter.feature",
+		"src/test/resources/features/siloam-outline/103SalesHapusFileUploadTTD.feature",
+		
+		"src/test/resources/features/siloam-outline/104UpdateDataSalesSatuKombinasi.feature",
 		"src/test/resources/features/siloam-outline/105UpdateDataSalesDuaKombinasi.feature",
 		"src/test/resources/features/siloam-outline/110UpdateDataSalesTigaKombinasi.feature",
 		"src/test/resources/features/siloam-outline/115UpdateDataSalesEmpatKombinasi.feature",
@@ -26,11 +30,8 @@ features = {
 		
 		"src/test/resources/features/siloam-outline/210TTDDigitalFiturDocument.feature",
 		"src/test/resources/features/siloam-outline/215TTDDigitalFiturFileUpload.feature",
-		"src/test/resources/features/siloam-outline/220TTDDigitalMenekanSubmit.feature",
 		
-		"src/test/resources/features/siloam-outline/370SalesHapusFileUploadBefore.feature",
-		"src/test/resources/features/siloam-outline/375SalesHapusFileUploadAfter.feature",
-		"src/test/resources/features/siloam-outline/380SalesHapusFileUploadTTD.feature",
+		"src/test/resources/features/siloam-outline/220TTDDigitalMenekanSubmit.feature",
 		
 		"src/test/resources/features/siloam-outline/385SalesUploadDokumenBeforeValid.feature",
 		"src/test/resources/features/siloam-outline/390SalesUploadDokumenAfterValid.feature",

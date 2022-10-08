@@ -57,24 +57,24 @@ public class TestTTDPageKombinasiSatu {
 		this.isAlasanEmpty = true;
 	}
 	
-	@When("Siloam100 Sales Mengakses Halaman Website")
-	public void siloam100_sales_mengakses_halaman_website() {
-		driver.get(Constants.URL_SILOAM);
-		ttdPage.login(Constants.USERNAME_SALES_SILOAM,Constants.PASSWORD_SALES_SILOAM );
-		ttdPage.btnLogin();
-		driver.get(Constants.URL_SILOAM_TTD_DIGITAL_EDIT_VALID);
-		extentTest.log(LogStatus.PASS, "Siloam100 Sales Mengakses Halaman Website");
-	}
-	
-	@Then("Siloam100 Validasi sales masuk ke halaman ttd digital")
-	public void siloam100_sales_sudah_login_dan_berada_di_halaman_ttd_digital() {
-		String txtExpectedTitle = "TTD Digital";
-		assertTrue(ttdPage.getTTDDigitalTitle().contains(txtExpectedTitle));
-		extentTest.log(LogStatus.PASS, "Siloam100 Validasi sales masuk ke halaman ttd digital");
-	}
+//	@When("Siloam100 Sales Mengakses Halaman Website")
+//	public void siloam100_sales_mengakses_halaman_website() {
+//		driver.get(Constants.URL_SILOAM);
+//		ttdPage.login(Constants.USERNAME_SALES_SILOAM,Constants.PASSWORD_SALES_SILOAM );
+//		ttdPage.btnLogin();
+//		extentTest.log(LogStatus.PASS, "Siloam100 Sales Mengakses Halaman Website");
+//	}
+//	
+//	@Then("Siloam100 Validasi sales masuk ke halaman ttd digital")
+//	public void siloam100_sales_sudah_login_dan_berada_di_halaman_ttd_digital() {
+//		String txtExpectedTitle = "TTD Digital";
+//		assertTrue(ttdPage.getTTDDigitalTitle().contains(txtExpectedTitle));
+//		extentTest.log(LogStatus.PASS, "Siloam100 Validasi sales masuk ke halaman ttd digital");
+//	}
 
 	@When("Siloam100 Sales Tekan Tombol Edit")
 	public void siloam100_sales_tekan_tombol_edit() {
+	   driver.get(Constants.URL_SILOAM_TTD_DIGITAL_EDIT_VALID);
 	   ttdPage.btnEdit();
 	   extentTest.log(LogStatus.PASS, "Siloam100 Sales Tekan Tombol Edit");
 	}

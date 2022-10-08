@@ -47,8 +47,8 @@ public class TestFaskesAwal {
 	    viewExportPage.btnLogin();
 	    viewExportPage.btnViewExport();
 	    
-	    String startDate = "2022-10-07";
-	    String endDate = "2022-10-07";
+	    String startDate = "2022-10-08";
+	    String endDate = "2022-10-08";
 	    
 	    viewExportPage.filter(startDate,endDate);
 	    extentTest.log(LogStatus.PASS, "Siloam055 Admin Berada Di Halaman View Export Dan Sudah Tekan Filter");

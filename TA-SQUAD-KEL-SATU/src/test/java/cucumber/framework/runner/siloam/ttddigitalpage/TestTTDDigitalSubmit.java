@@ -53,11 +53,11 @@ public class TestTTDDigitalSubmit {
 
 	@Then("Siloam220 Validasi Sales Submit Berhasil")
 	public void siloam220_validasi_sales_submit_berhasil() {
-		String txtExpectedTitle = "Form Input";
+//		String txtExpectedTitle = "Form Input";
 //		assertTrue(ttdDigital.getFormInputTitle().contains(txtExpectedTitle));
-	    String txtExpectedMsg = "TTD Digital Berhasil"; 
-//	    assertTrue(ttdDigital.getAlertSimpanData().contains(txtExpectedMsg));
+//	    String txtExpectedMsg = "TTD Digital Berhasil"; 
 //	    assertTrue(ttdDigital.getMsgAlert().contains(txtExpectedMsg));
+//	    assertTrue(ttdDigital.getAlertSimpanData().contains(txtExpectedMsg));
 	    extentTest.log(LogStatus.PASS, "Siloam220 Validasi Sales Submit Berhasil");
 	}
 		
