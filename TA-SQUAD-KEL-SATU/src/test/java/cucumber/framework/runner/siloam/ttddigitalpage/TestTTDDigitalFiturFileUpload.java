@@ -69,6 +69,7 @@ public class TestTTDDigitalFiturFileUpload {
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Awal.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
+		Utils.scrollDownToButtom(driver);
 		
 		ttdPage.fileUploadImg1(pathWebPicBefore);
 		ttdPage.fileUploadImg2(pathRealPicBefore);
@@ -119,6 +120,7 @@ public class TestTTDDigitalFiturFileUpload {
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
+		Utils.scrollDownToButtom(driver);
 		
 		ttdPage.fileUploadImg1(pathWebPicBefore);
 		ttdPage.fileUploadImg2(pathRealPicBefore);
@@ -170,6 +172,7 @@ public class TestTTDDigitalFiturFileUpload {
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto TTD.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
+		Utils.scrollDownToButtom(driver);
 		
 		ttdPage.fileUploadImg1(pathWebPicBefore);
 		ttdPage.fileUploadImg2(pathRealPicBefore);

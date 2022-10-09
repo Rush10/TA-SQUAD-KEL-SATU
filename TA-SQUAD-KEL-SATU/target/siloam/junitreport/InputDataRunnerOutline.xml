@@ -1,257 +1,257 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="43" time="569.6">
-    <testcase classname="Sales Menekan Tombol Menu Input" name="Siloam299 Sales menekan tombol menu input" time="14.352">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="43" time="566.54">
+    <testcase classname="Sales Menekan Tombol Menu Input" name="Siloam299 Sales menekan tombol menu input" time="12.422">
         <system-out><![CDATA[When Siloam299 Sales login dan masuk ke halaman home........................passed
 And Siloam299 Sales tekan tombol menu input.................................passed
 Then Siloam299 Validasi judul halaman input.................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Valid Sales Input Data" name="Siloam300 Sales Input Data Valid" time="13.825">
-        <system-out><![CDATA[When Siloam300 Sales input data NB Test 4, 1324354657686, 6767676767676767, Jl.Test, Luwu Timur, Faskes Test, Meikarta, dan Test Alasan valid.passed
+    <testcase classname="Valid Sales Input Data" name="Siloam300 Sales Input Data Valid" time="13.471">
+        <system-out><![CDATA[When Siloam300 Sales input data NB Test 7, 1324354644467, 6767676767676767, Jl.Test, Luwu Timur, Faskes Test, Meikarta, dan Test Alasan valid.passed
 And Siloam300 Sales tekan tombol simpan data valid..........................passed
 Then Siloam300 Validasi pesan input data berhasil...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Tidak Input Data" name="Siloam305 Sales langsung menekan tombol simpan" time="2.772">
+    <testcase classname="Sales Tidak Input Data" name="Siloam305 Sales langsung menekan tombol simpan" time="2.596">
         <system-out><![CDATA[When Siloam305001 Sales tekan tombol simpan data invalid....................passed
 Then Siloam305001 Validasi pesan error isi input nama.......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Tidak Input Data" name="Siloam305 Sales input data karyawan kosong semua" time="11.167">
+    <testcase classname="Sales Tidak Input Data" name="Siloam305 Sales input data karyawan kosong semua" time="11.237">
         <system-out><![CDATA[When Siloam305002 Sales input data , , , , kota, , faskes, dan  valid.......passed
 And Siloam305002 Sales tekan tombol simpan data invalid.....................passed
 Then Siloam305002 Validasi pesan error isi input nama.......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Salah Format" name="Siloam310 Sales input data karyawan nomor BPJS kurang dari tiga belas angka" time="12.506">
+    <testcase classname="Sales Input Data Salah Format" name="Siloam310 Sales input data karyawan nomor BPJS kurang dari tiga belas angka" time="12.53">
         <system-out><![CDATA[When Siloam310001 Sales input data NB Test 3, 67676767676, 6767676767676767, Jl.Test, Luwu Timur, Faskes Test, Meikarta, dan Test Alasan nomor bpjs format invalid.passed
 And Siloam310001 Sales tekan tombol simpan data invalid.....................passed
 Then Siloam310001 Validasi pesan error nomor BPJS angka harus tiga belas....passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Salah Format" name="Siloam310 Sales input data karyawan nomor KTP angka kurang dari enam belas angka" time="12.411">
+    <testcase classname="Sales Input Data Salah Format" name="Siloam310 Sales input data karyawan nomor KTP angka kurang dari enam belas angka" time="12.43">
         <system-out><![CDATA[When Siloam310002 Sales input data NB Test 3, 6767676767676, 676767676767, Jl.Test, Luwu Timur, Faskes Test, Meikarta, dan Test Alasan nomor ktp format invalid.passed
 And Siloam310002 Sales tekan tombol simpan data invalid.....................passed
 Then Siloam310002 Validasi pesan error nomor KTP angka harus enam belas.....passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data BPJS Yang Sudah Ada" name="Siloam315 Sales input data karyawan nomor BPJS yang sudah ada" time="13.169">
+    <testcase classname="Sales Input Data BPJS Yang Sudah Ada" name="Siloam315 Sales input data karyawan nomor BPJS yang sudah ada" time="13.041">
         <system-out><![CDATA[When Siloam315 Sales input data NB, 6767676767677, 1212121212121212, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB nomor bpjs sudah ada.passed
 And Siloam315 Sales tekan tombol simpan data invalid........................passed
 Then Siloam315 Validasi pesan nomor BPJS sudah ada atau dipakai.............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong" time="13.461">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong" time="13.607">
         <system-out><![CDATA[When Siloam320 Sales input data , 6767676767677, 1212121212121212, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 2" time="13.289">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 2" time="13.348">
         <system-out><![CDATA[When Siloam320 Sales input data NB, , 1212121212121212, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 3" time="13.315">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 3" time="13.3">
         <system-out><![CDATA[When Siloam320 Sales input data NB, 6767676767677, , Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 4" time="13.73">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 4" time="14.13">
         <system-out><![CDATA[When Siloam320 Sales input data NB, 6767676767677, 1212121212121212, , Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 5" time="13.479">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 5" time="13.546">
         <system-out><![CDATA[When Siloam320 Sales input data NB, 6767676767677, 1212121212121212, Jl.Test NB, kota, Faskes Test NB, Meikarta, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 6" time="13.249">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 6" time="13.326">
         <system-out><![CDATA[When Siloam320 Sales input data NB, 6767676767677, 1212121212121212, Jl.Test NB, Luwu Timur, , Meikarta, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 7" time="12.185">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 7" time="12.211">
         <system-out><![CDATA[When Siloam320 Sales input data NB, 6767676767677, 1212121212121212, Jl.Test NB, Luwu Timur, Faskes Test NB, faskes, dan Test Alasan NB salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 8" time="13.681">
+    <testcase classname="Sales Input Data Satu Kombinasi Kosong" name="Siloam320 Sales input data karyawan satu kombinasi kosong 8" time="14.04">
         <system-out><![CDATA[When Siloam320 Sales input data NB, 6767676767677, 1212121212121212, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan  salah satu kosong.passed
 And Siloam320 Sales tekan tombol simpan data invalid........................passed
 Then Siloam320 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong" time="14.442">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong" time="14.524">
         <system-out><![CDATA[When Siloam325 Sales input data , , 1212121212121210, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 2" time="14.302">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 2" time="14.332">
         <system-out><![CDATA[When Siloam325 Sales input data , 6767676767678, , Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 3" time="13.273">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 3" time="13.309">
         <system-out><![CDATA[When Siloam325 Sales input data , 6767676767679, 1212121212121210, , Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 4" time="14.294">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 4" time="14.292">
         <system-out><![CDATA[When Siloam325 Sales input data , 6767676767680, 1212121212121210, Jl.Test NB, kota, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 5" time="14.189">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 5" time="14.277">
         <system-out><![CDATA[When Siloam325 Sales input data , 6767676767681, 1212121212121210, Jl.Test NB, Luwu Timur, , Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 6" time="13.242">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 6" time="13.176">
         <system-out><![CDATA[When Siloam325 Sales input data , 6767676767682, 1212121212121210, Jl.Test NB, Luwu Timur, Faskes Test NB, faskes, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 7" time="13.335">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 7" time="12.977">
         <system-out><![CDATA[When Siloam325 Sales input data , 6767676767683, 1212121212121220, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 8" time="14.223">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 8" time="13.957">
         <system-out><![CDATA[When Siloam325 Sales input data NB, , , Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 9" time="13.253">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 9" time="13.051">
         <system-out><![CDATA[When Siloam325 Sales input data NB, , 1212121212121220, , Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 10" time="14.301">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 10" time="14.097">
         <system-out><![CDATA[When Siloam325 Sales input data NB, , 1212121212121220, Jl.Test NB, kota, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 11" time="14.294">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 11" time="14.072">
         <system-out><![CDATA[When Siloam325 Sales input data NB, , 1212121212121220, Jl.Test NB, Luwu Timur, , Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 12" time="13.237">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 12" time="13.011">
         <system-out><![CDATA[When Siloam325 Sales input data NB, , 1212121212121220, Jl.Test NB, Luwu Timur, Faskes Test NB, faskes, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 13" time="13.326">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 13" time="13.117">
         <system-out><![CDATA[When Siloam325 Sales input data NB, , 1212121212121220, Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 14" time="13.238">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 14" time="13.084">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767690, , , Luwu Timur, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 15" time="14.268">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 15" time="14.159">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767691, , Jl.Test NB, kota, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 16" time="14.287">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 16" time="14.067">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767692, , Jl.Test NB, Luwu Timur, , Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 17" time="13.186">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 17" time="13.027">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767693, , Jl.Test NB, Luwu Timur, Faskes Test NB, faskes, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 18" time="13.224">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 18" time="13.087">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767694, , Jl.Test NB, Luwu Timur, Faskes Test NB, Meikarta, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 19" time="13.201">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 19" time="13.135">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767695, 1212121212121230, , kota, Faskes Test NB, Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 20" time="13.198">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 20" time="13.29">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767696, 1212121212121230, , Luwu Timur, , Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 21" time="12.122">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 21" time="12.11">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767697, 1212121212121230, , Luwu Timur, Faskes Test NB, faskes, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 22" time="15.117">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 22" time="14.775">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767698, 1212121212121230, , Luwu Timur, Faskes Test NB, Meikarta, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 23" time="14.421">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 23" time="14.447">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767699, 1212121212121230, Jl.Test NB, kota, , Meikarta, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 24" time="13.146">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 24" time="13.11">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767700, 1212121212121230, Jl.Test NB, kota, Faskes Test NB, faskes, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 25" time="13.23">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 25" time="13.224">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767701, 1212121212121230, Jl.Test NB, kota, Faskes Test NB, Meikarta, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 26" time="13.19">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 26" time="13.209">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767702, 1212121212121230, Jl.Test NB, Luwu Timur, , faskes, dan Test Alasan NB dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 27" time="13.188">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 27" time="13.486">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767703, 1212121212121240, Jl.Test NB, Luwu Timur, , Meikarta, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 28" time="12.12">
+    <testcase classname="Sales Input Data Dua Kombinasi Kosong" name="Siloam325 Sales input data karyawan dua kombinasi kosong 28" time="12.488">
         <system-out><![CDATA[When Siloam325 Sales input data NB, 6767676767704, 1212121212121240, Jl.Test NB, Luwu Timur, Faskes Test NB, faskes, dan  dua kosong.passed
 And Siloam325 Sales tekan tombol simpan data invalid........................passed
 Then Siloam325 Validasi pesan isi data......................................passed

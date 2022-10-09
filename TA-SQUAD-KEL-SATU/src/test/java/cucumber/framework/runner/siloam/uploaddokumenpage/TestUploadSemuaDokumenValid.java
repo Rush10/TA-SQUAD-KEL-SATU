@@ -79,6 +79,7 @@ public class TestUploadSemuaDokumenValid {
 	@Then("Siloam350002 Validasi judul halaman ttd digital")
 	public void siloam350002_validasi_judul_halaman_ttd_digital() {
 		String txtExpected = "TTD Digital";
+		Utils.delay(2, "y");
 		assertTrue(uploadDokumenPage.txtTitleTTDDigital().contains(txtExpected));
 		extentTest.log(LogStatus.PASS, "Siloam350002 Validasi judul halaman ttd digital");
 	}

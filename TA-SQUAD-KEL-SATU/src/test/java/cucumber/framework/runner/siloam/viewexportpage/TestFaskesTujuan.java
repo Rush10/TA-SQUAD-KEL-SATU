@@ -74,6 +74,7 @@ public class TestFaskesTujuan {
 		String pathRealPicTujuan = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Tujuan.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
+		Utils.scrollDownToButtom(driver);
 		
 		viewExportPage.inputChooseFileSatu(pathWebPicTujuan);
 		viewExportPage.inputChooseFileDua(pathRealPicTujuan);

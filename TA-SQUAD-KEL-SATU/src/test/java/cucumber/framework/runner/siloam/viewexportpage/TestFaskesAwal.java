@@ -77,6 +77,7 @@ public class TestFaskesAwal {
 		String pathRealPicBefore = System.getProperty("user.dir") + "\\data\\testing-file\\Upload Foto Faskes Awal.jpg";
 		
 		driver.get(Constants.URL_IMG_ONLINE);
+		Utils.scrollDownToButtom(driver);
 		
 		viewExportPage.inputChooseFileSatu(pathWebPicBefore);
 		viewExportPage.inputChooseFileDua(pathRealPicBefore);

@@ -25,14 +25,14 @@ public class Constants {
 	public static final String URL_SILOAM = "https://dev.ptdika.com/siloam/panel/login/";
 	public static final String URL_SILOAM_VIEW_ADMIN = "https://dev.ptdika.com/siloam/bd/export_data/do_view/350"; //do not change this
 	public static final String URL_SILOAM_VIEW_ADMIN_DUA = "https://dev.ptdika.com/siloam/bd/export_data/do_view/344"; //do not change this
-	public static final String URL_SILOAM_DATA_UPLOAD_DOC_VALID = "https://dev.ptdika.com/siloam/sales/input/upload/582"; //change this
+	public static final String URL_SILOAM_DATA_UPLOAD_DOC_VALID = "https://dev.ptdika.com/siloam/sales/input/upload/593"; //change this
 	public static final String URL_SILOAM_DATA_UPLOAD_DOC_INVALID = "https://dev.ptdika.com/siloam/sales/input/upload/583"; //do not change this
 	public static final String URL_SILOAM_TTD_DIGITAL_DELETE_AND_UPLOAD = "https://dev.ptdika.com/siloam/sales/input/ttd_digital2/569"; //do not change this
 	public static final String URL_SILOAM_TTD_DIGITAL_PREVIEW_UPLOAD_DOK = "https://dev.ptdika.com/siloam/sales/input/ttd_digital2/570"; //do not change this
 	public static final String URL_SILOAM_TTD_DIGITAL_EDIT_VALID = "https://dev.ptdika.com/siloam/sales/input/ttd_digital2/568"; //do not change this
 	public static final String URL_SILOAM_TTD_DIGITAL_EDIT_INVALID = "https://dev.ptdika.com/siloam/sales/input/ttd_digital/318"; //do not change this
 //	public static final String URL_SILOAM_TTD_DIGITAL_EDIT_INVALID = "https://dev.ptdika.com/siloam/sales/input/update/318"; //do not change this
-	public static final String URL_SILOAM_TTD_DIGITAL_SUBMIT = "https://dev.ptdika.com/siloam/sales/input/ttd_digital2/590"; //change this
+	public static final String URL_SILOAM_TTD_DIGITAL_SUBMIT = "https://dev.ptdika.com/siloam/sales/input/ttd_digital2/592"; //change this
 	
 	public static final String USERNAME_ADMIN_SILOAM = "admindika";
 	public static final String PASSWORD_ADMIN_SILOAM = "d1k4@passw0rd";

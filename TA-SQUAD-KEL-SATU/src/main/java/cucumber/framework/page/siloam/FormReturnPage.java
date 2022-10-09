@@ -46,10 +46,10 @@ private WebDriver driver;
 	@FindBy(xpath = "//td[normalize-space()='14']")
 	private WebElement pilihTanggalStart;
 	
-	@FindBy(xpath = "//td[@class='day'][normalize-space()='9']")
+	@FindBy(xpath = "//td[@class='day'][normalize-space()='12']")
 	private WebElement pilihTanggalStartInvalidPending;
 	
-	@FindBy(xpath = "//td[normalize-space()='11']")
+	@FindBy(xpath = "//td[normalize-space()='15']")
 	private WebElement pilihTanggalEndInvalidPending;
 	
 	@FindBy(xpath = "//td[normalize-space()='17']")
@@ -489,6 +489,7 @@ private WebDriver driver;
 //INVALID FILTER
 	public void pilihStartEndDateInvalidPending()
 	{
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		this.btnStartDate();
 		this.btnPilihTanggalStartInvalidPending();
 		this.btnEndDate();
@@ -499,6 +500,7 @@ private WebDriver driver;
 	
 	public void pilihStartEndDateInvalidComplete()
 	{
+		Utils.delay(Constants.TIMEOUT_DELAY, Constants.GLOB_PARAM_DELAY);
 		this.btnStartDate();
 		this.btnPilihTanggalStartInvalidComplete();
 		this.btnEndDate();
